@@ -12,6 +12,12 @@
     "model.safetensors",
     "pytorch_model.bin"
   ],
-  "weights_downloaded": false,
-  "weight_sha256": null
+  "weights_downloaded": true,
+  "weight_sha256": "ac9535c5b9fe1d325c5bf58dd4ffc3201c1fc04992b37e393977a7526cccafb4",
+  "weight_file": "model.safetensors",
+  "weight_bytes": 106197008,
+  "weight_download_url": "https://huggingface.co/timm/mambaout_tiny.in1k/resolve/d080941663a60c42d015ecf8d8fad86d12694208/model.safetensors",
+  "publisher_sha256": "ac9535c5b9fe1d325c5bf58dd4ffc3201c1fc04992b37e393977a7526cccafb4",
+  "publisher_hash_matches": true,
+  "access_check": "Downloaded without authentication or access approval"
 }

@@ -26,6 +26,6 @@ MambaOut-Tiny 模型卡约 26.5M 参数，纯参数存储量粗估 FP32 106MB、
 
 ## 权重落实时必须保存
 
-确切模型名称、公开下载链接、发布方、上游训练数据说明、许可证全文、下载文件 SHA-256、代码提交、依赖版本。模型卡元数据已记录在 [weight_metadata.json](../06_references/weight_metadata.json)；尚未下载大权重，所以 SHA-256 留空，不能用模型仓库 revision 冒充文件哈希。
+确切模型名称、公开下载链接、发布方、上游训练数据说明、许可证全文、下载文件 SHA-256、代码提交、依赖版本。已实际下载主候选固定版本的权重并核对发布方 SHA-256；精确大小和哈希见 [weight_metadata.json](../06_references/weight_metadata.json)，逐项证据见 [符合性复核](../06_references/COMPLIANCE_REVIEW.md)。权重只保存在本地忽略目录，完整模型训练和部署仍待验证。
 
 加载与适配步骤见 [REPRODUCTION_GUIDE.md](REPRODUCTION_GUIDE.md)。

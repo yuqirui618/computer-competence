@@ -12,7 +12,7 @@
 
 首选 `timm/mambaout_tiny.in1k`，模型卡说明为论文作者的 ImageNet-1K 训练权重，Apache-2.0、非 gated。本次核实 revision：`d080941663a60c42d015ecf8d8fad86d12694208`。[模型卡](https://huggingface.co/timm/mambaout_tiny.in1k)。
 
-后续先从该 revision 下载具体权重文件、config 与许可，计算本地 SHA-256，并配置加载该本地副本；可使用 timm 的 `hf-hub:` 加载入口做首次验证，但最终运行不能依赖远程临时变化。
+该 revision 的具体权重、config、模型卡与作者许可证已保存于本地 `weights/pretrained/mambaout_tiny.in1k/`，SHA-256 与发布方一致。后续配置应加载这一已校验副本；下面的 `hf-hub:` 入口仅用于说明接口，最终运行不依赖远程临时变化。
 
 以下仅示意公开接口，不是本仓库已实现的训练脚本：
 
