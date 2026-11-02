@@ -1,0 +1,100 @@
+[
+  {
+    "requested_repository": "yuweihao/MambaOut",
+    "checked_on": "2026-11-02",
+    "check_status": "api_unavailable",
+    "error_type": "HttpResponseException",
+    "web_page_status": "accessible",
+    "web_license_observation": "Apache-2.0",
+    "notes": "natural-image weights; exact HF card recorded separately",
+    "source_url": "https://github.com/yuweihao/MambaOut"
+  },
+  {
+    "requested_repository": "THU-MIG/RepViT",
+    "checked_on": "2026-11-02",
+    "check_status": "api_unavailable",
+    "error_type": "HttpResponseException",
+    "web_page_status": "accessible",
+    "web_license_observation": "Apache-2.0",
+    "notes": "select ImageNet classification variant",
+    "source_url": "https://github.com/THU-MIG/RepViT"
+  },
+  {
+    "requested_repository": "facebookresearch/dinov2",
+    "checked_on": "2026-11-02",
+    "check_status": "api_unavailable",
+    "error_type": "HttpResponseException",
+    "web_page_status": "accessible",
+    "web_license_observation": "Apache-2.0 for original DINOv2",
+    "notes": "medical subprojects have different data and licenses",
+    "source_url": "https://github.com/facebookresearch/dinov2"
+  },
+  {
+    "requested_repository": "facebookresearch/ConvNeXt",
+    "checked_on": "2026-11-02",
+    "check_status": "api_unavailable",
+    "error_type": "HttpResponseException",
+    "web_page_status": "accessible",
+    "web_license_observation": "MIT project",
+    "notes": "verify exact selected checkpoint channel",
+    "source_url": "https://github.com/facebookresearch/ConvNeXt"
+  },
+  {
+    "requested_repository": "Alibaba-MIIL/ASL",
+    "checked_on": "2026-11-02",
+    "check_status": "api_unavailable",
+    "error_type": "HttpResponseException",
+    "web_page_status": "accessible",
+    "web_license_observation": "MIT",
+    "notes": "loss code; no task weights needed",
+    "source_url": "https://github.com/Alibaba-MIIL/ASL"
+  },
+  {
+    "requested_repository": "RicardoLee510520/Edge-RecViT",
+    "checked_on": "2026-11-02",
+    "check_status": "api_unavailable",
+    "error_type": "HttpResponseException",
+    "web_page_status": "accessible",
+    "web_license_observation": "Apache-2.0",
+    "notes": "paper checkpoint provenance not independently confirmed",
+    "source_url": "https://github.com/RicardoLee510520/Edge-RecViT"
+  },
+  {
+    "requested_repository": "yejix-ai/CHASE",
+    "checked_on": "2026-11-02",
+    "check_status": "api_unavailable",
+    "error_type": "HttpResponseException",
+    "web_page_status": "404",
+    "web_license_observation": "not verified",
+    "notes": "paper link exists; repository unavailable",
+    "source_url": "https://github.com/yejix-ai/CHASE"
+  },
+  {
+    "requested_repository": "facebookresearch/ConvNeXt-V2",
+    "checked_on": "2026-11-02",
+    "check_status": "api_unavailable",
+    "error_type": "HttpResponseException",
+    "web_page_status": "accessible",
+    "web_license_observation": "MIT code; CC-BY-NC pretrained weights",
+    "notes": "exclude original pretrained weights",
+    "source_url": "https://github.com/facebookresearch/ConvNeXt-V2"
+  },
+  {
+    "requested_repository": "NVlabs/MambaVision",
+    "checked_on": "2026-11-02",
+    "check_status": "api_unavailable",
+    "error_type": "HttpResponseException",
+    "web_page_status": "accessible",
+    "web_license_observation": "NVIDIA code NC; CC-BY-NC-SA-4.0 weights",
+    "notes": "exclude original pretrained weights",
+    "source_url": "https://github.com/NVlabs/MambaVision"
+  },
+  {
+    "requested_repository": "xup6YJ/RGB-Loss",
+    "source_url": "https://github.com/xup6YJ/RGB-Loss",
+    "web_page_status": "accessible",
+    "web_license_observation": "GPL-3.0",
+    "notes": "loss reference only; exclude medical pretraining in README example",
+    "checked_on": "2026-11-02"
+  }
+]

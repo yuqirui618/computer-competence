@@ -1,0 +1,9 @@
+experiment_id,model,loss,purpose,status
+E01,ConvNeXt-Tiny,BCE,baseline,planned
+E02,MambaOut-Tiny,BCE,backbone comparison,planned
+E03,MambaOut-Tiny,ASL,loss comparison,planned
+E04,MambaOut-Tiny,RGB,2026 loss and batch stability,planned
+E05,selected backbone,selected loss,study pooling comparison,planned
+E06,selected backbone,selected loss,resolution and latency comparison,planned
+E07,DINOv2-S-Reg,BCE or selected loss,optional heterogeneous backbone,optional
+E08,selected fixed ensemble,n/a,optional ensemble or fixed TTA,optional

@@ -1,0 +1,17 @@
+{
+  "model_id": "timm/mambaout_tiny.in1k",
+  "revision": "d080941663a60c42d015ecf8d8fad86d12694208",
+  "gated": false,
+  "license": "apache-2.0",
+  "source_url": "https://huggingface.co/timm/mambaout_tiny.in1k",
+  "checked_on": "2026-11-02",
+  "files": [
+    ".gitattributes",
+    "README.md",
+    "config.json",
+    "model.safetensors",
+    "pytorch_model.bin"
+  ],
+  "weights_downloaded": false,
+  "weight_sha256": null
+}

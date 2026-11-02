@@ -1,0 +1,1 @@
+run_id,experiment_id,seed,backbone,pretrain_file_sha256,code_revision,input_size,real_batch,effective_batch,loss,study_pooling,validation_usage,macro_auc,macro_f1,per_class_metrics_path,t4_mean_latency_ms,inference_bundle_bytes,precision,notes

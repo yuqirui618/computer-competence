@@ -1,0 +1,14 @@
+flowchart TD
+    A[官方规则与权重来源核查] --> B[仅获取官方比赛数据]
+    B --> C[Subject 泄漏检查与 Study 图像清单]
+    C --> D[官方训练集与验证集用途固定]
+    D --> E[ConvNeXt Tiny 加 BCE 基线]
+    D --> F[MambaOut Tiny 加 BCE 主候选]
+    F --> G[ASL 与 RGB Loss 训练对照]
+    E --> H[同次检查多视角聚合]
+    G --> H
+    H --> I[验证集逐类 AUC 与 Macro AUC]
+    I --> J[选择模型 聚合 阈值及可选集成]
+    J --> K[T4 端到端计时与文件大小检查]
+    K --> L[冻结推理生成 submission.csv]
+    L --> M[材料核验与赛方提交]

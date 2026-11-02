@@ -1,0 +1,33 @@
+# Local datasets, models and generated artifacts
+/data/
+/datasets/
+/weights/
+/checkpoints/
+/outputs/
+/runs/
+/third_party/
+/nnUNet_raw/
+/nnUNet_preprocessed/
+/nnUNet_results/
+/tmp/
+/submissions/
+/audit_private/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.dcm
+*.nii
+*.nii.gz
+
+# Python environments and local secrets
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
