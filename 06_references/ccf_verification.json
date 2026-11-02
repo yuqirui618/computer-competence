@@ -1,0 +1,15 @@
+{
+  "checked_on": "2026-11-02",
+  "source_url": "https://www.ccf.org.cn/Academic_Evaluation/AI/",
+  "source_html_sha256": "e4763109e3d2836c65a43f17446940c76c2405961b875a4c7f51c6e69dee7323",
+  "counting_policy": "CVPR ICCV ICML main-conference papers only; formal venue established separately from downloaded manuscript version",
+  "verified_venues": {
+    "CVPR": "A",
+    "ICCV": "A",
+    "ICML": "A"
+  },
+  "downloaded_pdf_count": 21,
+  "verified_A_count": 15,
+  "core_A_count": 12,
+  "public_A_pdf_count": 10
+}

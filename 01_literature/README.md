@@ -1,6 +1,21 @@
 # 文献调研：对齐 10 类胸片多标签分类
 
-检索截止 2026-11-02。优先检索 CVPR 2026、MICCAI 2026 及 CVPR/ICCV/ICLR 已发表工作；结合真实权重、许可和部署要求筛选。L01–L16 对应 [文献清单](../06_references/papers.csv)和 [BibTeX](../06_references/references.bib)。
+检索截止 2026-11-02。优先检索 CVPR 2026、MICCAI 2026 及 CVPR/ICCV/ICLR 已发表工作；结合真实权重、许可和部署要求筛选。L01–L21 对应 [文献清单](../06_references/papers.csv)和 [BibTeX](../06_references/references.bib)。
+
+## 论文下载与 CCF-A 筛选
+
+已下载 **21 篇** PDF，核实 **15 篇 CCF-A 主会论文**，选出 **12 篇**重点阅读，满足不少于 10 篇的要求。[CCF-A 精选清单](CCF_A_SELECTION.md)给出正式会议、年份、阅读次序和赛题关系；[PDF 总索引](PDF_INDEX.md)定位所有文件。
+
+| 子文件夹 | 主要内容 | 篇数 |
+| --- | --- | --- |
+| [01_backbones](01_backbones/README.md) | MambaOut、ConvNeXt、RepViT、DINOv2、Registers、EfficientNet 系列和 DeiT | 8 |
+| [02_training_methods](02_training_methods/README.md) | ASL、RGB、ML-GCN、C-Tran：不平衡与标签关系 | 4 |
+| [03_recent_research](03_recent_research/README.md) | Edge-RecViT、CHASE、DARC、AnyMC3D | 4 |
+| [04_excluded_models](04_excluded_models/README.md) | ConvNeXt V2、MambaVision、MedCLIPSeg、Dino U-Net、DINOv3 的边界参考 | 5 |
+
+公开同步 10 份有明确再分发许可的 CCF-A PDF；其余 11 份保存在对应目录的 `local_only/`，GitHub 保留原始来源。`local_only` 只描述公开镜像权限，不代表模型一定被赛题排除。完整本地可点击索引为 `LOCAL_PDF_INDEX.md`。[署名与许可](THIRD_PARTY_PAPERS.md)与[下载清单](../06_references/paper_downloads.csv)保留版本、页数和哈希。
+
+RGB/MICCAI、未在本次所用官方目录核实等级的 ICLR/TMLR，以及纯预印本不计入本次 A 类数量。A 类依据为 [CCF 官方目录](https://www.ccf.org.cn/Academic_Evaluation/AI/)列出的 CVPR、ICCV、ICML 主会。
 
 ## 1. 选型结论
 
@@ -27,7 +42,7 @@ RGB 的 [官方实现](https://github.com/xup6YJ/RGB-Loss)采用 GPL-3.0；公�
 | L01 MambaOut | [CVPR 2025 主会](https://openaccess.thecvf.com/content/CVPR2025/html/Yu_MambaOut_Do_We_Really_Need_Mamba_for_Vision_CVPR_2025_paper.html) | 使用门控 CNN，去掉状态空间模块；官方训练的 ImageNet 权重已被 timm 收录 | 主候选 Tiny，约 26.5M 参数；[模型卡](https://huggingface.co/timm/mambaout_tiny.in1k)明确 ImageNet-1K、Apache-2.0，无 gated |
 | L07 RepViT | [CVPR 2024 主会](https://openaccess.thecvf.com/content/CVPR2024/html/Wang_RepViT_Revisiting_Mobile_CNN_From_ViT_Perspective_CVPR_2024_paper.html) | 适合部署的轻量 CNN 与结构重参数化 | 速度备选；选择 ImageNet 分类权重，别混用 RepViT-SAM；手机延迟不能当成 T4 成绩 |
 | L08 Registers | [ICLR 2024](https://openreview.net/pdf?id=2dnO3LLiJ1) | 添加寄存器 token，减少 ViT 特征中的高范数伪影 | 对照自然图像预训练 DINOv2 Small with Registers；效果须在官方验证集测 |
-| L09 DINOv2 | [作者论文](https://arxiv.org/abs/2304.07193)，2023 预印本，后获 TMLR 接收 | 无监督通用视觉特征 | 强异构对照；只使用原始自然图像模型，排除同仓库的 XRay-DINO、Cell-DINO 等分支 |
+| L09 DINOv2 | [作者论文](https://arxiv.org/abs/2304.07193)，TMLR 2024，首发预印本 2023 | 无监督通用视觉特征 | 强异构对照；只使用原始自然图像模型，排除同仓库的 XRay-DINO、Cell-DINO 等分支 |
 | L10 ConvNeXt | [CVPR 2022 主会](https://openaccess.thecvf.com/content/CVPR2022/html/Liu_A_ConvNet_for_the_2020s_CVPR_2022_paper.html) | 由标准卷积模块组成的现代 CNN | Tiny 做稳定基线；代码与权重来源逐项记录 |
 | L11 ASL | [ICCV 2021 主会](https://openaccess.thecvf.com/content/ICCV2021/html/Ridnik_Asymmetric_Loss_for_Multi-Label_Classification_ICCV_2021_paper.html) | 对正负样本采用不同聚焦策略，减轻大量简单负类的影响 | 作为 BCE 后第一项损失对照；[官方代码](https://github.com/Alibaba-MIIL/ASL)为 MIT |
 
@@ -50,3 +65,13 @@ MedSAM、BiomedCLIP、RETFound、CheXzero 等医学预训练权重也不进入�
 先读 L01/L10 建立骨干对照，再读 L11/L02 设计损失消融；L08/L09 用于异构表征对照；L03/L04/L05 用于有预算的研究分支。
 
 逐篇核对：预训练数据、权重许可、是否无需登录下载、是否额外需要医学标注、推理网络是否增加、是否支持当前依赖、能否在 batch=1 计入完整前后处理后满足时限。本报告给出可验证的设计依据，未宣称实现文献中的精度。
+
+## 6. 补充的 CCF-A 分类文献
+
+| ID | 论文 / 正式发表 | 对本赛的用途 |
+| --- | --- | --- |
+| L17 | [ML-GCN · CVPR 2019](https://openaccess.thecvf.com/content_CVPR_2019/html/Chen_Multi-Label_Image_Recognition_With_Graph_Convolutional_Networks_CVPR_2019_paper.html) | 用标签图建模类别共现；关联矩阵须由官方训练集重建 |
+| L18 | [C-Tran · CVPR 2021](https://openaccess.thecvf.com/content/CVPR2021/html/Lanchantin_General_Multi-Label_Image_Classification_With_Transformers_CVPR_2021_paper.html) | 用 Transformer 联合建模视觉和标签；不能在推理时提供未知测试标签 |
+| L19 | [EfficientNetV2 · ICML 2021](https://proceedings.mlr.press/v139/tan21a.html) | 高效分类与渐进分辨率训练参考，具体初始化权重另行审查 |
+| L20 | [DeiT · ICML 2021](https://proceedings.mlr.press/v139/touvron21a.html) | 数据效率与注意力蒸馏参考；教师和学生须满足赛事来源要求 |
+| L21 | [EfficientNet · ICML 2019](https://proceedings.mlr.press/v97/tan19a.html) | 研究分辨率、深度、宽度的预算分配；T4 延迟仍需独立实测 |

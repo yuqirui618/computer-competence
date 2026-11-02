@@ -20,7 +20,7 @@
 
 | 文件夹 | 讲什么 | 关键文件 |
 | --- | --- | --- |
-| [01_literature](01_literature/README.md) | 16 项模型/方法文献：2026 新工作、实用骨干、损失函数及淘汰理由 | 文献调研报告 |
+| [01_literature](01_literature/README.md) | 21 篇论文原文；15 篇 CCF-A，精选 12 篇；按四类子目录存放 | 文献调研报告 |
 | [02_models](02_models/README.md) | 代码、权重、许可、大小估算、实际复用步骤 | 模型表、REPRODUCTION_GUIDE.md |
 | [03_datasets](03_datasets/README.md) | 官方数据结构、10 类映射、Study/Subject 分组、CSV 规范 | class_mapping.csv、datasets.csv |
 | [04_technical_route](04_technical_route/README.md) | 分类模型、多视角融合、公式、技术路线图与截止前排期 | pipeline.mmd |
@@ -35,4 +35,4 @@
 
 当前逐项复核见 [赛题符合性复核](06_references/COMPLIANCE_REVIEW.md)，官方数据入口与本地接收步骤见 [下载说明](03_datasets/DOWNLOAD_GUIDE.md)。
 
-公开仓库只保存自主整理的调研、公开链接和模板。比赛原始数据、患者标识、预测文件及模型权重默认不上传。论文原文通过链接访问。
+论文已下载到 `01_literature/` 的四类子目录：本地共 21 篇，核实 15 篇 CCF-A，精选阅读 12 篇；10 篇有明确再分发许可的 A 类原文同步公开仓库，其余 11 篇仅在本地保存并提供官方链接。见 [CCF-A 精选](01_literature/CCF_A_SELECTION.md)、[PDF 总索引](01_literature/PDF_INDEX.md)。比赛数据集按用户指示暂缓下载；原始比赛数据、患者标识、预测文件及模型权重不上传。

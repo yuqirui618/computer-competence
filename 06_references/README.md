@@ -2,8 +2,11 @@
 
 | 文件 | 用途 |
 | --- | --- |
-| [papers.csv](papers.csv) | L01–L16 的完整题名、年份、发表状态、论文/代码链接与复用结论 |
-| [references.bib](references.bib) | 16 项文献的 BibTeX；不编造未核实页码或 DOI |
+| [paper_downloads.csv](paper_downloads.csv) | 全部 21 篇 PDF 的来源、版本、页数、SHA-256、许可与公开镜像状态 |
+| [ccf_a_papers.csv](ccf_a_papers.csv) | 15 篇已核实的 CCF-A 论文，其中 12 篇重点阅读 |
+| [ccf_verification.json](ccf_verification.json) | CCF 官方目录来源、核查日期与数量口径 |
+| [papers.csv](papers.csv) | L01–L21 的完整题名、年份、发表状态、论文/代码链接与复用结论 |
+| [references.bib](references.bib) | 21 项文献的 BibTeX；不编造未核实页码或 DOI |
 | [COMPLIANCE_REVIEW.md](COMPLIANCE_REVIEW.md) | 推荐路线逐项复核、真实权重文件大小与哈希、仍待验证事项 |
 | [COMPETITION_RULES.md](COMPETITION_RULES.md) | 官方赛题、规则和补充说明及其对技术方案的影响 |
 | [SEARCH_LOG.md](SEARCH_LOG.md) | 检索范围、关键查询、核查方式和访问限制 |
@@ -12,4 +15,4 @@
 
 资料区分三层证据：论文正式页面确认发表状态，作者代码/模型卡确认公开材料，官方比赛规则决定可用范围。对未访问成功的链接保留限制说明，不把搜索到仓库名称当作完整复现证明。
 
-主候选公开权重已下载，SHA-256 与发布方一致；官方数据仍未取得，因此没有实际数据核查结果或训练分数。引用采用公开链接与自主笔记；公开仓库不复制论文全文。
+主候选公开权重已下载，SHA-256 与发布方一致；官方数据仍未取得，因此没有实际数据核查结果或训练分数。引用采用公开链接与自主笔记；仅将已确认再分发许可的 10 篇原文镜像到仓库，保留作者、来源与许可。其余 11 篇 PDF 仅存本地，参见 [论文索引](../01_literature/PDF_INDEX.md)。

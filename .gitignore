@@ -12,6 +12,9 @@
 /tmp/
 /submissions/
 /audit_private/
+/01_literature/*/local_only/
+/01_literature/**/*.part
+/01_literature/LOCAL_PDF_INDEX.md
 *.pt
 *.pth
 *.ckpt
