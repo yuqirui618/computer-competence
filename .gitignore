@@ -34,3 +34,8 @@ __pycache__/
 !.env.example
 .DS_Store
 Thumbs.db
+
+# Dataset payloads are E-drive Release assets
+/cxr_first/
+/release_parts/
+cxr_first.zip*

@@ -1,8 +1,8 @@
 # 官方数据与提交结构
 
-来源：[官方赛题](https://www.ncccu.org.cn/index/Paper/case1.html)，核查 2026-11-02。当前未取得参赛数据，以下按赛方页面与样例整理，下载后需用实际文件复核。
+来源：[官方赛题](https://www.ncccu.org.cn/index/Paper/case1.html)，数据复核2026-11-03。官方ZIP及解压文件已在E盘，实际包含33,984张JPG和3份CSV；ZIP共55,232,226,819字节。
 
-数据入口与本地目录状态见 [官方数据获取说明](DOWNLOAD_GUIDE.md)。当前缺少后台下载链接，不能视为已取得数据。
+存储、分卷下载和还原方法见[官方数据说明](DOWNLOAD_GUIDE.md)，校验及发布状态见[数据清单](../06_references/official_dataset.json)。实测train/valid/test图像数为30,344 / 1,422 / 2,218，唯一Study数为18,513 / 859 / 1,414，与官网一致。
 
 ## 1. 唯一医学数据来源
 
@@ -14,7 +14,7 @@
 
 这些是**检查数，不是图像数或患者数**。一个 Study_id 可能有多张投照图；同一 Subject_id 也可能有多次检查。用官方清单检查三个划分是否存在患者重叠并如实记录，不自行改写赛方测试划分。
 
-Kvasir、BUSI、MIMIC-CXR、CheXpert、医院数据等外部医学数据均不进入本赛的训练、自监督、伪标签和微调流程。不能因为数据未标注就当作允许。公开 GitHub 不上传官方数据、标签、患者标识和实际 submission.csv。
+Kvasir、BUSI、MIMIC-CXR、CheXpert、医院数据等外部医学数据均不进入本赛的训练、自监督、伪标签和微调流程。不能因为数据未标注就当作允许。原始数据按仓库所有者确认的主办方授权范围通过Release附件发布；普通Git历史只保存说明及清单，分享凭据、临时缓存和实际预测文件不发布。
 
 ## 2. 10 类映射
 
@@ -36,6 +36,8 @@ Kvasir、BUSI、MIMIC-CXR、CheXpert、医院数据等外部医学数据均不�
 No Finding 作为单独标签训练。是否施加互斥约束应先检查官方训练标签的一致性，不能直接令其概率等于 `1 - max(其他类别)`。
 
 ## 3. 需要建的本地清单
+
+实际train/valid CSV列为`Dicom_id,Subject_id,Study_id,ViewPosition,PatientOrientation,Rows,Columns,Predict_class`；test CSV无`Predict_class`。本版CSV没有`Support Devices`列，不应假定它存在。
 
 建议一张图一行：`Subject_id, Study_id, image_path, split, ViewPosition, PatientOrientation`；另建每个 Study 的 10 维标签表。保存图像尺寸、重复/近重复检查及缺失值情况。Support Devices 等元数据用于训练集内分层分析；其 -1/None 不能直接解释为疾病阴性。
 

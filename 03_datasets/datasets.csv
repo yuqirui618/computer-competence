@@ -1,4 +1,4 @@
 split,unit,official_count,labels,planned_use,download_status,source_url,checked_on
-train,study,18513,provided,supervised training,not_downloaded,https://www.ncccu.org.cn/index/Paper/case1.html,2026-11-02
-validation,study,859,provided,model selection,not_downloaded,https://www.ncccu.org.cn/index/Paper/case1.html,2026-11-02
-test,study,1414,withheld,fixed final inference,not_downloaded,https://www.ncccu.org.cn/index/Paper/case1.html,2026-11-02
+train,study,18513,provided,supervised training,downloaded_and_extracted_on_E,https://www.ncccu.org.cn/index/Paper/case1.html,2026-11-03
+validation,study,859,provided,model selection,downloaded_and_extracted_on_E,https://www.ncccu.org.cn/index/Paper/case1.html,2026-11-03
+test,study,1414,withheld,fixed final inference,downloaded_and_extracted_on_E,https://www.ncccu.org.cn/index/Paper/case1.html,2026-11-03
