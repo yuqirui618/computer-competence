@@ -9,4 +9,4 @@
 | L17 | Multi-Label Image Recognition With Graph Convolutional Networks | CVPR 2019 | [官方原文](https://arxiv.org/pdf/1904.03582v1)；本地 `local_only/L17_ML_GCN.pdf` |
 | L18 | General Multi-Label Image Classification With Transformers | CVPR 2021 | [PDF](L18_C_Tran.pdf) |
 
-来源、作者与许可见 [第三方论文说明](../THIRD_PARTY_PAPERS.md)，全部版本与哈希见 [下载清单](../../06_references/paper_downloads.csv)。
+来源、作者与许可见 [第三方论文说明](../THIRD_PARTY_PAPERS.md)，全部版本与哈希见 [下载清单](../references/paper_downloads.csv)。

@@ -96,7 +96,7 @@ def audit(root, report, bad_images, workers):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-root", help="Official dataset directory (defaults to DATA_ROOT)")
-    parser.add_argument("--report", type=Path, default=Path("reports/data_audit.md"))
+    parser.add_argument("--report", type=Path, default=Path(__file__).resolve().parents[1] / "data_audit.md")
     parser.add_argument("--bad-images", type=Path)
     parser.add_argument("--workers", type=int, default=6)
     args = parser.parse_args()

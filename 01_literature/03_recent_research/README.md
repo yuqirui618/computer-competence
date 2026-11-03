@@ -9,4 +9,4 @@
 | L05 | DARC: Dual Adjustment Reasoning with Counterfactuals for Trustworthy Chest X-ray Classification | CVPR 2026 | [官方原文](https://openaccess.thecvf.com/content/CVPR2026/papers/Liao_DARC_Dual_Adjustment_Reasoning_with_Counterfactuals_for_Trustworthy_Chest_X-ray_CVPR_2026_paper.pdf)；本地 `local_only/L05_DARC.pdf` |
 | L06 | Revisiting 2D Foundation Models for Scalable 3D Medical Image Classification | CVPR 2026 | [PDF](L06_AnyMC3D.pdf) |
 
-来源、作者与许可见 [第三方论文说明](../THIRD_PARTY_PAPERS.md)，全部版本与哈希见 [下载清单](../../06_references/paper_downloads.csv)。
+来源、作者与许可见 [第三方论文说明](../THIRD_PARTY_PAPERS.md)，全部版本与哈希见 [下载清单](../references/paper_downloads.csv)。
