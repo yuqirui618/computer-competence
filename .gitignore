@@ -39,3 +39,9 @@ Thumbs.db
 /cxr_first/
 /release_parts/
 cxr_first.zip*
+cache_512/
+manifest.csv
+bad_images.csv
+cache_failures.csv
+preds.csv
+submission.csv

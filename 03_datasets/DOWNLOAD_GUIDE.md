@@ -1,6 +1,6 @@
 # 官方数据存储与下载
 
-状态日期：2026-11-03。参赛者已下载并解压官方ZIP。原始文件为55,232,226,819字节，包含33,984张JPG和3份CSV。实际分卷发布状态见[数据清单](../06_references/official_dataset.json)的`publication.upload_status`。
+2026-11-03 已核验并发布官方 ZIP。原始文件为 55,232,226,819 字节，包含 33,984 张 JPG 和 3 份 CSV。每卷长度、SHA-256 及附件地址见[发布记录](dataset_release_receipt.json)。
 
 ## 本地目录
 
@@ -24,7 +24,7 @@ E:\比赛数据集\
 
 ## GitHub数据附件
 
-55.23GB原始ZIP超出普通Git单文件100MiB及GitHub LFS单文件上限，采用[GitHub Release](https://github.com/yuqirui618/computer-competence/releases/tag/official-cxr-first-2026-11-03)附件存放52个二进制分卷，每卷最多1GiB。只有全部附件的长度和SHA-256核对后，才记录为`published_and_verified`；此前入口可能尚不可公开访问。
+55.23 GB 原始 ZIP 分为 52 个二进制分卷，每卷最多 1 GiB。全部分卷已核对长度和 SHA-256。[GitHub Release](https://github.com/yuqirui618/computer-competence/releases/tag/official-cxr-first-2026-11-03)
 
 下载全部`cxr_first.zip.partNNNN`以及`DATASET_MANIFEST.json`、`restore_dataset.py`至E盘同一目录，再运行：
 
@@ -38,7 +38,7 @@ python restore_dataset.py --parts-dir "E:\比赛数据集\release_downloads" --o
 
 ## 校验和授权范围
 
-已核对ZIP中央目录、全部解压文件的路径与长度，以及CSV行数和唯一Study数量；ZIP及分卷均计算SHA-256。尚未逐图检查像素或验证全部图像CRC，未训练模型或按测试数据调参。
+已核对 ZIP 中央目录、解压文件路径与长度、CSV 行数和唯一 Study 数量，并计算原始 ZIP 和分卷的 SHA-256。解压后的逐图解码结果见[数据审计](../dataset/data_audit.md)。
 
 [官方赛题第八部分](https://www.ncccu.org.cn/index/Paper/case1.html)要求数据传播取得允许。仓库所有者于2026-11-03明确确认，已有主办方授权将本届训练、验证、测试原始影像及3份CSV向互联网用户公开下载。本次发布依据此声明，授权文件未独立核验，不另行授予下游数据使用许可。
 

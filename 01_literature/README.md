@@ -1,6 +1,6 @@
 # 文献调研：对齐 10 类胸片多标签分类
 
-检索截止 2026-11-02。优先检索 CVPR 2026、MICCAI 2026 及 CVPR/ICCV/ICLR 已发表工作；结合真实权重、许可和部署要求筛选。L01–L21 对应 [文献清单](../06_references/papers.csv)和 [BibTeX](../06_references/references.bib)。
+检索截止 2026-11-02。优先检索 CVPR 2026、MICCAI 2026 及 CVPR/ICCV/ICLR 已发表工作；结合真实权重、许可和部署要求筛选。L01–L21 对应 [文献清单](references/papers.csv)和 [BibTeX](references/references.bib)。[检索记录](references/SEARCH_LOG.md)与 [CCF 核查清单](references/ccf_a_papers.csv)可用于追溯来源。
 
 ## 论文下载与 CCF-A 筛选
 
@@ -13,7 +13,7 @@
 | [03_recent_research](03_recent_research/README.md) | Edge-RecViT、CHASE、DARC、AnyMC3D | 4 |
 | [04_excluded_models](04_excluded_models/README.md) | ConvNeXt V2、MambaVision、MedCLIPSeg、Dino U-Net、DINOv3 的边界参考 | 5 |
 
-公开同步 10 份有明确再分发许可的 CCF-A PDF；其余 11 份保存在对应目录的 `local_only/`，GitHub 保留原始来源。`local_only` 只描述公开镜像权限，不代表模型一定被赛题排除。完整本地可点击索引为 `LOCAL_PDF_INDEX.md`。[署名与许可](THIRD_PARTY_PAPERS.md)与[下载清单](../06_references/paper_downloads.csv)保留版本、页数和哈希。
+公开同步 10 份有明确再分发许可的 CCF-A PDF；其余 11 份保存在对应目录的 `local_only/`，GitHub 保留原始来源。`local_only` 只描述公开镜像权限，不代表模型一定被赛题排除。完整本地可点击索引为 `LOCAL_PDF_INDEX.md`。[署名与许可](THIRD_PARTY_PAPERS.md)与[下载清单](references/paper_downloads.csv)保留版本、页数和哈希。
 
 RGB/MICCAI、未在本次所用官方目录核实等级的 ICLR/TMLR，以及纯预印本不计入本次 A 类数量。A 类依据为 [CCF 官方目录](https://www.ccf.org.cn/Academic_Evaluation/AI/)列出的 CVPR、ICCV、ICML 主会。
 
@@ -58,7 +58,7 @@ RGB 的 [官方实现](https://github.com/xup6YJ/RGB-Loss)采用 GPL-3.0；公�
 | L15 | Dino U-Net | MICCAI 2026 | 分割任务；默认 DINOv3 主干获取有授权门槛，且需额外编译；不作为本赛起点 |
 | L16 | DINOv3 | [作者论文/代码](https://github.com/facebookresearch/dinov3)，2025 起 | 官方权重入口需接受获取授权，按本赛 gated 限制排除；不把它与 DINOv2 混同 |
 
-MedSAM、BiomedCLIP、RETFound、CheXzero 等医学预训练权重也不进入本赛方案。可以阅读其论文，但不能用这些模型的输出给学生蒸馏，或将医学权重换个文件名继续使用。[规则依据](../06_references/COMPETITION_RULES.md)。
+MedSAM、BiomedCLIP、RETFound、CheXzero 等医学预训练权重也不进入本赛方案。可以阅读其论文，但不能用这些模型的输出给学生蒸馏，或将医学权重换个文件名继续使用。[规则依据](../赛题相关资料/README.md)。
 
 ## 5. 读完文献后应确认什么
 

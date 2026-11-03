@@ -13,4 +13,4 @@
 | L20 | Training data-efficient image transformers & distillation through attention | ICML 2021 | [PDF](L20_DeiT.pdf) |
 | L21 | EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks | ICML 2019 | [PDF](L21_EfficientNet.pdf) |
 
-来源、作者与许可见 [第三方论文说明](../THIRD_PARTY_PAPERS.md)，全部版本与哈希见 [下载清单](../../06_references/paper_downloads.csv)。
+来源、作者与许可见 [第三方论文说明](../THIRD_PARTY_PAPERS.md)，全部版本与哈希见 [下载清单](../references/paper_downloads.csv)。

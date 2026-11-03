@@ -8,8 +8,8 @@ from PIL import Image, ImageOps
 from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
 
-from tools.build_cache import cache_image_path
-from tools.build_manifest import NUM_CLASSES, SPLIT_NAMES, data_root_path, image_files, image_ids, parse_label_ids, read_manifest, split_name
+from .tools.build_cache import cache_image_path
+from .tools.build_manifest import NUM_CLASSES, SPLIT_NAMES, data_root_path, image_files, image_ids, parse_label_ids, read_manifest, split_name
 
 
 def list_images(root: str) -> list[dict]:

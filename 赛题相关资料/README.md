@@ -10,4 +10,6 @@
 
 正式规则及补充说明作为实施依据，任务描述便于阅读。[官方赛题及附件](https://www.ncccu.org.cn/index/Paper/case1.html)。
 
-原件的长度、SHA-256及来源见[资料清单](../06_references/competition_materials.csv)。完整数据以GitHub Release分卷附件发布，方法见[数据说明](../03_datasets/DOWNLOAD_GUIDE.md)。
+原件长度和 SHA-256 见[资料清单](competition_materials.csv)。
+
+团队的模型起点和实验顺序集中在[备赛方案](备赛方案.md)，公开权重的来源与校验值见[权重记录](weight_metadata.json)。官方数据从[数据集入口](../03_datasets/README.md)下载。
