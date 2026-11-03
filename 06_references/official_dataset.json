@@ -3,7 +3,7 @@
   "source": "Official competition share downloaded by repository owner",
   "official_rules_url": "https://www.ncccu.org.cn/index/Paper/case1.html",
   "local_root": "E:\\比赛数据集",
-  "local_extracted_root": "E:\\比赛数据集\\cxr_first\\cxr_first",
+  "local_extracted_root": "E:\\比赛数据集\\raw\\cxr_first",
   "archive": {
     "name": "cxr_first.zip",
     "bytes": 55232226819,
@@ -77,12 +77,14 @@
     "method": "GitHub Release assets; binary parts reconstruct original ZIP without changing bytes",
     "release_tag": "official-cxr-first-2026-11-03",
     "release_url": "https://github.com/yuqirui618/computer-competence/releases/tag/official-cxr-first-2026-11-03",
-    "upload_status": "uploading",
+    "upload_status": "published_and_verified",
     "excluded": [
       "Share access tokens and passcode",
       "Browser scripts and HTML caches",
       "Private manifests containing sample identifiers"
-    ]
+    ],
+    "release_id": 432090326,
+    "verified_asset_count": 56
   },
   "part_size_bytes": 1073741824,
   "parts": [
@@ -346,5 +348,13 @@
       "bytes": 471393795,
       "sha256": "dac053c4b9dfa6cdac149303876e2ccb8817ae7de63759599166efb9f49d9063"
     }
-  ]
+  ],
+  "local_archive_path": "E:\\比赛数据集\\downloads\\cxr_first.zip",
+  "local_cleanup": {
+    "temporary_data_removed": true,
+    "removed_E_drive_files": 76,
+    "removed_E_drive_bytes": 55239808283,
+    "original_zip_preserved": true,
+    "extracted_data_preserved": true
+  }
 }

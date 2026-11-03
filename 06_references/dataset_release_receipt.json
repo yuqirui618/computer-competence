@@ -1,0 +1,399 @@
+{
+  "release_id": 432090326,
+  "release_url": "https://github.com/yuqirui618/computer-competence/releases/tag/official-cxr-first-2026-11-03",
+  "publicly_accessible": true,
+  "verified_assets": [
+    {
+      "name": "cxr_first.zip.part0001",
+      "bytes": 1073741824,
+      "sha256": "4d8345c7292ac8a2b5ef214c6fe533b3db8641048a7a5a56ea09dbd8495af607",
+      "asset_id": 704402391,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0001"
+    },
+    {
+      "name": "cxr_first.zip.part0002",
+      "bytes": 1073741824,
+      "sha256": "37d94397fe2b00e283c54139929edf8d34310fb0ba7a62f0d204b315175c6168",
+      "asset_id": 704402394,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0002"
+    },
+    {
+      "name": "cxr_first.zip.part0003",
+      "bytes": 1073741824,
+      "sha256": "4d2a6765c43874add2b1c65f074831ce2d0890253de616504b4c0ba484f442e0",
+      "asset_id": 703595777,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0003"
+    },
+    {
+      "name": "cxr_first.zip.part0004",
+      "bytes": 1073741824,
+      "sha256": "8dd429ff51c1c4eb320e930bcead2360f0785fe4f24abcda9496e7c373c3e0ae",
+      "asset_id": 703595774,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0004"
+    },
+    {
+      "name": "cxr_first.zip.part0005",
+      "bytes": 1073741824,
+      "sha256": "8fbd517091bfc735f1cac582e6f10885ead9a156cba142178981ce1a0bfda186",
+      "asset_id": 703595781,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0005"
+    },
+    {
+      "name": "cxr_first.zip.part0006",
+      "bytes": 1073741824,
+      "sha256": "004e291f1e0ef472077e37e7dc5085aff038358da0700a1faa2ca091310b0def",
+      "asset_id": 703595779,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0006"
+    },
+    {
+      "name": "cxr_first.zip.part0007",
+      "bytes": 1073741824,
+      "sha256": "ad317388f97b471db449c6f1ac87717c127ae4b1172f01c2298db39f44bd902d",
+      "asset_id": 703595775,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0007"
+    },
+    {
+      "name": "cxr_first.zip.part0008",
+      "bytes": 1073741824,
+      "sha256": "dac22ee7a063d00ffba58cf9daf74ffae881a6393edcc714853b544897225310",
+      "asset_id": 703595776,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0008"
+    },
+    {
+      "name": "cxr_first.zip.part0009",
+      "bytes": 1073741824,
+      "sha256": "c713f151220c31cce54f3a70b394a5b0bb886c79de2591aa1491b813220ac614",
+      "asset_id": 703677615,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0009"
+    },
+    {
+      "name": "cxr_first.zip.part0010",
+      "bytes": 1073741824,
+      "sha256": "56749f6b908252fdb6bb83bea7e35f5f04bfaf73bb1d465f23b35edb82b88886",
+      "asset_id": 703680051,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0010"
+    },
+    {
+      "name": "cxr_first.zip.part0011",
+      "bytes": 1073741824,
+      "sha256": "782144f8aa30ae5c47ced69f095e5ee09c5375ee579d14e53b3e8f01d497f56b",
+      "asset_id": 703680525,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0011"
+    },
+    {
+      "name": "cxr_first.zip.part0012",
+      "bytes": 1073741824,
+      "sha256": "4184bfbc48ea6c1c3370e9fe58a7359df9392cb88ca3a3322f80918d5d7c974c",
+      "asset_id": 703683768,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0012"
+    },
+    {
+      "name": "cxr_first.zip.part0013",
+      "bytes": 1073741824,
+      "sha256": "27081d69edae3fbd1e965fd815f8552ed6d56b3d6a5c85bccac1733ca8e49a77",
+      "asset_id": 703685607,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0013"
+    },
+    {
+      "name": "cxr_first.zip.part0014",
+      "bytes": 1073741824,
+      "sha256": "4d92e9f96cce0f740d2bf36d50ff5d81bd87bb4425e9eebbd369265e02aa00a6",
+      "asset_id": 703685802,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0014"
+    },
+    {
+      "name": "cxr_first.zip.part0015",
+      "bytes": 1073741824,
+      "sha256": "900512d833cda7a9bc402efba2e5b4b09fc8f65487062f8197c41fc32efbe56e",
+      "asset_id": 703754662,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0015"
+    },
+    {
+      "name": "cxr_first.zip.part0016",
+      "bytes": 1073741824,
+      "sha256": "30e1382c4f92541601c9b83faf665aff04cc11d93792633c935b28ef8897698c",
+      "asset_id": 703761438,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0016"
+    },
+    {
+      "name": "cxr_first.zip.part0017",
+      "bytes": 1073741824,
+      "sha256": "8f6d438a82a9b5c75a55dd2576020c812bf029631460a69fda688652c61cb796",
+      "asset_id": 703761657,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0017"
+    },
+    {
+      "name": "cxr_first.zip.part0018",
+      "bytes": 1073741824,
+      "sha256": "d504440d294cc05424bb677397874b954493adcc74c6e1ee23c44b313c1248dc",
+      "asset_id": 703763848,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0018"
+    },
+    {
+      "name": "cxr_first.zip.part0019",
+      "bytes": 1073741824,
+      "sha256": "3d0dc907fea78b7cea7956b227b651dc113dca83f68421a03cb15e1f6399c731",
+      "asset_id": 703766668,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0019"
+    },
+    {
+      "name": "cxr_first.zip.part0020",
+      "bytes": 1073741824,
+      "sha256": "515932eb4a747d06f41e6288d0ef4c52c5e4a1457c1c03da3906a700f9bdc33d",
+      "asset_id": 703766664,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0020"
+    },
+    {
+      "name": "cxr_first.zip.part0021",
+      "bytes": 1073741824,
+      "sha256": "16d4b638278f5f3775398ca38e4dad82d3deb233638d2e2dade74f0b7345f420",
+      "asset_id": 704402438,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0021"
+    },
+    {
+      "name": "cxr_first.zip.part0022",
+      "bytes": 1073741824,
+      "sha256": "cc1a78541866e1dd84594fc3fecea0689337e0ba7e8c864d162545fc3246edcb",
+      "asset_id": 704402436,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0022"
+    },
+    {
+      "name": "cxr_first.zip.part0023",
+      "bytes": 1073741824,
+      "sha256": "bd121fc585a7f1bb4cd5c59c5f338d02a9c3ce81f490956c68f528c6fae7fddc",
+      "asset_id": 704402437,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0023"
+    },
+    {
+      "name": "cxr_first.zip.part0024",
+      "bytes": 1073741824,
+      "sha256": "17a9c266758b73cd93ec7d73ab4d2baa2ffe274de25f139803fa0f4657fcd318",
+      "asset_id": 704402435,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0024"
+    },
+    {
+      "name": "cxr_first.zip.part0025",
+      "bytes": 1073741824,
+      "sha256": "95c3660fcc4854807d9c098d0b1c050fc3efd68c6ecfcf1f9b915becafefc5cf",
+      "asset_id": 704499801,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0025"
+    },
+    {
+      "name": "cxr_first.zip.part0026",
+      "bytes": 1073741824,
+      "sha256": "1a3efd8860af944523828ffe74709f112179504d8140f6b9768630062727f6eb",
+      "asset_id": 704502034,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0026"
+    },
+    {
+      "name": "cxr_first.zip.part0027",
+      "bytes": 1073741824,
+      "sha256": "ad75ec60ec85ed9accf5a9d36199c45ba9f6ff3307e6ad200abe5a891c8d5525",
+      "asset_id": 703891296,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0027"
+    },
+    {
+      "name": "cxr_first.zip.part0028",
+      "bytes": 1073741824,
+      "sha256": "4b62307ea0596f7240fcdde7c3665cfaeb926b31c5400e55ae316f07da36a658",
+      "asset_id": 703891290,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0028"
+    },
+    {
+      "name": "cxr_first.zip.part0029",
+      "bytes": 1073741824,
+      "sha256": "fa8b1c955afa3735237ec25805d597beb5071085612c6aef39aa13cc44ea49ab",
+      "asset_id": 703891292,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0029"
+    },
+    {
+      "name": "cxr_first.zip.part0030",
+      "bytes": 1073741824,
+      "sha256": "bdb19e667e7351a4dcc556b0bf24bdb23c9ce9d58f5cd5395295842c594cfa6b",
+      "asset_id": 703891293,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0030"
+    },
+    {
+      "name": "cxr_first.zip.part0031",
+      "bytes": 1073741824,
+      "sha256": "2adf35a015cfae2c389d855dac0c9b815a6f2e56ddc92452cde41123276c99ab",
+      "asset_id": 703891291,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0031"
+    },
+    {
+      "name": "cxr_first.zip.part0032",
+      "bytes": 1073741824,
+      "sha256": "eea3b4f542dbbae6605dd7e8f41f36bbd239201363f75a92dcb2c9831a2ea72c",
+      "asset_id": 703891295,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0032"
+    },
+    {
+      "name": "cxr_first.zip.part0033",
+      "bytes": 1073741824,
+      "sha256": "4959bb1912fbccbf83b1273cc8146682017a1bcf439d02eebc7c0290bc479f5f",
+      "asset_id": 703981519,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0033"
+    },
+    {
+      "name": "cxr_first.zip.part0034",
+      "bytes": 1073741824,
+      "sha256": "e6ce91528be9066429b6432acdfbba7e0a8ad0e0b5ad7a53ab1a6b5a768b709a",
+      "asset_id": 703984762,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0034"
+    },
+    {
+      "name": "cxr_first.zip.part0035",
+      "bytes": 1073741824,
+      "sha256": "dbd94ec217b625eed527d01916f2e6a3e2103bb7a83f6a0103ad88adf1074f4a",
+      "asset_id": 703985944,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0035"
+    },
+    {
+      "name": "cxr_first.zip.part0036",
+      "bytes": 1073741824,
+      "sha256": "ec827b58e1f81722de9229a5e2ac6c5c2502aaea1c5c06c6df7f225e0d010e5d",
+      "asset_id": 703989033,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0036"
+    },
+    {
+      "name": "cxr_first.zip.part0037",
+      "bytes": 1073741824,
+      "sha256": "6afcdd6690d8a722aeac672ec92c083af0b035f40e5a7a43c57716a7c4ee5bde",
+      "asset_id": 703991656,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0037"
+    },
+    {
+      "name": "cxr_first.zip.part0038",
+      "bytes": 1073741824,
+      "sha256": "fcf79ff2988e26d5115431413e6254182fa9db97b6317b6d5cf96fb29044779d",
+      "asset_id": 703995115,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0038"
+    },
+    {
+      "name": "cxr_first.zip.part0039",
+      "bytes": 1073741824,
+      "sha256": "8e910371c3e7c136e87c31a1200f65cad934b4e70bf7c6fb899a2d642bd22e64",
+      "asset_id": 704073222,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0039"
+    },
+    {
+      "name": "cxr_first.zip.part0040",
+      "bytes": 1073741824,
+      "sha256": "ebaa135b38efa028f74001def5937e08333ca0d4c69f8b93ca0086eb14066a05",
+      "asset_id": 704077280,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0040"
+    },
+    {
+      "name": "cxr_first.zip.part0041",
+      "bytes": 1073741824,
+      "sha256": "5d28fc990a6c53cae3f0b8cf2a18da12b10bdcdc412bc667c27898618a2294a7",
+      "asset_id": 704082740,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0041"
+    },
+    {
+      "name": "cxr_first.zip.part0042",
+      "bytes": 1073741824,
+      "sha256": "a90f48cf7063b6caeeca19f89bad44275944ebcf1dcab83a4470a3191d13c45d",
+      "asset_id": 704083380,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0042"
+    },
+    {
+      "name": "cxr_first.zip.part0043",
+      "bytes": 1073741824,
+      "sha256": "99c912d0cde4d00d65b26a620236208c4bfb76938ed6a4dfc30dbec3f23aa484",
+      "asset_id": 704088897,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0043"
+    },
+    {
+      "name": "cxr_first.zip.part0044",
+      "bytes": 1073741824,
+      "sha256": "834676050892ba1bae6cdc91db01e422d9d10a9f5526f76781b1b3ed01423f55",
+      "asset_id": 704096212,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0044"
+    },
+    {
+      "name": "cxr_first.zip.part0045",
+      "bytes": 1073741824,
+      "sha256": "1d8c2981d35dd42faaf06c2a98181921e0e705fb3d3c19dbb89152742cd959a7",
+      "asset_id": 704175709,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0045"
+    },
+    {
+      "name": "cxr_first.zip.part0046",
+      "bytes": 1073741824,
+      "sha256": "0b1df40d0ce8bdb84c6958870540a400cd00f92e1d42b6cd158f37b1fec2f3e8",
+      "asset_id": 704184793,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0046"
+    },
+    {
+      "name": "cxr_first.zip.part0047",
+      "bytes": 1073741824,
+      "sha256": "3b4413798a5b2cd067280710e4821505a3aca0fe0da8cd895b3df15e2b701ffb",
+      "asset_id": 704504927,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0047"
+    },
+    {
+      "name": "cxr_first.zip.part0048",
+      "bytes": 1073741824,
+      "sha256": "fd120d3917cadc863f89531f06fa107987695b5d1e42c58899843aa6077b4ca6",
+      "asset_id": 704186279,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0048"
+    },
+    {
+      "name": "cxr_first.zip.part0049",
+      "bytes": 1073741824,
+      "sha256": "c4e7877f8485a251f69cbd073e0e568aa0a2d2728ce1a53123fb5cde96653ba7",
+      "asset_id": 704505773,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0049"
+    },
+    {
+      "name": "cxr_first.zip.part0050",
+      "bytes": 1073741824,
+      "sha256": "eb0b4770ad5412dbc5985979ab770ea8cbeca8cc4bddd8141f1dc4a9bdb28a39",
+      "asset_id": 704200575,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0050"
+    },
+    {
+      "name": "cxr_first.zip.part0051",
+      "bytes": 1073741824,
+      "sha256": "80bdc207b9c42d8f6a2ccb51927bc09120624bf0170534fb2f243d95de329c4c",
+      "asset_id": 704294027,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0051"
+    },
+    {
+      "name": "cxr_first.zip.part0052",
+      "bytes": 471393795,
+      "sha256": "dac053c4b9dfa6cdac149303876e2ccb8817ae7de63759599166efb9f49d9063",
+      "asset_id": 704297901,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/cxr_first.zip.part0052"
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 4680,
+      "sha256": "7adcd6494d65ee6688f4cbcb25b83f8bf4c984daecce10c05802c1d468a57377",
+      "asset_id": 703600721,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/SHA256SUMS.txt"
+    },
+    {
+      "name": "DATASET_MANIFEST.json",
+      "bytes": 10579,
+      "sha256": "d2d8a42295cf190db7934295e292e2c32a31dbfcff3dfd7d12a17b50ac5667ff",
+      "asset_id": 703600744,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/DATASET_MANIFEST.json"
+    },
+    {
+      "name": "restore_dataset.py",
+      "bytes": 2285,
+      "sha256": "520839366d4c8eefa26ffc5af0c8dafaebb96792133985c5836195f76af4904d",
+      "asset_id": 703600768,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/restore_dataset.py"
+    },
+    {
+      "name": "README_DATASET.txt",
+      "bytes": 645,
+      "sha256": "57cfcd899ecfe8084b839c32c51be449756dccbf652a23069b7e2e58b3033189",
+      "asset_id": 703600787,
+      "browser_download_url": "https://github.com/yuqirui618/computer-competence/releases/download/untagged-2d429aed27aed44b2118/README_DATASET.txt"
+    }
+  ]
+}
