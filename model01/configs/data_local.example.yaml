@@ -1,0 +1,8 @@
+# Pass local paths with --data-root, --manifest and --cache-dir when preparing.
+data_root: 'E:/比赛数据集/raw/cxr_first'
+manifest: 'E:/比赛数据集/喻数据产物/manifest.csv'
+cache_dir: 'E:/比赛数据集/喻数据产物/cache_512'
+img_size: 224
+batch_size: 12
+num_workers: 0
+num_classes: 10

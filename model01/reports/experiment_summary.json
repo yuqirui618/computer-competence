@@ -1,0 +1,182 @@
+{
+  "recorded_on": "2026-11-04",
+  "state": "paused_after_epoch",
+  "architecture": "mambaout_tiny",
+  "planned_epochs": 100,
+  "completed_epochs": 45,
+  "resume_epoch": 46,
+  "train_images_per_epoch": 30344,
+  "train_studies": 18513,
+  "validation_images": 1422,
+  "validation_studies": 859,
+  "settings": {
+    "img_size": 224,
+    "batch_size": 12,
+    "cpu_threads": 4,
+    "data_workers": 0,
+    "loss": "BCEWithLogitsLoss",
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "seed": 42,
+    "first_lr": 0.0001,
+    "last_lr": 1e-06,
+    "hold_epochs": 3
+  },
+  "selection": [
+    "study_macro_auc",
+    "study_macro_f1_at_0.5"
+  ],
+  "study_aggregation": "mean_image_probability",
+  "best_epoch": 3,
+  "best_validation": {
+    "image": {
+      "auc": [
+        0.715676176743228,
+        0.8407364565259302,
+        0.7885408271721737,
+        0.7529411764705882,
+        0.8768326390001603,
+        0.7854444948502108,
+        0.8053512906846241,
+        0.7022124718601683,
+        0.9192601082457814,
+        0.8741541891670758
+      ],
+      "f1": [
+        0.0,
+        0.2222222222222222,
+        0.0,
+        0.0,
+        0.4755700325732899,
+        0.3488943488943489,
+        0.4316831683168317,
+        0.27251732101616627,
+        0.7282051282051282,
+        0.750465549348231
+      ],
+      "macro_auc": 0.8061149830719941,
+      "macro_f1": 0.3229557770576218,
+      "auc_classes": 10,
+      "count": 1422
+    },
+    "study": {
+      "auc": [
+        0.6802894211576845,
+        0.8680048661800486,
+        0.7848013262741322,
+        0.754582806573957,
+        0.8610390369331463,
+        0.7635941150156568,
+        0.7912990710918172,
+        0.7153227559226255,
+        0.9091466546808784,
+        0.8733763547613138
+      ],
+      "f1": [
+        0.0,
+        0.20833333333333334,
+        0.0,
+        0.0,
+        0.4888888888888889,
+        0.3333333333333333,
+        0.46511627906976744,
+        0.2857142857142857,
+        0.7335766423357665,
+        0.7132352941176471
+      ],
+      "macro_auc": 0.800145640859126,
+      "macro_f1": 0.32281980567930224,
+      "auc_classes": 10,
+      "count": 859
+    }
+  },
+  "latest_epoch": 45,
+  "latest_validation": {
+    "image": {
+      "auc": [
+        0.48538469461324546,
+        0.7100893258787995,
+        0.5052034058656575,
+        0.6329879679144386,
+        0.7810271791379587,
+        0.716603659458642,
+        0.7015203890759447,
+        0.6644183478871826,
+        0.8775014326647566,
+        0.8474400670921289
+      ],
+      "f1": [
+        0.0,
+        0.25,
+        0.075,
+        0.12987012987012986,
+        0.391025641025641,
+        0.36533957845433257,
+        0.336,
+        0.34179357021996615,
+        0.6915629322268326,
+        0.7425821972734563
+      ],
+      "macro_auc": 0.6922176469588754,
+      "macro_f1": 0.3323174049070359,
+      "auc_classes": 10,
+      "count": 1422
+    },
+    "study": {
+      "auc": [
+        0.5013473053892216,
+        0.7497369632406129,
+        0.5460318733622118,
+        0.6497917751171265,
+        0.7861266947171576,
+        0.7174934141855958,
+        0.6926939893261137,
+        0.6711584438165616,
+        0.8643668935405163,
+        0.8460181540970818
+      ],
+      "f1": [
+        0.0,
+        0.25,
+        0.0967741935483871,
+        0.10869565217391304,
+        0.41379310344827586,
+        0.3902439024390244,
+        0.3696969696969697,
+        0.3848101265822785,
+        0.703125,
+        0.7120743034055728
+      ],
+      "macro_auc": 0.70247655067922,
+      "macro_f1": 0.3429213251294422,
+      "auc_classes": 10,
+      "count": 859
+    }
+  },
+  "total_training_seconds": 14884.871188700898,
+  "total_validation_seconds": 2990.640548398951,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "environment": {
+    "python": "3.13.11",
+    "torch": "2.10.0+cu128",
+    "torchvision": "0.25.0+cu128",
+    "timm": "1.0.22",
+    "safetensors": "0.8.0",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "PyYAML": "6.0.3",
+    "Pillow": "13.0.0"
+  },
+  "source_sha256": {
+    "run_local.py": "a1ce02f9dbb2b67c52ab3b33d0d2602901d22e29d86ef2e404768f7b6da06628",
+    "train_and_optimize.py": "6d818b8bf456e24a055006fe9535d055b23ace4f5df83807713e09aad56515d9",
+    "train_full.py": "f94fda336d4451a1258272622992a3c9ea9fac21d864a2308ba6fc456fa360d3"
+  },
+  "notes": [
+    "100 epochs are planned. The experiment is paused after epoch 45.",
+    "Metrics describe the official validation split used for model selection.",
+    "The official hidden-test score is pending evaluation.",
+    "Per-patient threshold folds reuse a model selected on the full validation split.",
+    "ASL fine-tuning has not been trained in this snapshot."
+  ]
+}
