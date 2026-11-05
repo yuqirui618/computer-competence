@@ -1,5 +1,5 @@
 """
-最小训练循环（陈负责）：BCEWithLogitsLoss + AMP。
+最小训练循环（陈负责）：BCE / RGB Loss + AMP。
 
 验收：python train.py --config configs/base.yaml --subset 2000 --epochs 2
 """
@@ -9,10 +9,10 @@ import argparse
 import os
 
 import torch
-import torch.nn as nn
 from torch.amp import GradScaler, autocast
 
 from model import build_model          # 自己的
+from losses import build_loss            # RGB Loss / BCE
 from utils import load_config, seed_everything   # 邓
 from dataset import build_loaders                  # 喻
 
@@ -56,7 +56,8 @@ def main():
         weight_decay=float(cfg.get("weight_decay", 0.05)),
     )
 
-    criterion = nn.BCEWithLogitsLoss()
+    loss_name = os.environ.get("LOSS", "BCE").upper()
+    criterion = build_loss(loss_name, num_classes=int(cfg.get("num_classes", 10)))
     use_amp = bool(cfg.get("amp", True)) and device == "cuda"
     scaler = GradScaler() if use_amp else None
 
@@ -90,9 +91,9 @@ def main():
             total_n += x.size(0)
 
         avg = total_loss / max(total_n, 1)
-        print(f"[train] epoch {epoch + 1}/{epochs}  loss={avg:.4f}  samples={total_n}", flush=True)
+        print(f"[train] epoch {epoch + 1}/{epochs}  loss({loss_name})={avg:.4f}  samples={total_n}", flush=True)
 
-    torch.save({"model": model.state_dict(), "config": cfg}, ckpt_path)
+    torch.save({"model": model.state_dict(), "config": cfg, "loss": loss_name}, ckpt_path)
     print(f"[train] saved checkpoint -> {ckpt_path}", flush=True)
 
 
