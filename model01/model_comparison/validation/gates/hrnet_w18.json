@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "key": "hrnet_w18",
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "final_gates_by_class_id": [
+    0.075,
+    0.175,
+    0.125,
+    0.175,
+    0.3,
+    0.225,
+    0.225,
+    0.25,
+    0.175,
+    0.6
+  ],
+  "binding": {
+    "kind": "single_model",
+    "source_checkpoints": [
+      {
+        "role": "hrnet_w18",
+        "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\best.pth",
+        "sha256": "df1a02333931e558c9feaababd1fda5a79db5ede3632a58ddf160d98d805f8dd",
+        "weight": 1.0
+      }
+    ]
+  },
+  "source_gate_file": "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\candidate_gates.json",
+  "source_gate_sha256": "69a46f89d723c072c218661c64a5cf33c529865a1d2d3283d242d634d8859145",
+  "final_gate_fit_scope": "All official validation labels, reused for tuning; optimistic in-sample F1",
+  "patient_fivefold_oof_f1_reference": 0.4260043798489682,
+  "decision_rule_for_local_metrics": "Probability >= Gate",
+  "validation_studies": 859,
+  "validation_patients": 228,
+  "not_a_test_submission": true
+}

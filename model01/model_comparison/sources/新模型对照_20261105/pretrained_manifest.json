@@ -1,0 +1,108 @@
+{
+  "checked_on": "2026-11-05",
+  "models": {
+    "convnext_tiny": {
+      "architecture": "convnext_tiny.fb_in1k",
+      "directory": "convnext_tiny",
+      "sha256": "08b9dc9c3a3a29421de7996761e176501896d1ae7fc3085cf56a643772329276",
+      "bytes": 114374272,
+      "repository": "timm/convnext_tiny.fb_in1k",
+      "revision": "b43a6303c9fcf176d2d707478a128c2c91e93528",
+      "license": "apache-2.0",
+      "pretraining_data": "ImageNet-1k",
+      "source_url": "https://huggingface.co/timm/convnext_tiny.fb_in1k",
+      "config": {
+        "architecture": "convnext_tiny",
+        "num_classes": 1000,
+        "num_features": 768,
+        "pretrained_cfg": {
+          "tag": "fb_in1k",
+          "custom_load": false,
+          "input_size": [
+            3,
+            224,
+            224
+          ],
+          "test_input_size": [
+            3,
+            288,
+            288
+          ],
+          "fixed_input_size": false,
+          "interpolation": "bicubic",
+          "crop_pct": 0.875,
+          "test_crop_pct": 1.0,
+          "crop_mode": "center",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "num_classes": 1000,
+          "pool_size": [
+            7,
+            7
+          ],
+          "first_conv": "stem.0",
+          "classifier": "head.fc"
+        }
+      }
+    },
+    "efficientnetv2_s": {
+      "architecture": "tf_efficientnetv2_s.in1k",
+      "directory": "efficientnetv2_s",
+      "sha256": "b8a4b5462df66612e3c0e63781f73f7890ccdac8bcd950b4fc0ba0c0f29bda1f",
+      "bytes": 86523256,
+      "repository": "timm/tf_efficientnetv2_s.in1k",
+      "revision": "3af791b42d7e895c9da9b5aa4ed4e6b648e4ac0b",
+      "license": "apache-2.0",
+      "pretraining_data": "ImageNet-1k",
+      "source_url": "https://huggingface.co/timm/tf_efficientnetv2_s.in1k",
+      "config": {
+        "architecture": "tf_efficientnetv2_s",
+        "num_classes": 1000,
+        "num_features": 1280,
+        "pretrained_cfg": {
+          "tag": "in1k",
+          "custom_load": false,
+          "input_size": [
+            3,
+            300,
+            300
+          ],
+          "test_input_size": [
+            3,
+            384,
+            384
+          ],
+          "fixed_input_size": false,
+          "interpolation": "bicubic",
+          "crop_pct": 1.0,
+          "crop_mode": "center",
+          "mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "num_classes": 1000,
+          "pool_size": [
+            10,
+            10
+          ],
+          "first_conv": "conv_stem",
+          "classifier": "classifier"
+        }
+      }
+    }
+  }
+}

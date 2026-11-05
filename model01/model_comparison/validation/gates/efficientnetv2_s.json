@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "key": "efficientnetv2_s",
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "final_gates_by_class_id": [
+    0.05,
+    0.175,
+    0.225,
+    0.15,
+    0.4,
+    0.3,
+    0.225,
+    0.2,
+    0.325,
+    0.4
+  ],
+  "binding": {
+    "kind": "single_model",
+    "source_checkpoints": [
+      {
+        "role": "efficientnetv2_s",
+        "path": "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\best.pth",
+        "sha256": "c0e98673281b6b024d5c27d708c4aa8f2129cb676a3c4497403722f5bf4ded18",
+        "weight": 1.0
+      }
+    ]
+  },
+  "source_gate_file": "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\candidate_gates.json",
+  "source_gate_sha256": "c303f1049b87da6f90a1b1edc9f5a1b9c59cdc605cacf6974a17108cf220d932",
+  "final_gate_fit_scope": "All official validation labels, reused for tuning; optimistic in-sample F1",
+  "patient_fivefold_oof_f1_reference": 0.41389517027548506,
+  "decision_rule_for_local_metrics": "Probability >= Gate",
+  "validation_studies": 859,
+  "validation_patients": 228,
+  "not_a_test_submission": true
+}

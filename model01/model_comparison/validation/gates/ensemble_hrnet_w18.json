@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "key": "ensemble_hrnet_w18",
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "final_gates_by_class_id": [
+    0.075,
+    0.2,
+    0.175,
+    0.175,
+    0.375,
+    0.2,
+    0.175,
+    0.3,
+    0.225,
+    0.4
+  ],
+  "binding": {
+    "kind": "probability_ensemble_not_new_single_model",
+    "weights": [
+      0.5,
+      0.5
+    ],
+    "source_checkpoints": [
+      {
+        "role": "existing_gamma_mambaout",
+        "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+        "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+        "weight": 0.5
+      },
+      {
+        "role": "hrnet_w18",
+        "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\best.pth",
+        "sha256": "df1a02333931e558c9feaababd1fda5a79db5ede3632a58ddf160d98d805f8dd",
+        "weight": 0.5
+      }
+    ],
+    "single_model_epoch": 5,
+    "probability_arithmetic": "float64 equal mean of saved Study mean image probabilities",
+    "aggregation": "Each source first averages image probabilities within the same Study; then sources are averaged 50:50"
+  },
+  "source_gate_file": "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\hrnet_w18\\candidate_gates.json",
+  "source_gate_sha256": "e25d48e8422859dd632ec2b8dcc4d86bda607f43a9ea8a82c7fd8c90ab735c5c",
+  "final_gate_fit_scope": "All official validation labels, reused for tuning; optimistic in-sample F1",
+  "patient_fivefold_oof_f1_reference": 0.43788877772663853,
+  "decision_rule_for_local_metrics": "Probability >= Gate",
+  "validation_studies": 859,
+  "validation_patients": 228,
+  "not_a_test_submission": true
+}

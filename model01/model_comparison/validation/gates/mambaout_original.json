@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "key": "mambaout_original",
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "final_gates_by_class_id": [
+    0.1,
+    0.25,
+    0.125,
+    0.15,
+    0.375,
+    0.3,
+    0.125,
+    0.15,
+    0.3,
+    0.425
+  ],
+  "binding": {
+    "kind": "single_model",
+    "source_checkpoints": [
+      {
+        "role": "original_mambaout",
+        "path": "E:\\比赛数据集\\MambaOut_ASL对照\\best_model.pth",
+        "sha256": "9911ef5383bb320a4770a544b85e27d58c01ab57a69bb0963392a208073a2585",
+        "weight": 1.0
+      }
+    ],
+    "legacy_gate_binding_evidence": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\protected_inputs.json"
+  },
+  "source_gate_file": "E:\\比赛数据集\\MambaOut_ASL对照\\gates.json",
+  "source_gate_sha256": "1ef20f260ee1ea2e3e7737a8aa472537ebb8f43dbdf3198cd3e5264acba5f380",
+  "final_gate_fit_scope": "All official validation labels, reused for tuning; optimistic in-sample F1",
+  "patient_fivefold_oof_f1_reference": 0.451054963682343,
+  "decision_rule_for_local_metrics": "Probability >= Gate",
+  "validation_studies": 859,
+  "validation_patients": 228,
+  "not_a_test_submission": true
+}

@@ -1,0 +1,1198 @@
+{
+  "schema_version": 1,
+  "exporter": "export_validation.py",
+  "exporter_sha256": "b93fac19e4c3725b280f7c6974a25b19f257e4c5ed34a6ae2c40509ca7f11cef",
+  "generated_at": "2026-11-05T16:53:57.610897+08:00",
+  "kind": "official_five_column_format_validation_predictions_not_test_submission",
+  "split": "official validation",
+  "header": [
+    "Subject_id",
+    "Study_id",
+    "Predict_class",
+    "Probability",
+    "Gate"
+  ],
+  "files": [
+    {
+      "key": "mambaout_original",
+      "label": "保留的原MambaOut单模型",
+      "best_epoch": "protected_original",
+      "csv": "predictions/mambaout_original.csv",
+      "csv_sha256": "a112a9e40246709d9a1a559110e4fbe26d558992e756cbca44dfb005b0a51920",
+      "gates": "gates/mambaout_original.json",
+      "gates_sha256": "3e8357f8ba293bdd6b264e39f05117cb149caaee643e42a3fb9a664ac6cfb4ec",
+      "source_predictions": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\baseline_predictions.npz",
+      "source_predictions_sha256": "1a800ca0a41d1735fd604ce5fc82b59ad25a3654f4069605ace5494c6cb09383",
+      "source_gates": "E:\\比赛数据集\\MambaOut_ASL对照\\gates.json",
+      "source_gates_sha256": "1ef20f260ee1ea2e3e7737a8aa472537ebb8f43dbdf3198cd3e5264acba5f380",
+      "binding": {
+        "kind": "single_model",
+        "source_checkpoints": [
+          {
+            "role": "original_mambaout",
+            "path": "E:\\比赛数据集\\MambaOut_ASL对照\\best_model.pth",
+            "sha256": "9911ef5383bb320a4770a544b85e27d58c01ab57a69bb0963392a208073a2585",
+            "weight": 1.0
+          }
+        ],
+        "legacy_gate_binding_evidence": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\protected_inputs.json"
+      },
+      "aggregate_validation_metrics": {
+        "study_macro_auc": 0.8019769550500871,
+        "macro_f1_at_0_5": 0.3299175803247271,
+        "csv_final_gate_macro_f1_in_sample": 0.46650799456866954,
+        "macro_ap": 0.4199295871749822,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            6,
+            1,
+            1,
+            55,
+            53,
+            54,
+            48,
+            180,
+            221
+          ],
+          "fp": [
+            0,
+            6,
+            1,
+            0,
+            58,
+            71,
+            40,
+            47,
+            65,
+            63
+          ],
+          "fn": [
+            24,
+            31,
+            45,
+            67,
+            60,
+            124,
+            139,
+            166,
+            80,
+            85
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            4,
+            16,
+            17,
+            33,
+            75,
+            111,
+            166,
+            183,
+            220,
+            229
+          ],
+          "fp": [
+            20,
+            25,
+            81,
+            114,
+            84,
+            166,
+            273,
+            353,
+            111,
+            75
+          ],
+          "fn": [
+            20,
+            21,
+            29,
+            35,
+            40,
+            66,
+            27,
+            31,
+            40,
+            77
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1": 0.451054963682343
+    },
+    {
+      "key": "mambaout_gamma",
+      "label": "MambaOut Gamma/轻噪声候选",
+      "best_epoch": 1,
+      "csv": "predictions/mambaout_gamma.csv",
+      "csv_sha256": "fa4ccfa0199bddd7978ba4d04e063d5874265b45202c158075c0138908e9b200",
+      "gates": "gates/mambaout_gamma.json",
+      "gates_sha256": "0cb999316cb1f65300eb29983b28e1bbecf4a51d508eeaecdcf60e9264acbd33",
+      "source_predictions": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\verified_candidate_predictions.npz",
+      "source_predictions_sha256": "61576035a3467370ab9c337279757914550a12b4ff6ba0722f79ca14d13b8e23",
+      "source_gates": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\candidate_gates.json",
+      "source_gates_sha256": "4737f58acedbb4b0deffe39ff5ac52ac499597675dc2cf2575009d989f22ef39",
+      "binding": {
+        "kind": "single_model",
+        "source_checkpoints": [
+          {
+            "role": "mambaout_gamma_noise",
+            "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+            "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+            "weight": 1.0
+          }
+        ]
+      },
+      "aggregate_validation_metrics": {
+        "study_macro_auc": 0.8021774782195852,
+        "macro_f1_at_0_5": 0.339731851464981,
+        "csv_final_gate_macro_f1_in_sample": 0.46751475526990516,
+        "macro_ap": 0.4209532387726254,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            7,
+            1,
+            1,
+            58,
+            52,
+            62,
+            53,
+            188,
+            223
+          ],
+          "fp": [
+            0,
+            7,
+            1,
+            0,
+            60,
+            73,
+            51,
+            52,
+            74,
+            64
+          ],
+          "fn": [
+            24,
+            30,
+            45,
+            67,
+            57,
+            125,
+            131,
+            161,
+            72,
+            83
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            4,
+            14,
+            15,
+            37,
+            73,
+            120,
+            156,
+            147,
+            227,
+            221
+          ],
+          "fp": [
+            19,
+            18,
+            59,
+            135,
+            78,
+            197,
+            245,
+            241,
+            128,
+            59
+          ],
+          "fn": [
+            20,
+            23,
+            31,
+            31,
+            42,
+            57,
+            37,
+            67,
+            33,
+            85
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1": 0.44249116923580356
+    },
+    {
+      "key": "convnext_tiny",
+      "label": "convnext_tiny",
+      "best_epoch": 5,
+      "csv": "predictions/convnext_tiny.csv",
+      "csv_sha256": "7a3ea451731fdc1fec1e9c084c326c9416d0349b3971b5c2ee417637b45c4878",
+      "gates": "gates/convnext_tiny.json",
+      "gates_sha256": "9ca293d53ea1176280de9cfcd18f5050cb65de0a3779b3408c3148519d2e7fef",
+      "source_predictions": "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\epoch_5_predictions.npz",
+      "source_predictions_sha256": "744e0b91e96217668a365a8a88cf67d9376e30333e4f599533e5b69382c2a4af",
+      "source_gates": "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\candidate_gates.json",
+      "source_gates_sha256": "c3a981716f2774f6a419d8563fd43c32de4a30618d399dbc227580945501401a",
+      "binding": {
+        "kind": "single_model",
+        "source_checkpoints": [
+          {
+            "role": "convnext_tiny",
+            "path": "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\best.pth",
+            "sha256": "af58ccc38f2d5631d5018a8b33a43b3e9564e98bda5446c4425de27ed663c36e",
+            "weight": 1.0
+          }
+        ]
+      },
+      "aggregate_validation_metrics": {
+        "study_macro_auc": 0.7894525276328309,
+        "macro_f1_at_0_5": 0.2932566417629661,
+        "csv_final_gate_macro_f1_in_sample": 0.4538144534869306,
+        "macro_ap": 0.4119623999354782,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            1,
+            0,
+            0,
+            52,
+            58,
+            38,
+            36,
+            168,
+            219
+          ],
+          "fp": [
+            0,
+            0,
+            1,
+            0,
+            43,
+            54,
+            21,
+            35,
+            64,
+            62
+          ],
+          "fn": [
+            24,
+            36,
+            46,
+            68,
+            63,
+            119,
+            155,
+            178,
+            92,
+            87
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            11,
+            8,
+            12,
+            22,
+            78,
+            126,
+            171,
+            197,
+            219,
+            224
+          ],
+          "fp": [
+            119,
+            7,
+            42,
+            66,
+            87,
+            197,
+            291,
+            380,
+            120,
+            65
+          ],
+          "fn": [
+            13,
+            29,
+            34,
+            46,
+            37,
+            51,
+            22,
+            17,
+            41,
+            82
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1": 0.43090180651352183
+    },
+    {
+      "key": "efficientnetv2_s",
+      "label": "efficientnetv2_s",
+      "best_epoch": 4,
+      "csv": "predictions/efficientnetv2_s.csv",
+      "csv_sha256": "d0c77e4807029a3da705381130385b7d1b09cf3aa18aafbfcdbe6831ca1cc7e9",
+      "gates": "gates/efficientnetv2_s.json",
+      "gates_sha256": "7adf624e11a4b7fbb30ee60b1853ffcabc2d14b46a37148613af1173feda6320",
+      "source_predictions": "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\epoch_4_predictions.npz",
+      "source_predictions_sha256": "893f9fe505c552b0fe3ce8421f9f64e9879b3115e0f1b75a7c01683066c8218a",
+      "source_gates": "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\candidate_gates.json",
+      "source_gates_sha256": "c303f1049b87da6f90a1b1edc9f5a1b9c59cdc605cacf6974a17108cf220d932",
+      "binding": {
+        "kind": "single_model",
+        "source_checkpoints": [
+          {
+            "role": "efficientnetv2_s",
+            "path": "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\best.pth",
+            "sha256": "c0e98673281b6b024d5c27d708c4aa8f2129cb676a3c4497403722f5bf4ded18",
+            "weight": 1.0
+          }
+        ]
+      },
+      "aggregate_validation_metrics": {
+        "study_macro_auc": 0.7851446784600837,
+        "macro_f1_at_0_5": 0.2951296644401176,
+        "csv_final_gate_macro_f1_in_sample": 0.43879585856399855,
+        "macro_ap": 0.39455008461738095,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            1,
+            0,
+            0,
+            64,
+            45,
+            36,
+            52,
+            186,
+            215
+          ],
+          "fp": [
+            0,
+            2,
+            1,
+            0,
+            66,
+            58,
+            35,
+            55,
+            64,
+            67
+          ],
+          "fn": [
+            24,
+            36,
+            46,
+            68,
+            51,
+            132,
+            157,
+            162,
+            74,
+            91
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            12,
+            13,
+            13,
+            34,
+            79,
+            115,
+            150,
+            184,
+            213,
+            236
+          ],
+          "fp": [
+            184,
+            44,
+            68,
+            165,
+            85,
+            179,
+            231,
+            358,
+            99,
+            101
+          ],
+          "fn": [
+            12,
+            24,
+            33,
+            34,
+            36,
+            62,
+            43,
+            30,
+            47,
+            70
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1": 0.41389517027548506
+    },
+    {
+      "key": "caformer_s18",
+      "label": "caformer_s18",
+      "best_epoch": 3,
+      "csv": "predictions/caformer_s18.csv",
+      "csv_sha256": "f08a973645410fe3aec7207bfcbb6e7b8d8a4f2fc98e444675ed03bf57d85aba",
+      "gates": "gates/caformer_s18.json",
+      "gates_sha256": "143927db50f3c79fdc9d439ca11dace1418aa866df1efc1830f0a50e1733ef8e",
+      "source_predictions": "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\epoch_3_predictions.npz",
+      "source_predictions_sha256": "1ec0b8c42c759de9f8b8691b299aa982796d29192e5bd03c05edbee4b27495ec",
+      "source_gates": "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\candidate_gates.json",
+      "source_gates_sha256": "6c8ec52a36ac9a7a31d6bc00d24f031de4ea36a740fda523a960bd82920a2f88",
+      "binding": {
+        "kind": "single_model",
+        "source_checkpoints": [
+          {
+            "role": "caformer_s18",
+            "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\best.pth",
+            "sha256": "9201f8715dd393445262b49c523d2c61c542ff5ba63fc752806fda0a9a4384c2",
+            "weight": 1.0
+          }
+        ]
+      },
+      "aggregate_validation_metrics": {
+        "study_macro_auc": 0.7911913556017702,
+        "macro_f1_at_0_5": 0.2761347630276675,
+        "csv_final_gate_macro_f1_in_sample": 0.45069922052519107,
+        "macro_ap": 0.4106647422830513,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            0,
+            0,
+            0,
+            46,
+            34,
+            44,
+            37,
+            196,
+            206
+          ],
+          "fp": [
+            0,
+            0,
+            0,
+            0,
+            51,
+            51,
+            27,
+            29,
+            73,
+            53
+          ],
+          "fn": [
+            24,
+            37,
+            46,
+            68,
+            69,
+            143,
+            149,
+            177,
+            64,
+            100
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            6,
+            18,
+            11,
+            30,
+            81,
+            152,
+            154,
+            175,
+            214,
+            234
+          ],
+          "fp": [
+            80,
+            66,
+            22,
+            124,
+            99,
+            285,
+            237,
+            333,
+            94,
+            91
+          ],
+          "fn": [
+            18,
+            19,
+            35,
+            38,
+            34,
+            25,
+            39,
+            39,
+            46,
+            72
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1": 0.4297349571931816
+    },
+    {
+      "key": "densenet121",
+      "label": "densenet121",
+      "best_epoch": 4,
+      "csv": "predictions/densenet121.csv",
+      "csv_sha256": "b571e701fcf46ffa236838a3e6da05152821629cf846002451240e301fab882c",
+      "gates": "gates/densenet121.json",
+      "gates_sha256": "9aaaed7645f4d406c31a7145ea045d51186eecf08db1e5a40c287a83d6596417",
+      "source_predictions": "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\epoch_4_predictions.npz",
+      "source_predictions_sha256": "47be130a52b59305c40d2b32a2935b8b3e7d6667ba629c72cb2dff9286cc47ca",
+      "source_gates": "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\candidate_gates.json",
+      "source_gates_sha256": "ff8a7e70dda694ee3f799a66be31c5c53de07b83c22eff1d832b810bd726f1fc",
+      "binding": {
+        "kind": "single_model",
+        "source_checkpoints": [
+          {
+            "role": "densenet121",
+            "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\best.pth",
+            "sha256": "1a93f24e3de177fe9d9bf6ece5fae564fb2cd2d06d99c927494664cec4ba26fb",
+            "weight": 1.0
+          }
+        ]
+      },
+      "aggregate_validation_metrics": {
+        "study_macro_auc": 0.7726570348323928,
+        "macro_f1_at_0_5": 0.2510172555062199,
+        "csv_final_gate_macro_f1_in_sample": 0.436135607055743,
+        "macro_ap": 0.39353846381136004,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            0,
+            0,
+            0,
+            42,
+            30,
+            24,
+            34,
+            175,
+            212
+          ],
+          "fp": [
+            0,
+            0,
+            0,
+            0,
+            57,
+            33,
+            19,
+            22,
+            66,
+            76
+          ],
+          "fn": [
+            24,
+            37,
+            46,
+            68,
+            73,
+            147,
+            169,
+            180,
+            85,
+            94
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            7,
+            11,
+            16,
+            23,
+            79,
+            133,
+            164,
+            120,
+            209,
+            242
+          ],
+          "fp": [
+            122,
+            19,
+            83,
+            94,
+            92,
+            223,
+            304,
+            181,
+            104,
+            116
+          ],
+          "fn": [
+            17,
+            26,
+            30,
+            45,
+            36,
+            44,
+            29,
+            94,
+            51,
+            64
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1": 0.4215920552406354
+    },
+    {
+      "key": "hrnet_w18",
+      "label": "hrnet_w18",
+      "best_epoch": 5,
+      "csv": "predictions/hrnet_w18.csv",
+      "csv_sha256": "0f1741214c8bacd03a606b35cd65eb6e65d6bba3e2a43240e2b5d9d1b3171db9",
+      "gates": "gates/hrnet_w18.json",
+      "gates_sha256": "7d834f180e63705fe3fe8abd3be8087a000bce5bfadd5fde9b0c8a7f8f31fc8b",
+      "source_predictions": "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\epoch_5_predictions.npz",
+      "source_predictions_sha256": "9d2140dbfb3c45434642eb195e3d7292f465cc4e77c64dd6210b8533c3ab9ac6",
+      "source_gates": "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\candidate_gates.json",
+      "source_gates_sha256": "69a46f89d723c072c218661c64a5cf33c529865a1d2d3283d242d634d8859145",
+      "binding": {
+        "kind": "single_model",
+        "source_checkpoints": [
+          {
+            "role": "hrnet_w18",
+            "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\best.pth",
+            "sha256": "df1a02333931e558c9feaababd1fda5a79db5ede3632a58ddf160d98d805f8dd",
+            "weight": 1.0
+          }
+        ]
+      },
+      "aggregate_validation_metrics": {
+        "study_macro_auc": 0.7864584042171241,
+        "macro_f1_at_0_5": 0.30456552847801244,
+        "csv_final_gate_macro_f1_in_sample": 0.4430543194918714,
+        "macro_ap": 0.40380087983299723,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            2,
+            0,
+            2,
+            63,
+            56,
+            44,
+            30,
+            184,
+            224
+          ],
+          "fp": [
+            0,
+            2,
+            5,
+            1,
+            63,
+            75,
+            32,
+            19,
+            66,
+            85
+          ],
+          "fn": [
+            24,
+            35,
+            46,
+            66,
+            52,
+            121,
+            149,
+            184,
+            76,
+            82
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            6,
+            9,
+            15,
+            22,
+            88,
+            137,
+            136,
+            127,
+            230,
+            208
+          ],
+          "fp": [
+            72,
+            23,
+            70,
+            64,
+            116,
+            227,
+            200,
+            172,
+            136,
+            52
+          ],
+          "fn": [
+            18,
+            28,
+            31,
+            46,
+            27,
+            40,
+            57,
+            87,
+            30,
+            98
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1": 0.4260043798489682
+    },
+    {
+      "key": "ensemble_caformer_s18",
+      "label": "MambaOut Gamma + caformer_s18 50:50",
+      "best_epoch": 3,
+      "csv": "predictions/ensemble_caformer_s18.csv",
+      "csv_sha256": "c33966eb8093bb4e32e48597fc7200633de1e2f2cf99a89edabbaeec7356c540",
+      "gates": "gates/ensemble_caformer_s18.json",
+      "gates_sha256": "d7909844649badea762f96135958ded83242451a4358e26a45face6d7b5ccee6",
+      "source_predictions": "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\caformer_s18\\predictions.npz",
+      "source_predictions_sha256": "434aae4e2c8644957ff1cd98b6a3f73a3573154ad242abd9e6a8b36cfdbdb296",
+      "source_gates": "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\caformer_s18\\candidate_gates.json",
+      "source_gates_sha256": "5940eb47dafa34e143b61187c4778425054fc882de0c87fe73b6e5753b383786",
+      "binding": {
+        "kind": "probability_ensemble_not_new_single_model",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "source_checkpoints": [
+          {
+            "role": "existing_gamma_mambaout",
+            "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+            "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+            "weight": 0.5
+          },
+          {
+            "role": "caformer_s18",
+            "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\best.pth",
+            "sha256": "9201f8715dd393445262b49c523d2c61c542ff5ba63fc752806fda0a9a4384c2",
+            "weight": 0.5
+          }
+        ],
+        "single_model_epoch": 3,
+        "probability_arithmetic": "float64 equal mean of saved Study mean image probabilities",
+        "aggregation": "Each source first averages image probabilities within the same Study; then sources are averaged 50:50"
+      },
+      "aggregate_validation_metrics": {
+        "study_macro_auc": 0.8030723387147158,
+        "macro_f1_at_0_5": 0.3048937197881576,
+        "csv_final_gate_macro_f1_in_sample": 0.47507651215496133,
+        "macro_ap": 0.4278627618870966,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            2,
+            0,
+            0,
+            54,
+            46,
+            50,
+            47,
+            195,
+            213
+          ],
+          "fp": [
+            0,
+            3,
+            0,
+            0,
+            61,
+            60,
+            28,
+            38,
+            73,
+            59
+          ],
+          "fn": [
+            24,
+            35,
+            46,
+            68,
+            61,
+            131,
+            143,
+            167,
+            65,
+            93
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            4,
+            16,
+            16,
+            28,
+            82,
+            120,
+            164,
+            153,
+            218,
+            233
+          ],
+          "fp": [
+            23,
+            19,
+            66,
+            85,
+            93,
+            188,
+            258,
+            255,
+            104,
+            78
+          ],
+          "fn": [
+            20,
+            21,
+            30,
+            40,
+            33,
+            57,
+            29,
+            61,
+            42,
+            73
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1": 0.4609758471453912
+    },
+    {
+      "key": "ensemble_densenet121",
+      "label": "MambaOut Gamma + densenet121 50:50",
+      "best_epoch": 4,
+      "csv": "predictions/ensemble_densenet121.csv",
+      "csv_sha256": "511d0ce982d50886a25fa4f193e6ff64a78395690fc991d23feb99657b888fe5",
+      "gates": "gates/ensemble_densenet121.json",
+      "gates_sha256": "ab6113a6aab765e933da78f77f533729527043404edf97ab642c2060f19e11f8",
+      "source_predictions": "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\densenet121\\predictions.npz",
+      "source_predictions_sha256": "cf47f2913d6cf0f0a9cfee9e7e896447c639ea7f1847020b7385ffddb56f8fed",
+      "source_gates": "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\densenet121\\candidate_gates.json",
+      "source_gates_sha256": "3e5cc26b7d797fccfd0869b392636eff795a585b9a0fc3e9a176778cad0b465f",
+      "binding": {
+        "kind": "probability_ensemble_not_new_single_model",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "source_checkpoints": [
+          {
+            "role": "existing_gamma_mambaout",
+            "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+            "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+            "weight": 0.5
+          },
+          {
+            "role": "densenet121",
+            "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\best.pth",
+            "sha256": "1a93f24e3de177fe9d9bf6ece5fae564fb2cd2d06d99c927494664cec4ba26fb",
+            "weight": 0.5
+          }
+        ],
+        "single_model_epoch": 4,
+        "probability_arithmetic": "float64 equal mean of saved Study mean image probabilities",
+        "aggregation": "Each source first averages image probabilities within the same Study; then sources are averaged 50:50"
+      },
+      "aggregate_validation_metrics": {
+        "study_macro_auc": 0.7966953369145889,
+        "macro_f1_at_0_5": 0.2988121840653434,
+        "csv_final_gate_macro_f1_in_sample": 0.46954591080210745,
+        "macro_ap": 0.4238754235197611,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            2,
+            0,
+            0,
+            52,
+            43,
+            44,
+            46,
+            183,
+            220
+          ],
+          "fp": [
+            0,
+            2,
+            0,
+            0,
+            57,
+            50,
+            24,
+            35,
+            65,
+            70
+          ],
+          "fn": [
+            24,
+            35,
+            46,
+            68,
+            63,
+            134,
+            149,
+            168,
+            77,
+            86
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            4,
+            17,
+            14,
+            27,
+            81,
+            121,
+            157,
+            151,
+            223,
+            240
+          ],
+          "fp": [
+            28,
+            24,
+            55,
+            81,
+            91,
+            186,
+            252,
+            257,
+            113,
+            97
+          ],
+          "fn": [
+            20,
+            20,
+            32,
+            41,
+            34,
+            56,
+            36,
+            63,
+            37,
+            66
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1": 0.4499882172501014
+    },
+    {
+      "key": "ensemble_hrnet_w18",
+      "label": "MambaOut Gamma + hrnet_w18 50:50",
+      "best_epoch": 5,
+      "csv": "predictions/ensemble_hrnet_w18.csv",
+      "csv_sha256": "f6b468a5e256a31098516bcf166665d9be03775dc907387798717d1939dac93e",
+      "gates": "gates/ensemble_hrnet_w18.json",
+      "gates_sha256": "1e1560264d207fb0d9188d24a92cefe31afe8f5f21031d9250c0242f4b81b8fa",
+      "source_predictions": "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\hrnet_w18\\predictions.npz",
+      "source_predictions_sha256": "2c835f9eafddb3ff485e4e1adc1510d72b3c0afe5971d5b31eff90d8bf0f788a",
+      "source_gates": "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\hrnet_w18\\candidate_gates.json",
+      "source_gates_sha256": "e25d48e8422859dd632ec2b8dcc4d86bda607f43a9ea8a82c7fd8c90ab735c5c",
+      "binding": {
+        "kind": "probability_ensemble_not_new_single_model",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "source_checkpoints": [
+          {
+            "role": "existing_gamma_mambaout",
+            "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+            "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+            "weight": 0.5
+          },
+          {
+            "role": "hrnet_w18",
+            "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\best.pth",
+            "sha256": "df1a02333931e558c9feaababd1fda5a79db5ede3632a58ddf160d98d805f8dd",
+            "weight": 0.5
+          }
+        ],
+        "single_model_epoch": 5,
+        "probability_arithmetic": "float64 equal mean of saved Study mean image probabilities",
+        "aggregation": "Each source first averages image probabilities within the same Study; then sources are averaged 50:50"
+      },
+      "aggregate_validation_metrics": {
+        "study_macro_auc": 0.8051417314801448,
+        "macro_f1_at_0_5": 0.31995012522143923,
+        "csv_final_gate_macro_f1_in_sample": 0.4675139988976661,
+        "macro_ap": 0.4240780179651063,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            4,
+            0,
+            1,
+            61,
+            55,
+            49,
+            40,
+            189,
+            223
+          ],
+          "fp": [
+            0,
+            4,
+            1,
+            1,
+            59,
+            72,
+            33,
+            32,
+            66,
+            72
+          ],
+          "fn": [
+            24,
+            33,
+            46,
+            67,
+            54,
+            122,
+            144,
+            174,
+            71,
+            83
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            5,
+            15,
+            11,
+            24,
+            79,
+            145,
+            156,
+            115,
+            232,
+            239
+          ],
+          "fp": [
+            48,
+            23,
+            35,
+            59,
+            85,
+            247,
+            239,
+            137,
+            133,
+            96
+          ],
+          "fn": [
+            19,
+            22,
+            35,
+            44,
+            36,
+            32,
+            37,
+            99,
+            28,
+            67
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1": 0.43788877772663853
+    }
+  ],
+  "count": 10,
+  "data_rows_per_csv": 8590,
+  "studies_per_csv": 859,
+  "patients_per_csv": 228,
+  "probability_serialization": "float64 .17g; exact independent readback equality",
+  "gate_source": "Each source model/combo final_gates_by_class_id fitted using the entire validation set, not per-fold OOF gates",
+  "source_fingerprints": {
+    "E:\\比赛数据集\\raw\\cxr_first\\valid.csv": "7e1930138718eee4595f48820c26b69d95fb021bc9d48b46006c0aacd2415df6",
+    "E:\\比赛数据集\\喻数据产物\\manifest.csv": "b7c280dc0edc8b99d2aa1210651bab7ff9724d4c0a26b76b231c1935b275c142",
+    "E:\\比赛数据集\\提交结果\\MambaOut_S7微调第1轮_20261104\\submission.csv": "d49b6a7ef02489af1ed2cc38f8f49bc5f592b6519f7ee24399d4e18ab95eeae8",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\protected_inputs.json": "d7c95254d22a8af01bbcbd825cd1f18b42bdf5e4bdd78187a7e5cde08302d0bb",
+    "E:\\比赛数据集\\MambaOut_ASL对照\\best_model.pth": "9911ef5383bb320a4770a544b85e27d58c01ab57a69bb0963392a208073a2585",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\baseline_metrics.json": "31143bbfc6f10fbd41a6882ac9e7db1e1f77dd27c15a4a136765aef4e79a3c52",
+    "E:\\比赛数据集\\MambaOut_ASL对照\\gates.json": "1ef20f260ee1ea2e3e7737a8aa472537ebb8f43dbdf3198cd3e5264acba5f380",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\baseline_predictions.npz": "1a800ca0a41d1735fd604ce5fc82b59ad25a3654f4069605ace5494c6cb09383",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\candidate_verification.json": "45831a34abd18d4a37475bc92e5bdb7d08b7df9e738f2ab63aa2ebc254f6f56f",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\candidate_gates.json": "4737f58acedbb4b0deffe39ff5ac52ac499597675dc2cf2575009d989f22ef39",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\verified_candidate_predictions.npz": "61576035a3467370ab9c337279757914550a12b4ff6ba0722f79ca14d13b8e23",
+    "E:\\比赛数据集\\新模型对照_20261105\\results.json": "541b798da90b7589e382964a8c994c6f8604ea774ea19d598cb2ae7ba5427567",
+    "E:\\比赛数据集\\新模型对照_20261105\\protected_inputs.json": "ee3e8d44aaf1777af864c769e2b8ad961fde2aa22f35d1ff2f9a41bbb6ab3622",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\results.json": "3c1a6bec8c97f0441e98b85942adc01b6de8f726d5ddb359450e84e31d87c010",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\history.json": "74933d49498ab071385aa0ddd07f678e8e953745a09229d911e1c4c4f6738c25",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\best.pth": "af58ccc38f2d5631d5018a8b33a43b3e9564e98bda5446c4425de27ed663c36e",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\candidate_gates.json": "c3a981716f2774f6a419d8563fd43c32de4a30618d399dbc227580945501401a",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\epoch_5_predictions.npz": "744e0b91e96217668a365a8a88cf67d9376e30333e4f599533e5b69382c2a4af",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\results.json": "41768c03a841b3849e87e6cfbdff7eb285e8479286a7ca4187f71984b8965871",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\history.json": "7ec3397640aedccf9f052c424dcbf5f4b859b81fc103c6fddf17ac38dafc5827",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\best.pth": "c0e98673281b6b024d5c27d708c4aa8f2129cb676a3c4497403722f5bf4ded18",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\candidate_gates.json": "c303f1049b87da6f90a1b1edc9f5a1b9c59cdc605cacf6974a17108cf220d932",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\epoch_4_predictions.npz": "893f9fe505c552b0fe3ce8421f9f64e9879b3115e0f1b75a7c01683066c8218a",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\results.json": "ffc8d9f7ac95cf167178250b513422aed0c62f5a904d7f0c04aaabb50ee8b5b5",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\protected_inputs.json": "535cdd1687d7635993c258bcc745f9e83e44a50585f004f2bb2e3fe23dd98708",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\results.json": "4aa547f515fe2c6c2915a62788aea3655572d2a236681245323c580f10807cd3",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\history.json": "6c21c7b7fdf5b2a719cec028cb94a8507c0dde354d4fed5de5ccba6faaa38250",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\best.pth": "9201f8715dd393445262b49c523d2c61c542ff5ba63fc752806fda0a9a4384c2",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\candidate_gates.json": "6c8ec52a36ac9a7a31d6bc00d24f031de4ea36a740fda523a960bd82920a2f88",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\epoch_3_predictions.npz": "1ec0b8c42c759de9f8b8691b299aa982796d29192e5bd03c05edbee4b27495ec",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\results.json": "f284fa2755287a410fce395d94d5cd198e970bf506e2b53341590c2363197af2",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\history.json": "e7f71f36c71e85502f78966b9e42f8832162f5a2e7cc0443d153bc58fda92bd3",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\best.pth": "1a93f24e3de177fe9d9bf6ece5fae564fb2cd2d06d99c927494664cec4ba26fb",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\candidate_gates.json": "ff8a7e70dda694ee3f799a66be31c5c53de07b83c22eff1d832b810bd726f1fc",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\epoch_4_predictions.npz": "47be130a52b59305c40d2b32a2935b8b3e7d6667ba629c72cb2dff9286cc47ca",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\results.json": "0e896c3dcd3385bb345a54992f064eb5c9633b7edde57684a9fac7c0001d4a71",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\history.json": "ca77a15aefaa06769cff09816e18b2509574a1df3ac2e3969390b79498e7d615",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\best.pth": "df1a02333931e558c9feaababd1fda5a79db5ede3632a58ddf160d98d805f8dd",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\candidate_gates.json": "69a46f89d723c072c218661c64a5cf33c529865a1d2d3283d242d634d8859145",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\epoch_5_predictions.npz": "9d2140dbfb3c45434642eb195e3d7292f465cc4e77c64dd6210b8533c3ab9ac6",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensemble_results.json": "ef6915dffa7c2e32b256fd664ae7c2d995e72b7f69eea7b14076db0f5d3c9980",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensemble_plan.json": "47d8ab7de9ba3c889f23f02e5da0a0f18b0367801bf980ace3331f44e5c2eca9",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\caformer_s18\\candidate_gates.json": "5940eb47dafa34e143b61187c4778425054fc882de0c87fe73b6e5753b383786",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\caformer_s18\\predictions.npz": "434aae4e2c8644957ff1cd98b6a3f73a3573154ad242abd9e6a8b36cfdbdb296",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\densenet121\\candidate_gates.json": "3e5cc26b7d797fccfd0869b392636eff795a585b9a0fc3e9a176778cad0b465f",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\densenet121\\predictions.npz": "cf47f2913d6cf0f0a9cfee9e7e896447c639ea7f1847020b7385ffddb56f8fed",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\hrnet_w18\\candidate_gates.json": "e25d48e8422859dd632ec2b8dcc4d86bda607f43a9ea8a82c7fd8c90ab735c5c",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\hrnet_w18\\predictions.npz": "2c835f9eafddb3ff485e4e1adc1510d72b3c0afe5971d5b31eff90d8bf0f788a"
+  },
+  "reference_test_submission": {
+    "path": "E:\\比赛数据集\\提交结果\\MambaOut_S7微调第1轮_20261104\\submission.csv",
+    "sha256": "d49b6a7ef02489af1ed2cc38f8f49bc5f592b6519f7ee24399d4e18ab95eeae8",
+    "data_rows": 14140,
+    "studies": 1414,
+    "read_only": true
+  },
+  "source_files_modified": false,
+  "labels_exported": false,
+  "NPZ_exported": false,
+  "weights_exported": false,
+  "new_test_inference": false,
+  "new_training": false,
+  "metrics_caution": "CSV final-gate F1 is in-sample. Patient fivefold OOF F1 is separately recomputed; models were also selected on reused validation, so neither is a hidden-test result."
+}

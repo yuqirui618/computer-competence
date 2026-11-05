@@ -1,0 +1,95 @@
+{
+  "created": "2026-11-05",
+  "files": [
+    {
+      "source_path": "E:\\比赛数据集\\新模型对照_20261105\\模型对照总结.md",
+      "source_sha256": "859552468352042b075a2aa057969256ec76035db817a2b9f40e3ddfb2147e6b",
+      "public_path": "新模型对照总结.md",
+      "public_text_sha256_utf8_lf": "89c91e6e7adcd06f14075926d17fdbf699b1a2f7cd358a332bfaac8f10a1f710",
+      "changes": "Archival context note and local Markdown-link resolution only; numeric results preserved"
+    },
+    {
+      "source_path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\顶刊三模型实验总结.md",
+      "source_sha256": "bb914d2cca2bfd789fb2aebd6eb0d41723b384230e229b193d328d0a8dcc0732",
+      "public_path": "顶刊三模型实验总结.md",
+      "public_text_sha256_utf8_lf": "0c829f1f0f9db4ceb952b779033c8233f8900e08e55264feb580d6ddf5d874b1",
+      "changes": "Archival context note and local Markdown-link resolution only; numeric results preserved"
+    },
+    {
+      "source_path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\等权组合对照.md",
+      "source_sha256": "25fa6f92996ce19a7f750bf956fa60c0fa3b0544800daed8116f72f0b2526e3d",
+      "public_path": "等权组合对照.md",
+      "public_text_sha256_utf8_lf": "54eb5051da248834a55062351f917b651a1c82d28c81f1eb1dc1480624428a00",
+      "changes": "Archival context note and local Markdown-link resolution only; numeric results preserved"
+    },
+    {
+      "source_path": "E:\\比赛数据集\\新模型对照_20261105\\论文选型.md",
+      "source_sha256": "2b1b67833df6de19b4b1f9a6354c42abdcb45198405e3459e0578a4633adf17a",
+      "public_path": "前次论文选型.md",
+      "public_text_sha256_utf8_lf": "a63ea9a144384540e977df88b150daafc12f0f2d0786a90d55f6712b6187829f",
+      "changes": "Archival context note and local Markdown-link resolution only; numeric results preserved"
+    },
+    {
+      "source_path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\文献与选型.md",
+      "source_sha256": "92550af1d31928e75f0af08ff7e9ef15d5765429be3e11cbe3f1185280eb6499",
+      "public_path": "文献与选型.md",
+      "public_text_sha256_utf8_lf": "5cc173b6c0e2b23d2ca1d6a412920f0ee6a2bc15fa085e1f23b48026b2838d95",
+      "changes": "Archival context note and local Markdown-link resolution only; numeric results preserved"
+    },
+    {
+      "source_path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\医学顶刊权重适用性.md",
+      "source_sha256": "9184a54539010675257ff9529b98fa45fa13065854324ec0f13ce7f738f70d5d",
+      "public_path": "医学顶刊权重适用性.md",
+      "public_text_sha256_utf8_lf": "a6077d9ab5a9ff874fa7b83209740d7218e23eb5f29906c54bcda8a2e7d4ab56",
+      "changes": "Archival context note and local Markdown-link resolution only; numeric results preserved"
+    },
+    {
+      "source_path": "E:\\比赛数据集\\新模型对照_20261105\\十轮明细.csv",
+      "source_sha256": "8b05194bc53ae7b8a673fd906186be0271c80536fe01e22c83e509bf497b0832",
+      "public_path": "十轮明细.csv",
+      "public_sha256": "8b05194bc53ae7b8a673fd906186be0271c80536fe01e22c83e509bf497b0832",
+      "changes": "Byte-identical aggregate/source metadata copy"
+    },
+    {
+      "source_path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\十五轮明细.csv",
+      "source_sha256": "c1b16ceac845ec28cac16168b05d1ac4fedc0c0fd433884741f6b310d1977d96",
+      "public_path": "十五轮明细.csv",
+      "public_sha256": "c1b16ceac845ec28cac16168b05d1ac4fedc0c0fd433884741f6b310d1977d96",
+      "changes": "Byte-identical aggregate/source metadata copy"
+    },
+    {
+      "source_path": "E:\\比赛数据集\\新模型对照_20261105\\report_checks.json",
+      "source_sha256": "2e9d7b77ade2432379a45fd2edd8d4fe76930e3e03cd90437fbfb960f679485b",
+      "public_path": "两模型校验.json",
+      "public_sha256": "2e9d7b77ade2432379a45fd2edd8d4fe76930e3e03cd90437fbfb960f679485b",
+      "changes": "Byte-identical aggregate/source metadata copy"
+    },
+    {
+      "source_path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\report_checks.json",
+      "source_sha256": "e3cf64e2764b99bf4f70429e895afd39b5810acc1f6d9a5572a980dd8da16f2d",
+      "public_path": "三模型校验.json",
+      "public_sha256": "e3cf64e2764b99bf4f70429e895afd39b5810acc1f6d9a5572a980dd8da16f2d",
+      "changes": "Byte-identical aggregate/source metadata copy"
+    },
+    {
+      "source_path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensemble_results.json",
+      "source_sha256": "ef6915dffa7c2e32b256fd664ae7c2d995e72b7f69eea7b14076db0f5d3c9980",
+      "public_path": "组合聚合结果.json",
+      "public_sha256": "ef6915dffa7c2e32b256fd664ae7c2d995e72b7f69eea7b14076db0f5d3c9980",
+      "changes": "Byte-identical aggregate/source metadata copy"
+    },
+    {
+      "source_path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\papers\\paper_downloads.json",
+      "source_sha256": "d15622d87dd6b053190317fc923a742f3593836ec4c8c2fb5b3b297f265d628e",
+      "public_path": "论文来源.json",
+      "public_sha256": "d15622d87dd6b053190317fc923a742f3593836ec4c8c2fb5b3b297f265d628e",
+      "changes": "Byte-identical aggregate/source metadata copy"
+    }
+  ],
+  "combined_csv_rows": 25,
+  "source_csv_rows": [
+    10,
+    15
+  ],
+  "public_markdown_hash_policy": "SHA of UTF-8 text with LF newlines; Git checkout EOL changes do not alter canonical text"
+}

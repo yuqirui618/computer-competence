@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "key": "mambaout_gamma",
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "final_gates_by_class_id": [
+    0.1,
+    0.3,
+    0.15,
+    0.125,
+    0.4,
+    0.25,
+    0.15,
+    0.225,
+    0.25,
+    0.525
+  ],
+  "binding": {
+    "kind": "single_model",
+    "source_checkpoints": [
+      {
+        "role": "mambaout_gamma_noise",
+        "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+        "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+        "weight": 1.0
+      }
+    ]
+  },
+  "source_gate_file": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\candidate_gates.json",
+  "source_gate_sha256": "4737f58acedbb4b0deffe39ff5ac52ac499597675dc2cf2575009d989f22ef39",
+  "final_gate_fit_scope": "All official validation labels, reused for tuning; optimistic in-sample F1",
+  "patient_fivefold_oof_f1_reference": 0.44249116923580356,
+  "decision_rule_for_local_metrics": "Probability >= Gate",
+  "validation_studies": 859,
+  "validation_patients": 228,
+  "not_a_test_submission": true
+}

@@ -1,0 +1,1071 @@
+{
+  "state": "passed",
+  "kind": "independent_CSV_readback_checks",
+  "all_ten_exports_verified": true,
+  "checks": {
+    "mambaout_original": {
+      "state": "passed",
+      "data_rows": 8590,
+      "rows_including_header": 8591,
+      "studies": 859,
+      "patients": 228,
+      "classes_per_study": 10,
+      "exact_header": [
+        "Subject_id",
+        "Study_id",
+        "Predict_class",
+        "Probability",
+        "Gate"
+      ],
+      "utf8_without_bom": true,
+      "official_valid_IDs_and_targets_checked": true,
+      "unique_subject_study_class": true,
+      "row_order": "Official valid.csv first Study occurrence; class IDs1..10 ascending",
+      "probabilities_bit_equal_after_float64_roundtrip": true,
+      "max_abs_probability_roundtrip_difference": 0.0,
+      "gates_global_per_class": true,
+      "csv_metrics_from_independent_readback": {
+        "study_macro_auc": 0.8019769550500871,
+        "macro_f1_at_0_5": 0.3299175803247271,
+        "csv_final_gate_macro_f1_in_sample": 0.46650799456866954,
+        "macro_ap": 0.4199295871749822,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            6,
+            1,
+            1,
+            55,
+            53,
+            54,
+            48,
+            180,
+            221
+          ],
+          "fp": [
+            0,
+            6,
+            1,
+            0,
+            58,
+            71,
+            40,
+            47,
+            65,
+            63
+          ],
+          "fn": [
+            24,
+            31,
+            45,
+            67,
+            60,
+            124,
+            139,
+            166,
+            80,
+            85
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            4,
+            16,
+            17,
+            33,
+            75,
+            111,
+            166,
+            183,
+            220,
+            229
+          ],
+          "fp": [
+            20,
+            25,
+            81,
+            114,
+            84,
+            166,
+            273,
+            353,
+            111,
+            75
+          ],
+          "fn": [
+            20,
+            21,
+            29,
+            35,
+            40,
+            66,
+            27,
+            31,
+            40,
+            77
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1_reference": 0.451054963682343,
+      "final_gate_f1_scope": "In-sample: final class gates were fitted on all reused validation labels; not the patient-OOF score"
+    },
+    "mambaout_gamma": {
+      "state": "passed",
+      "data_rows": 8590,
+      "rows_including_header": 8591,
+      "studies": 859,
+      "patients": 228,
+      "classes_per_study": 10,
+      "exact_header": [
+        "Subject_id",
+        "Study_id",
+        "Predict_class",
+        "Probability",
+        "Gate"
+      ],
+      "utf8_without_bom": true,
+      "official_valid_IDs_and_targets_checked": true,
+      "unique_subject_study_class": true,
+      "row_order": "Official valid.csv first Study occurrence; class IDs1..10 ascending",
+      "probabilities_bit_equal_after_float64_roundtrip": true,
+      "max_abs_probability_roundtrip_difference": 0.0,
+      "gates_global_per_class": true,
+      "csv_metrics_from_independent_readback": {
+        "study_macro_auc": 0.8021774782195852,
+        "macro_f1_at_0_5": 0.339731851464981,
+        "csv_final_gate_macro_f1_in_sample": 0.46751475526990516,
+        "macro_ap": 0.4209532387726254,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            7,
+            1,
+            1,
+            58,
+            52,
+            62,
+            53,
+            188,
+            223
+          ],
+          "fp": [
+            0,
+            7,
+            1,
+            0,
+            60,
+            73,
+            51,
+            52,
+            74,
+            64
+          ],
+          "fn": [
+            24,
+            30,
+            45,
+            67,
+            57,
+            125,
+            131,
+            161,
+            72,
+            83
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            4,
+            14,
+            15,
+            37,
+            73,
+            120,
+            156,
+            147,
+            227,
+            221
+          ],
+          "fp": [
+            19,
+            18,
+            59,
+            135,
+            78,
+            197,
+            245,
+            241,
+            128,
+            59
+          ],
+          "fn": [
+            20,
+            23,
+            31,
+            31,
+            42,
+            57,
+            37,
+            67,
+            33,
+            85
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1_reference": 0.44249116923580356,
+      "final_gate_f1_scope": "In-sample: final class gates were fitted on all reused validation labels; not the patient-OOF score"
+    },
+    "convnext_tiny": {
+      "state": "passed",
+      "data_rows": 8590,
+      "rows_including_header": 8591,
+      "studies": 859,
+      "patients": 228,
+      "classes_per_study": 10,
+      "exact_header": [
+        "Subject_id",
+        "Study_id",
+        "Predict_class",
+        "Probability",
+        "Gate"
+      ],
+      "utf8_without_bom": true,
+      "official_valid_IDs_and_targets_checked": true,
+      "unique_subject_study_class": true,
+      "row_order": "Official valid.csv first Study occurrence; class IDs1..10 ascending",
+      "probabilities_bit_equal_after_float64_roundtrip": true,
+      "max_abs_probability_roundtrip_difference": 0.0,
+      "gates_global_per_class": true,
+      "csv_metrics_from_independent_readback": {
+        "study_macro_auc": 0.7894525276328309,
+        "macro_f1_at_0_5": 0.2932566417629661,
+        "csv_final_gate_macro_f1_in_sample": 0.4538144534869306,
+        "macro_ap": 0.4119623999354782,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            1,
+            0,
+            0,
+            52,
+            58,
+            38,
+            36,
+            168,
+            219
+          ],
+          "fp": [
+            0,
+            0,
+            1,
+            0,
+            43,
+            54,
+            21,
+            35,
+            64,
+            62
+          ],
+          "fn": [
+            24,
+            36,
+            46,
+            68,
+            63,
+            119,
+            155,
+            178,
+            92,
+            87
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            11,
+            8,
+            12,
+            22,
+            78,
+            126,
+            171,
+            197,
+            219,
+            224
+          ],
+          "fp": [
+            119,
+            7,
+            42,
+            66,
+            87,
+            197,
+            291,
+            380,
+            120,
+            65
+          ],
+          "fn": [
+            13,
+            29,
+            34,
+            46,
+            37,
+            51,
+            22,
+            17,
+            41,
+            82
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1_reference": 0.43090180651352183,
+      "final_gate_f1_scope": "In-sample: final class gates were fitted on all reused validation labels; not the patient-OOF score"
+    },
+    "efficientnetv2_s": {
+      "state": "passed",
+      "data_rows": 8590,
+      "rows_including_header": 8591,
+      "studies": 859,
+      "patients": 228,
+      "classes_per_study": 10,
+      "exact_header": [
+        "Subject_id",
+        "Study_id",
+        "Predict_class",
+        "Probability",
+        "Gate"
+      ],
+      "utf8_without_bom": true,
+      "official_valid_IDs_and_targets_checked": true,
+      "unique_subject_study_class": true,
+      "row_order": "Official valid.csv first Study occurrence; class IDs1..10 ascending",
+      "probabilities_bit_equal_after_float64_roundtrip": true,
+      "max_abs_probability_roundtrip_difference": 0.0,
+      "gates_global_per_class": true,
+      "csv_metrics_from_independent_readback": {
+        "study_macro_auc": 0.7851446784600837,
+        "macro_f1_at_0_5": 0.2951296644401176,
+        "csv_final_gate_macro_f1_in_sample": 0.43879585856399855,
+        "macro_ap": 0.39455008461738095,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            1,
+            0,
+            0,
+            64,
+            45,
+            36,
+            52,
+            186,
+            215
+          ],
+          "fp": [
+            0,
+            2,
+            1,
+            0,
+            66,
+            58,
+            35,
+            55,
+            64,
+            67
+          ],
+          "fn": [
+            24,
+            36,
+            46,
+            68,
+            51,
+            132,
+            157,
+            162,
+            74,
+            91
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            12,
+            13,
+            13,
+            34,
+            79,
+            115,
+            150,
+            184,
+            213,
+            236
+          ],
+          "fp": [
+            184,
+            44,
+            68,
+            165,
+            85,
+            179,
+            231,
+            358,
+            99,
+            101
+          ],
+          "fn": [
+            12,
+            24,
+            33,
+            34,
+            36,
+            62,
+            43,
+            30,
+            47,
+            70
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1_reference": 0.41389517027548506,
+      "final_gate_f1_scope": "In-sample: final class gates were fitted on all reused validation labels; not the patient-OOF score"
+    },
+    "caformer_s18": {
+      "state": "passed",
+      "data_rows": 8590,
+      "rows_including_header": 8591,
+      "studies": 859,
+      "patients": 228,
+      "classes_per_study": 10,
+      "exact_header": [
+        "Subject_id",
+        "Study_id",
+        "Predict_class",
+        "Probability",
+        "Gate"
+      ],
+      "utf8_without_bom": true,
+      "official_valid_IDs_and_targets_checked": true,
+      "unique_subject_study_class": true,
+      "row_order": "Official valid.csv first Study occurrence; class IDs1..10 ascending",
+      "probabilities_bit_equal_after_float64_roundtrip": true,
+      "max_abs_probability_roundtrip_difference": 0.0,
+      "gates_global_per_class": true,
+      "csv_metrics_from_independent_readback": {
+        "study_macro_auc": 0.7911913556017702,
+        "macro_f1_at_0_5": 0.2761347630276675,
+        "csv_final_gate_macro_f1_in_sample": 0.45069922052519107,
+        "macro_ap": 0.4106647422830513,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            0,
+            0,
+            0,
+            46,
+            34,
+            44,
+            37,
+            196,
+            206
+          ],
+          "fp": [
+            0,
+            0,
+            0,
+            0,
+            51,
+            51,
+            27,
+            29,
+            73,
+            53
+          ],
+          "fn": [
+            24,
+            37,
+            46,
+            68,
+            69,
+            143,
+            149,
+            177,
+            64,
+            100
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            6,
+            18,
+            11,
+            30,
+            81,
+            152,
+            154,
+            175,
+            214,
+            234
+          ],
+          "fp": [
+            80,
+            66,
+            22,
+            124,
+            99,
+            285,
+            237,
+            333,
+            94,
+            91
+          ],
+          "fn": [
+            18,
+            19,
+            35,
+            38,
+            34,
+            25,
+            39,
+            39,
+            46,
+            72
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1_reference": 0.4297349571931816,
+      "final_gate_f1_scope": "In-sample: final class gates were fitted on all reused validation labels; not the patient-OOF score"
+    },
+    "densenet121": {
+      "state": "passed",
+      "data_rows": 8590,
+      "rows_including_header": 8591,
+      "studies": 859,
+      "patients": 228,
+      "classes_per_study": 10,
+      "exact_header": [
+        "Subject_id",
+        "Study_id",
+        "Predict_class",
+        "Probability",
+        "Gate"
+      ],
+      "utf8_without_bom": true,
+      "official_valid_IDs_and_targets_checked": true,
+      "unique_subject_study_class": true,
+      "row_order": "Official valid.csv first Study occurrence; class IDs1..10 ascending",
+      "probabilities_bit_equal_after_float64_roundtrip": true,
+      "max_abs_probability_roundtrip_difference": 0.0,
+      "gates_global_per_class": true,
+      "csv_metrics_from_independent_readback": {
+        "study_macro_auc": 0.7726570348323928,
+        "macro_f1_at_0_5": 0.2510172555062199,
+        "csv_final_gate_macro_f1_in_sample": 0.436135607055743,
+        "macro_ap": 0.39353846381136004,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            0,
+            0,
+            0,
+            42,
+            30,
+            24,
+            34,
+            175,
+            212
+          ],
+          "fp": [
+            0,
+            0,
+            0,
+            0,
+            57,
+            33,
+            19,
+            22,
+            66,
+            76
+          ],
+          "fn": [
+            24,
+            37,
+            46,
+            68,
+            73,
+            147,
+            169,
+            180,
+            85,
+            94
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            7,
+            11,
+            16,
+            23,
+            79,
+            133,
+            164,
+            120,
+            209,
+            242
+          ],
+          "fp": [
+            122,
+            19,
+            83,
+            94,
+            92,
+            223,
+            304,
+            181,
+            104,
+            116
+          ],
+          "fn": [
+            17,
+            26,
+            30,
+            45,
+            36,
+            44,
+            29,
+            94,
+            51,
+            64
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1_reference": 0.4215920552406354,
+      "final_gate_f1_scope": "In-sample: final class gates were fitted on all reused validation labels; not the patient-OOF score"
+    },
+    "hrnet_w18": {
+      "state": "passed",
+      "data_rows": 8590,
+      "rows_including_header": 8591,
+      "studies": 859,
+      "patients": 228,
+      "classes_per_study": 10,
+      "exact_header": [
+        "Subject_id",
+        "Study_id",
+        "Predict_class",
+        "Probability",
+        "Gate"
+      ],
+      "utf8_without_bom": true,
+      "official_valid_IDs_and_targets_checked": true,
+      "unique_subject_study_class": true,
+      "row_order": "Official valid.csv first Study occurrence; class IDs1..10 ascending",
+      "probabilities_bit_equal_after_float64_roundtrip": true,
+      "max_abs_probability_roundtrip_difference": 0.0,
+      "gates_global_per_class": true,
+      "csv_metrics_from_independent_readback": {
+        "study_macro_auc": 0.7864584042171241,
+        "macro_f1_at_0_5": 0.30456552847801244,
+        "csv_final_gate_macro_f1_in_sample": 0.4430543194918714,
+        "macro_ap": 0.40380087983299723,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            2,
+            0,
+            2,
+            63,
+            56,
+            44,
+            30,
+            184,
+            224
+          ],
+          "fp": [
+            0,
+            2,
+            5,
+            1,
+            63,
+            75,
+            32,
+            19,
+            66,
+            85
+          ],
+          "fn": [
+            24,
+            35,
+            46,
+            66,
+            52,
+            121,
+            149,
+            184,
+            76,
+            82
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            6,
+            9,
+            15,
+            22,
+            88,
+            137,
+            136,
+            127,
+            230,
+            208
+          ],
+          "fp": [
+            72,
+            23,
+            70,
+            64,
+            116,
+            227,
+            200,
+            172,
+            136,
+            52
+          ],
+          "fn": [
+            18,
+            28,
+            31,
+            46,
+            27,
+            40,
+            57,
+            87,
+            30,
+            98
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1_reference": 0.4260043798489682,
+      "final_gate_f1_scope": "In-sample: final class gates were fitted on all reused validation labels; not the patient-OOF score"
+    },
+    "ensemble_caformer_s18": {
+      "state": "passed",
+      "data_rows": 8590,
+      "rows_including_header": 8591,
+      "studies": 859,
+      "patients": 228,
+      "classes_per_study": 10,
+      "exact_header": [
+        "Subject_id",
+        "Study_id",
+        "Predict_class",
+        "Probability",
+        "Gate"
+      ],
+      "utf8_without_bom": true,
+      "official_valid_IDs_and_targets_checked": true,
+      "unique_subject_study_class": true,
+      "row_order": "Official valid.csv first Study occurrence; class IDs1..10 ascending",
+      "probabilities_bit_equal_after_float64_roundtrip": true,
+      "max_abs_probability_roundtrip_difference": 0.0,
+      "gates_global_per_class": true,
+      "csv_metrics_from_independent_readback": {
+        "study_macro_auc": 0.8030723387147158,
+        "macro_f1_at_0_5": 0.3048937197881576,
+        "csv_final_gate_macro_f1_in_sample": 0.47507651215496133,
+        "macro_ap": 0.4278627618870966,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            2,
+            0,
+            0,
+            54,
+            46,
+            50,
+            47,
+            195,
+            213
+          ],
+          "fp": [
+            0,
+            3,
+            0,
+            0,
+            61,
+            60,
+            28,
+            38,
+            73,
+            59
+          ],
+          "fn": [
+            24,
+            35,
+            46,
+            68,
+            61,
+            131,
+            143,
+            167,
+            65,
+            93
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            4,
+            16,
+            16,
+            28,
+            82,
+            120,
+            164,
+            153,
+            218,
+            233
+          ],
+          "fp": [
+            23,
+            19,
+            66,
+            85,
+            93,
+            188,
+            258,
+            255,
+            104,
+            78
+          ],
+          "fn": [
+            20,
+            21,
+            30,
+            40,
+            33,
+            57,
+            29,
+            61,
+            42,
+            73
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1_reference": 0.4609758471453912,
+      "final_gate_f1_scope": "In-sample: final class gates were fitted on all reused validation labels; not the patient-OOF score"
+    },
+    "ensemble_densenet121": {
+      "state": "passed",
+      "data_rows": 8590,
+      "rows_including_header": 8591,
+      "studies": 859,
+      "patients": 228,
+      "classes_per_study": 10,
+      "exact_header": [
+        "Subject_id",
+        "Study_id",
+        "Predict_class",
+        "Probability",
+        "Gate"
+      ],
+      "utf8_without_bom": true,
+      "official_valid_IDs_and_targets_checked": true,
+      "unique_subject_study_class": true,
+      "row_order": "Official valid.csv first Study occurrence; class IDs1..10 ascending",
+      "probabilities_bit_equal_after_float64_roundtrip": true,
+      "max_abs_probability_roundtrip_difference": 0.0,
+      "gates_global_per_class": true,
+      "csv_metrics_from_independent_readback": {
+        "study_macro_auc": 0.7966953369145889,
+        "macro_f1_at_0_5": 0.2988121840653434,
+        "csv_final_gate_macro_f1_in_sample": 0.46954591080210745,
+        "macro_ap": 0.4238754235197611,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            2,
+            0,
+            0,
+            52,
+            43,
+            44,
+            46,
+            183,
+            220
+          ],
+          "fp": [
+            0,
+            2,
+            0,
+            0,
+            57,
+            50,
+            24,
+            35,
+            65,
+            70
+          ],
+          "fn": [
+            24,
+            35,
+            46,
+            68,
+            63,
+            134,
+            149,
+            168,
+            77,
+            86
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            4,
+            17,
+            14,
+            27,
+            81,
+            121,
+            157,
+            151,
+            223,
+            240
+          ],
+          "fp": [
+            28,
+            24,
+            55,
+            81,
+            91,
+            186,
+            252,
+            257,
+            113,
+            97
+          ],
+          "fn": [
+            20,
+            20,
+            32,
+            41,
+            34,
+            56,
+            36,
+            63,
+            37,
+            66
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1_reference": 0.4499882172501014,
+      "final_gate_f1_scope": "In-sample: final class gates were fitted on all reused validation labels; not the patient-OOF score"
+    },
+    "ensemble_hrnet_w18": {
+      "state": "passed",
+      "data_rows": 8590,
+      "rows_including_header": 8591,
+      "studies": 859,
+      "patients": 228,
+      "classes_per_study": 10,
+      "exact_header": [
+        "Subject_id",
+        "Study_id",
+        "Predict_class",
+        "Probability",
+        "Gate"
+      ],
+      "utf8_without_bom": true,
+      "official_valid_IDs_and_targets_checked": true,
+      "unique_subject_study_class": true,
+      "row_order": "Official valid.csv first Study occurrence; class IDs1..10 ascending",
+      "probabilities_bit_equal_after_float64_roundtrip": true,
+      "max_abs_probability_roundtrip_difference": 0.0,
+      "gates_global_per_class": true,
+      "csv_metrics_from_independent_readback": {
+        "study_macro_auc": 0.8051417314801448,
+        "macro_f1_at_0_5": 0.31995012522143923,
+        "csv_final_gate_macro_f1_in_sample": 0.4675139988976661,
+        "macro_ap": 0.4240780179651063,
+        "confusion_at_0_5": {
+          "tp": [
+            0,
+            4,
+            0,
+            1,
+            61,
+            55,
+            49,
+            40,
+            189,
+            223
+          ],
+          "fp": [
+            0,
+            4,
+            1,
+            1,
+            59,
+            72,
+            33,
+            32,
+            66,
+            72
+          ],
+          "fn": [
+            24,
+            33,
+            46,
+            67,
+            54,
+            122,
+            144,
+            174,
+            71,
+            83
+          ]
+        },
+        "confusion_at_final_gate": {
+          "tp": [
+            5,
+            15,
+            11,
+            24,
+            79,
+            145,
+            156,
+            115,
+            232,
+            239
+          ],
+          "fp": [
+            48,
+            23,
+            35,
+            59,
+            85,
+            247,
+            239,
+            137,
+            133,
+            96
+          ],
+          "fn": [
+            19,
+            22,
+            35,
+            44,
+            36,
+            32,
+            37,
+            99,
+            28,
+            67
+          ]
+        }
+      },
+      "patient_fivefold_oof_f1_reference": 0.43788877772663853,
+      "final_gate_f1_scope": "In-sample: final class gates were fitted on all reused validation labels; not the patient-OOF score"
+    }
+  },
+  "all_input_SHA_unchanged": true,
+  "official_labels_used_only_locally": true,
+  "labels_exported": false,
+  "new_test_inference": false
+}

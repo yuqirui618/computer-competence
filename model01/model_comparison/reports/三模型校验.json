@@ -1,0 +1,1134 @@
+{
+  "state": "passed",
+  "experiment_state": "complete",
+  "full_three_by_five_completed": true,
+  "previous_two_model_summary": {
+    "convnext_tiny": {
+      "label": "ConvNeXt-Tiny",
+      "best_epoch": 5,
+      "best_validation": {
+        "image": {
+          "auc": [
+            0.721794211556288,
+            0.7951159951159951,
+            0.7602578927082237,
+            0.7272541592394535,
+            0.8846163475404583,
+            0.8078599391770418,
+            0.7882424242424242,
+            0.7156177858074877,
+            0.9100133715377268,
+            0.8758611520209458
+          ],
+          "f1": [
+            0.0,
+            0.034482758620689655,
+            0.0,
+            0.0,
+            0.4896551724137931,
+            0.39416058394160586,
+            0.265625,
+            0.22549019607843138,
+            0.6899441340782123,
+            0.765625
+          ],
+          "macro_auc": 0.7986633278946045,
+          "macro_f1": 0.28649828451327325,
+          "auc_classes": 10,
+          "count": 1422
+        },
+        "study": {
+          "auc": [
+            0.6896457085828344,
+            0.8126685079239825,
+            0.7552542916733516,
+            0.7162099353015543,
+            0.8666958859280037,
+            0.7865781930844806,
+            0.775941744853662,
+            0.7184199087154967,
+            0.8975600359573649,
+            0.8755510643075796
+          ],
+          "f1": [
+            0.0,
+            0.05263157894736842,
+            0.0,
+            0.0,
+            0.49523809523809526,
+            0.4013840830449827,
+            0.30158730158730157,
+            0.25263157894736843,
+            0.6829268292682927,
+            0.7461669505962522
+          ],
+          "macro_auc": 0.7894525276328309,
+          "macro_f1": 0.2932566417629661,
+          "auc_classes": 10,
+          "count": 859
+        }
+      },
+      "best_calibration": {
+        "oof_macro_f1": 0.43090180651352183,
+        "oof_f1_by_class_id": [
+          0.14285714285714285,
+          0.22448979591836735,
+          0.18840579710144928,
+          0.25,
+          0.5434782608695652,
+          0.4753747323340471,
+          0.5073170731707317,
+          0.49810366624525915,
+          0.7260504201680672,
+          0.7529411764705882
+        ],
+        "final_gates_by_class_id": [
+          0.05,
+          0.275,
+          0.175,
+          0.2,
+          0.3,
+          0.275,
+          0.125,
+          0.125,
+          0.3,
+          0.475
+        ],
+        "patients": 228
+      },
+      "checkpoint_sha256": "af58ccc38f2d5631d5018a8b33a43b3e9564e98bda5446c4425de27ed663c36e"
+    },
+    "efficientnetv2_s": {
+      "label": "EfficientNetV2-S",
+      "best_epoch": 4,
+      "best_validation": {
+        "image": {
+          "auc": [
+            0.7220620043258832,
+            0.7762611657348499,
+            0.7677330436712335,
+            0.718166963755199,
+            0.8910806561448485,
+            0.7828250751886017,
+            0.7820680882903105,
+            0.6896746533602902,
+            0.9144629099013053,
+            0.8638285468826706
+          ],
+          "f1": [
+            0.0,
+            0.0625,
+            0.029850746268656716,
+            0.0,
+            0.5,
+            0.33980582524271846,
+            0.26108374384236455,
+            0.27672955974842767,
+            0.7162534435261708,
+            0.7519582245430809
+          ],
+          "macro_auc": 0.7908163107255192,
+          "macro_f1": 0.2938181543171419,
+          "auc_classes": 10,
+          "count": 1422
+        },
+        "study": {
+          "auc": [
+            0.6786427145708582,
+            0.8003222200302492,
+            0.7689314936627627,
+            0.719714434446345,
+            0.8761863020102852,
+            0.7626538761038487,
+            0.7707603977034029,
+            0.7023726726074041,
+            0.904218569410556,
+            0.8676441040551242
+          ],
+          "f1": [
+            0.0,
+            0.05,
+            0.0,
+            0.0,
+            0.5224489795918368,
+            0.32142857142857145,
+            0.2727272727272727,
+            0.32398753894080995,
+            0.7294117647058823,
+            0.7312925170068028
+          ],
+          "macro_auc": 0.7851446784600837,
+          "macro_f1": 0.2951296644401176,
+          "auc_classes": 10,
+          "count": 859
+        }
+      },
+      "best_calibration": {
+        "oof_macro_f1": 0.41389517027548506,
+        "oof_f1_by_class_id": [
+          0.07179487179487179,
+          0.20454545454545456,
+          0.14285714285714285,
+          0.2188679245283019,
+          0.5663082437275986,
+          0.4753747323340471,
+          0.5226480836236934,
+          0.48064085447263016,
+          0.7341337907375644,
+          0.7217806041335453
+        ],
+        "final_gates_by_class_id": [
+          0.05,
+          0.175,
+          0.225,
+          0.15,
+          0.4,
+          0.3,
+          0.225,
+          0.2,
+          0.325,
+          0.4
+        ],
+        "patients": 228
+      },
+      "checkpoint_sha256": "c0e98673281b6b024d5c27d708c4aa8f2129cb676a3c4497403722f5bf4ded18"
+    }
+  },
+  "actual_complete_epochs_from_history": 15,
+  "runner_summary_epochs": 15,
+  "per_model": {
+    "caformer_s18": {
+      "state": "complete",
+      "actual_epochs": 5,
+      "successful": true,
+      "best_epoch": 3,
+      "construction": {
+        "constructor_kwargs": {
+          "num_classes": 1000,
+          "drop_rate": 0.2,
+          "drop_path_rate": 0.1,
+          "proj_drop_rate": 0.0
+        },
+        "classifier_path": "head.fc.fc2",
+        "classifier_adaptation": "Only final Linear replaced; pretrained hidden head/norm retained",
+        "classifier_lr_scope": "Only new final Linear has classifier_lr; all other pretrained parameters use backbone_lr",
+        "head_drop_rate": 0.2,
+        "actual_drop_path_rate": 0.1,
+        "dense_layer_drop_rate": null,
+        "dropout_sites": {
+          "stages.0.blocks.0.mlp.drop1": 0.0,
+          "stages.0.blocks.0.mlp.drop2": 0.0,
+          "stages.0.blocks.1.mlp.drop1": 0.0,
+          "stages.0.blocks.1.mlp.drop2": 0.0,
+          "stages.0.blocks.2.mlp.drop1": 0.0,
+          "stages.0.blocks.2.mlp.drop2": 0.0,
+          "stages.1.blocks.0.mlp.drop1": 0.0,
+          "stages.1.blocks.0.mlp.drop2": 0.0,
+          "stages.1.blocks.1.mlp.drop1": 0.0,
+          "stages.1.blocks.1.mlp.drop2": 0.0,
+          "stages.1.blocks.2.mlp.drop1": 0.0,
+          "stages.1.blocks.2.mlp.drop2": 0.0,
+          "stages.2.blocks.0.token_mixer.attn_drop": 0.0,
+          "stages.2.blocks.0.token_mixer.proj_drop": 0.0,
+          "stages.2.blocks.0.mlp.drop1": 0.0,
+          "stages.2.blocks.0.mlp.drop2": 0.0,
+          "stages.2.blocks.1.token_mixer.attn_drop": 0.0,
+          "stages.2.blocks.1.token_mixer.proj_drop": 0.0,
+          "stages.2.blocks.1.mlp.drop1": 0.0,
+          "stages.2.blocks.1.mlp.drop2": 0.0,
+          "stages.2.blocks.2.token_mixer.attn_drop": 0.0,
+          "stages.2.blocks.2.token_mixer.proj_drop": 0.0,
+          "stages.2.blocks.2.mlp.drop1": 0.0,
+          "stages.2.blocks.2.mlp.drop2": 0.0,
+          "stages.2.blocks.3.token_mixer.attn_drop": 0.0,
+          "stages.2.blocks.3.token_mixer.proj_drop": 0.0,
+          "stages.2.blocks.3.mlp.drop1": 0.0,
+          "stages.2.blocks.3.mlp.drop2": 0.0,
+          "stages.2.blocks.4.token_mixer.attn_drop": 0.0,
+          "stages.2.blocks.4.token_mixer.proj_drop": 0.0,
+          "stages.2.blocks.4.mlp.drop1": 0.0,
+          "stages.2.blocks.4.mlp.drop2": 0.0,
+          "stages.2.blocks.5.token_mixer.attn_drop": 0.0,
+          "stages.2.blocks.5.token_mixer.proj_drop": 0.0,
+          "stages.2.blocks.5.mlp.drop1": 0.0,
+          "stages.2.blocks.5.mlp.drop2": 0.0,
+          "stages.2.blocks.6.token_mixer.attn_drop": 0.0,
+          "stages.2.blocks.6.token_mixer.proj_drop": 0.0,
+          "stages.2.blocks.6.mlp.drop1": 0.0,
+          "stages.2.blocks.6.mlp.drop2": 0.0,
+          "stages.2.blocks.7.token_mixer.attn_drop": 0.0,
+          "stages.2.blocks.7.token_mixer.proj_drop": 0.0,
+          "stages.2.blocks.7.mlp.drop1": 0.0,
+          "stages.2.blocks.7.mlp.drop2": 0.0,
+          "stages.2.blocks.8.token_mixer.attn_drop": 0.0,
+          "stages.2.blocks.8.token_mixer.proj_drop": 0.0,
+          "stages.2.blocks.8.mlp.drop1": 0.0,
+          "stages.2.blocks.8.mlp.drop2": 0.0,
+          "stages.3.blocks.0.token_mixer.attn_drop": 0.0,
+          "stages.3.blocks.0.token_mixer.proj_drop": 0.0,
+          "stages.3.blocks.0.mlp.drop1": 0.0,
+          "stages.3.blocks.0.mlp.drop2": 0.0,
+          "stages.3.blocks.1.token_mixer.attn_drop": 0.0,
+          "stages.3.blocks.1.token_mixer.proj_drop": 0.0,
+          "stages.3.blocks.1.mlp.drop1": 0.0,
+          "stages.3.blocks.1.mlp.drop2": 0.0,
+          "stages.3.blocks.2.token_mixer.attn_drop": 0.0,
+          "stages.3.blocks.2.token_mixer.proj_drop": 0.0,
+          "stages.3.blocks.2.mlp.drop1": 0.0,
+          "stages.3.blocks.2.mlp.drop2": 0.0,
+          "head.drop": 0.2,
+          "head.fc.head_drop": 0.2
+        },
+        "drop_path_sites": {
+          "stages.0.blocks.1.drop_path1": 0.0058823530562222,
+          "stages.0.blocks.1.drop_path2": 0.0058823530562222,
+          "stages.0.blocks.2.drop_path1": 0.0117647061124444,
+          "stages.0.blocks.2.drop_path2": 0.0117647061124444,
+          "stages.1.blocks.0.drop_path1": 0.01764705963432789,
+          "stages.1.blocks.0.drop_path2": 0.01764705963432789,
+          "stages.1.blocks.1.drop_path1": 0.0235294122248888,
+          "stages.1.blocks.1.drop_path2": 0.0235294122248888,
+          "stages.1.blocks.2.drop_path1": 0.029411764815449715,
+          "stages.1.blocks.2.drop_path2": 0.029411764815449715,
+          "stages.2.blocks.0.drop_path1": 0.03529411926865578,
+          "stages.2.blocks.0.drop_path2": 0.03529411926865578,
+          "stages.2.blocks.1.drop_path1": 0.04117647185921669,
+          "stages.2.blocks.1.drop_path2": 0.04117647185921669,
+          "stages.2.blocks.2.drop_path1": 0.0470588244497776,
+          "stages.2.blocks.2.drop_path2": 0.0470588244497776,
+          "stages.2.blocks.3.drop_path1": 0.052941177040338516,
+          "stages.2.blocks.3.drop_path2": 0.052941177040338516,
+          "stages.2.blocks.4.drop_path1": 0.05882352963089943,
+          "stages.2.blocks.4.drop_path2": 0.05882352963089943,
+          "stages.2.blocks.5.drop_path1": 0.06470587849617004,
+          "stages.2.blocks.5.drop_path2": 0.06470587849617004,
+          "stages.2.blocks.6.drop_path1": 0.07058823853731155,
+          "stages.2.blocks.6.drop_path2": 0.07058823853731155,
+          "stages.2.blocks.7.drop_path1": 0.07647059112787247,
+          "stages.2.blocks.7.drop_path2": 0.07647059112787247,
+          "stages.2.blocks.8.drop_path1": 0.08235294371843338,
+          "stages.2.blocks.8.drop_path2": 0.08235294371843338,
+          "stages.3.blocks.0.drop_path1": 0.0882352963089943,
+          "stages.3.blocks.0.drop_path2": 0.0882352963089943,
+          "stages.3.blocks.1.drop_path1": 0.0941176488995552,
+          "stages.3.blocks.1.drop_path2": 0.0941176488995552,
+          "stages.3.blocks.2.drop_path1": 0.10000000149011612,
+          "stages.3.blocks.2.drop_path2": 0.10000000149011612
+        },
+        "construction_audit": {
+          "source": "ImageNet",
+          "final_linear_only_replaced": true,
+          "all_nonfinal_pretrained_tensors_bit_equal": true,
+          "retained_tensor_count": 204,
+          "caformer_hidden_head_preservation": {
+            "head.fc.fc1.": {
+              "tensors": 2,
+              "bit_equal_to_pretrained": true,
+              "module_type": "Linear",
+              "parameter_free_at_source": false
+            },
+            "head.fc.norm.": {
+              "tensors": 2,
+              "bit_equal_to_pretrained": true,
+              "module_type": "LayerNorm",
+              "parameter_free_at_source": false
+            },
+            "head.norm.": {
+              "tensors": 2,
+              "bit_equal_to_pretrained": true,
+              "module_type": "LayerNorm2d",
+              "parameter_free_at_source": false
+            }
+          }
+        }
+      }
+    },
+    "densenet121": {
+      "state": "complete",
+      "actual_epochs": 5,
+      "successful": true,
+      "best_epoch": 4,
+      "construction": {
+        "constructor_kwargs": {
+          "num_classes": 1000,
+          "drop_rate": 0.2,
+          "proj_drop_rate": 0.0
+        },
+        "classifier_path": "classifier",
+        "classifier_adaptation": "Only final Linear replaced; pretrained hidden head/norm retained",
+        "classifier_lr_scope": "Only new final Linear has classifier_lr; all other pretrained parameters use backbone_lr",
+        "head_drop_rate": 0.2,
+        "actual_drop_path_rate": 0.0,
+        "dense_layer_drop_rate": 0.0,
+        "dropout_sites": {
+          "head_drop": 0.2
+        },
+        "drop_path_sites": {},
+        "construction_audit": {
+          "source": "ImageNet",
+          "final_linear_only_replaced": true,
+          "all_nonfinal_pretrained_tensors_bit_equal": true,
+          "retained_tensor_count": 725,
+          "caformer_hidden_head_preservation": {}
+        }
+      }
+    },
+    "hrnet_w18": {
+      "state": "complete",
+      "actual_epochs": 5,
+      "successful": true,
+      "best_epoch": 5,
+      "construction": {
+        "constructor_kwargs": {
+          "num_classes": 1000,
+          "drop_rate": 0.2
+        },
+        "classifier_path": "classifier",
+        "classifier_adaptation": "Only final Linear replaced; pretrained hidden head/norm retained",
+        "classifier_lr_scope": "Only new final Linear has classifier_lr; all other pretrained parameters use backbone_lr",
+        "head_drop_rate": 0.2,
+        "actual_drop_path_rate": 0.0,
+        "dense_layer_drop_rate": null,
+        "dropout_sites": {
+          "head_drop": 0.2
+        },
+        "drop_path_sites": {},
+        "construction_audit": {
+          "source": "ImageNet",
+          "final_linear_only_replaced": true,
+          "all_nonfinal_pretrained_tensors_bit_equal": true,
+          "retained_tensor_count": 1954,
+          "caformer_hidden_head_preservation": {}
+        }
+      }
+    }
+  },
+  "checks": [
+    "pretrained_weights_fixed_revisions_and_archived_license_metadata",
+    "MambaOut_original_gamma_metrics_thresholds_and_historical_first5",
+    "previous_two_model_aggregates_and_unchanged_best_weights",
+    "caformer_s18:final_linear_only,constructor_kwargs,pretrained_retention,actual_regularization",
+    "caformer_s18/epoch1:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "caformer_s18/epoch2:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "caformer_s18/epoch3:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "caformer_s18/epoch4:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "caformer_s18/epoch5:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "caformer_s18:best_selection,SHA,GPU_verification,gates,bootstrap_points",
+    "densenet121:final_linear_only,constructor_kwargs,pretrained_retention,actual_regularization",
+    "densenet121/epoch1:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "densenet121/epoch2:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "densenet121/epoch3:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "densenet121/epoch4:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "densenet121/epoch5:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "densenet121:best_selection,SHA,GPU_verification,gates,bootstrap_points",
+    "hrnet_w18:final_linear_only,constructor_kwargs,pretrained_retention,actual_regularization",
+    "hrnet_w18/epoch1:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "hrnet_w18/epoch2:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "hrnet_w18/epoch3:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "hrnet_w18/epoch4:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "hrnet_w18/epoch5:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "hrnet_w18:best_selection,SHA,GPU_verification,gates,bootstrap_points",
+    "caformer_s18:fixed50_50_probability_identity,source_bindings,metrics,patient_CV,gates,CI_points,appendix",
+    "densenet121:fixed50_50_probability_identity,source_bindings,metrics,patient_CV,gates,CI_points,appendix",
+    "hrnet_w18:fixed50_50_probability_identity,source_bindings,metrics,patient_CV,gates,CI_points,appendix"
+  ],
+  "all_saved_study_predictions_recomputed": true,
+  "patient_threshold_cv_recomputed": true,
+  "paired_bootstrap_recomputed": false,
+  "paired_bootstrap_point_differences_checked": true,
+  "protected_hashes_verified": {
+    "E:\\比赛数据集\\MambaOut_ASL对照\\best_model.pth": "9911ef5383bb320a4770a544b85e27d58c01ab57a69bb0963392a208073a2585",
+    "E:\\比赛数据集\\MambaOut_ASL对照\\gates.json": "1ef20f260ee1ea2e3e7737a8aa472537ebb8f43dbdf3198cd3e5264acba5f380",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\candidate_gates.json": "4737f58acedbb4b0deffe39ff5ac52ac499597675dc2cf2575009d989f22ef39",
+    "E:\\比赛数据集\\提交结果\\MambaOut_S7微调第1轮_20261104\\submission.csv": "d49b6a7ef02489af1ed2cc38f8f49bc5f592b6519f7ee24399d4e18ab95eeae8",
+    "E:\\比赛数据集\\喻数据产物\\manifest.csv": "b7c280dc0edc8b99d2aa1210651bab7ff9724d4c0a26b76b231c1935b275c142",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\best.pth": "af58ccc38f2d5631d5018a8b33a43b3e9564e98bda5446c4425de27ed663c36e",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\best.pth": "c0e98673281b6b024d5c27d708c4aa8f2129cb676a3c4497403722f5bf4ded18",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\candidate_gates.json": "c3a981716f2774f6a419d8563fd43c32de4a30618d399dbc227580945501401a",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\candidate_gates.json": "c303f1049b87da6f90a1b1edc9f5a1b9c59cdc605cacf6974a17108cf220d932"
+  },
+  "pretraining_provenance": {
+    "caformer_s18": {
+      "architecture": "caformer_s18.sail_in1k",
+      "directory": "caformer_s18",
+      "sha256": "70a2d91bcd6960c626a02853afba5af6289801c9405eb87ced8eb709192dc998",
+      "bytes": 105387838,
+      "repository": "timm/caformer_s18.sail_in1k",
+      "revision": "f2054d7d6dd0fddcd00f3d117959c913314075dc",
+      "license": "apache-2.0",
+      "pretraining_data": "ImageNet-1k",
+      "source_url": "https://huggingface.co/timm/caformer_s18.sail_in1k",
+      "config": {
+        "architecture": "caformer_s18",
+        "num_classes": 1000,
+        "num_features": 512,
+        "pretrained_cfg": {
+          "tag": "sail_in1k",
+          "custom_load": false,
+          "input_size": [
+            3,
+            224,
+            224
+          ],
+          "fixed_input_size": false,
+          "interpolation": "bicubic",
+          "crop_pct": 1.0,
+          "crop_mode": "center",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "num_classes": 1000,
+          "pool_size": [
+            7,
+            7
+          ],
+          "first_conv": "stem.conv",
+          "classifier": "head.fc.fc2"
+        }
+      },
+      "repository_metadata_sha256": "c2a54c428cb3daefac5b1a6c6e5fd8c0d236a993a0c18c71f4f87bfd899dc111",
+      "model_card_sha256": "804ddc51ecc99a2b11d2ca0251c26265c07f2cc6a7d46f55330ecb61c9a7ff0d",
+      "license_text_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "license_text_file": "LICENSE.apache-2.0.txt"
+    },
+    "densenet121": {
+      "architecture": "densenet121.ra_in1k",
+      "directory": "densenet121",
+      "sha256": "eae900d8ae5b3716efa7f443fcc692aeb5a7f01f72581835c03c8c495f9eda10",
+      "bytes": 32334434,
+      "repository": "timm/densenet121.ra_in1k",
+      "revision": "92007b6200e0b4a4fe68cb4e3947022a928aaaae",
+      "license": "apache-2.0",
+      "pretraining_data": "ImageNet-1k",
+      "source_url": "https://huggingface.co/timm/densenet121.ra_in1k",
+      "config": {
+        "architecture": "densenet121",
+        "num_classes": 1000,
+        "num_features": 1024,
+        "pretrained_cfg": {
+          "tag": "ra_in1k",
+          "custom_load": false,
+          "input_size": [
+            3,
+            224,
+            224
+          ],
+          "test_input_size": [
+            3,
+            288,
+            288
+          ],
+          "fixed_input_size": false,
+          "interpolation": "bicubic",
+          "crop_pct": 0.875,
+          "test_crop_pct": 0.95,
+          "crop_mode": "center",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "num_classes": 1000,
+          "pool_size": [
+            7,
+            7
+          ],
+          "first_conv": "features.conv0",
+          "classifier": "classifier"
+        }
+      },
+      "repository_metadata_sha256": "5a62a41be8ccc0d6983c1b0ebc399879aa6b4ee28e5874e6b41a51c6bb0effa2",
+      "model_card_sha256": "8b3b5b7500f9e0ff5777d63719ca6480d93c72f15109d5c85d3d7e339ef708f8",
+      "license_text_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "license_text_file": "LICENSE.apache-2.0.txt"
+    },
+    "hrnet_w18": {
+      "architecture": "hrnet_w18.ms_aug_in1k",
+      "directory": "hrnet_w18",
+      "sha256": "f9e3c451448c037d4dd549c96f3013d2926b492f69f27c74bbcc909e053e677c",
+      "bytes": 85602968,
+      "repository": "timm/hrnet_w18.ms_aug_in1k",
+      "revision": "7e2c5583769f54514fd87e3ba9de408e33eaba0f",
+      "license": "mit",
+      "pretraining_data": "ImageNet-1k",
+      "source_url": "https://huggingface.co/timm/hrnet_w18.ms_aug_in1k",
+      "config": {
+        "architecture": "hrnet_w18",
+        "num_classes": 1000,
+        "num_features": 2048,
+        "pretrained_cfg": {
+          "tag": "ms_aug_in1k",
+          "custom_load": false,
+          "input_size": [
+            3,
+            224,
+            224
+          ],
+          "fixed_input_size": false,
+          "interpolation": "bilinear",
+          "crop_pct": 0.95,
+          "crop_mode": "center",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "num_classes": 1000,
+          "pool_size": [
+            7,
+            7
+          ],
+          "first_conv": "conv1",
+          "classifier": "classifier"
+        }
+      },
+      "repository_metadata_sha256": "bac84640a060378a7618a6adfa8732ba7121189640451c929dce45704cdc863f",
+      "model_card_sha256": "7e045056328991652aff499111db673ed569c354c8f35f5c02d21b0771027b26",
+      "license_text_sha256": "285c174bc9a991f013d2f205c63f1d7ec90bb91e7acb428151f119a76cfd6d00",
+      "license_text_file": "LICENSE.hrnet-MIT.txt"
+    }
+  },
+  "new_models_uploaded": false,
+  "previous_optimization_upload": {
+    "repository": "https://github.com/yuqirui618/computer-competence",
+    "branch": "feat/model01-mambaout",
+    "commit": "11e95521f926961461d5d9db131bff9cfcb706c6",
+    "remote_verified": true,
+    "main_before": "4bebb51180ef62ada40980d49894c816046eaa6c",
+    "main_after": "4bebb51180ef62ada40980d49894c816046eaa6c",
+    "scope": "Completed MambaOut optimization sources and aggregate reports, separate from new backbone experiments"
+  },
+  "fixed_ensemble_evaluation": {
+    "state": "passed",
+    "kind": "fixed_probability_ensembles_not_new_single_models",
+    "combinations": {
+      "caformer_s18": {
+        "metrics": {
+          "auc": [
+            0.6837824351297406,
+            0.8545077924639968,
+            0.7800684528584416,
+            0.7591284301331153,
+            0.8736909770920992,
+            0.7702089235714168,
+            0.7948077611290046,
+            0.7288777801927118,
+            0.9104661615513036,
+            0.8751846730253282
+          ],
+          "f1": [
+            0.0,
+            0.09523809523809523,
+            0.0,
+            0.0,
+            0.46956521739130436,
+            0.3250883392226148,
+            0.36900369003690037,
+            0.31438127090301005,
+            0.7386363636363636,
+            0.7370242214532872
+          ],
+          "macro_auc": 0.8030723387147158,
+          "macro_f1": 0.3048937197881576,
+          "macro_ap": 0.4278627618870966,
+          "ap_by_class": [
+            0.0700891266838213,
+            0.34493483364545485,
+            0.17296595178917196,
+            0.23549037470529793,
+            0.4288651287914639,
+            0.4067245665740268,
+            0.5276811290038433,
+            0.46169152507048794,
+            0.7981226454999837,
+            0.8320623371074148
+          ],
+          "tp": [
+            0,
+            2,
+            0,
+            0,
+            54,
+            46,
+            50,
+            47,
+            195,
+            213
+          ],
+          "fp": [
+            0,
+            3,
+            0,
+            0,
+            61,
+            60,
+            28,
+            38,
+            73,
+            59
+          ],
+          "fn": [
+            24,
+            35,
+            46,
+            68,
+            61,
+            131,
+            143,
+            167,
+            65,
+            93
+          ]
+        },
+        "calibration": {
+          "oof_macro_f1": 0.4609758471453912,
+          "oof_f1_by_class_id": [
+            0.1456953642384106,
+            0.4444444444444444,
+            0.1951219512195122,
+            0.28292682926829266,
+            0.5521885521885522,
+            0.4948453608247423,
+            0.5275459098497496,
+            0.4673748103186646,
+            0.7443478260869565,
+            0.7552674230145867
+          ],
+          "final_gates_by_class_id": [
+            0.075,
+            0.25,
+            0.15,
+            0.15,
+            0.325,
+            0.275,
+            0.175,
+            0.25,
+            0.375,
+            0.4
+          ],
+          "patients": 228
+        },
+        "binding": {
+          "kind": "probability_ensemble_not_new_single_model",
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "source_checkpoints": [
+            {
+              "role": "existing_gamma_mambaout",
+              "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+              "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+              "weight": 0.5
+            },
+            {
+              "role": "caformer_s18",
+              "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\best.pth",
+              "sha256": "9201f8715dd393445262b49c523d2c61c542ff5ba63fc752806fda0a9a4384c2",
+              "weight": 0.5
+            }
+          ],
+          "single_model_epoch": 3,
+          "probability_arithmetic": "float64 equal mean of saved Study mean image probabilities",
+          "aggregation": "Each source first averages image probabilities within the same Study; then sources are averaged 50:50"
+        },
+        "paired_auc_vs_existing_gamma": {
+          "delta": 0.000894860495130656,
+          "ci95": [
+            -0.003825461489312676,
+            0.006662924665742882
+          ],
+          "repeats": 400,
+          "valid_repeats": 400,
+          "seed": 20261104,
+          "scope": "Patient-cluster paired percentile CI, conditional on fixed selected models; not model-selection corrected; no thresholds refit."
+        },
+        "predictions_sha256": "434aae4e2c8644957ff1cd98b6a3f73a3573154ad242abd9e6a8b36cfdbdb296",
+        "candidate_gates_sha256": "5940eb47dafa34e143b61187c4778425054fc882de0c87fe73b6e5753b383786",
+        "exceeds_existing_gamma_auc": true
+      },
+      "densenet121": {
+        "metrics": {
+          "auc": [
+            0.6689620758483034,
+            0.8502334451239562,
+            0.7745066581100595,
+            0.742340298951439,
+            0.8703950444132773,
+            0.7751130771907153,
+            0.7877826012541038,
+            0.7192784177352749,
+            0.9071401053037114,
+            0.8712016452150481
+          ],
+          "f1": [
+            0.0,
+            0.0975609756097561,
+            0.0,
+            0.0,
+            0.4642857142857143,
+            0.31851851851851853,
+            0.3371647509578544,
+            0.31186440677966104,
+            0.7204724409448819,
+            0.738255033557047
+          ],
+          "macro_auc": 0.7966953369145889,
+          "macro_f1": 0.2988121840653434,
+          "macro_ap": 0.4238754235197611,
+          "ap_by_class": [
+            0.0667584411369909,
+            0.3313318973219846,
+            0.18288716912448794,
+            0.22989867995213753,
+            0.41712347557986656,
+            0.4258406064931019,
+            0.515856191183587,
+            0.4474040918198734,
+            0.7878275382516922,
+            0.833826144333889
+          ],
+          "tp": [
+            0,
+            2,
+            0,
+            0,
+            52,
+            43,
+            44,
+            46,
+            183,
+            220
+          ],
+          "fp": [
+            0,
+            2,
+            0,
+            0,
+            57,
+            50,
+            24,
+            35,
+            65,
+            70
+          ],
+          "fn": [
+            24,
+            35,
+            46,
+            68,
+            63,
+            134,
+            149,
+            168,
+            77,
+            86
+          ]
+        },
+        "calibration": {
+          "oof_macro_f1": 0.4499882172501014,
+          "oof_f1_by_class_id": [
+            0.15,
+            0.39080459770114945,
+            0.20754716981132076,
+            0.2484472049689441,
+            0.5543859649122806,
+            0.4847250509164969,
+            0.496551724137931,
+            0.478125,
+            0.7483221476510067,
+            0.7409733124018838
+          ],
+          "final_gates_by_class_id": [
+            0.075,
+            0.175,
+            0.15,
+            0.15,
+            0.35,
+            0.275,
+            0.175,
+            0.25,
+            0.3,
+            0.375
+          ],
+          "patients": 228
+        },
+        "binding": {
+          "kind": "probability_ensemble_not_new_single_model",
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "source_checkpoints": [
+            {
+              "role": "existing_gamma_mambaout",
+              "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+              "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+              "weight": 0.5
+            },
+            {
+              "role": "densenet121",
+              "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\best.pth",
+              "sha256": "1a93f24e3de177fe9d9bf6ece5fae564fb2cd2d06d99c927494664cec4ba26fb",
+              "weight": 0.5
+            }
+          ],
+          "single_model_epoch": 4,
+          "probability_arithmetic": "float64 equal mean of saved Study mean image probabilities",
+          "aggregation": "Each source first averages image probabilities within the same Study; then sources are averaged 50:50"
+        },
+        "paired_auc_vs_existing_gamma": {
+          "delta": -0.005482141304996246,
+          "ci95": [
+            -0.010438138850036754,
+            -0.0007001549634796536
+          ],
+          "repeats": 400,
+          "valid_repeats": 400,
+          "seed": 20261104,
+          "scope": "Patient-cluster paired percentile CI, conditional on fixed selected models; not model-selection corrected; no thresholds refit."
+        },
+        "predictions_sha256": "cf47f2913d6cf0f0a9cfee9e7e896447c639ea7f1847020b7385ffddb56f8fed",
+        "candidate_gates_sha256": "3e5cc26b7d797fccfd0869b392636eff795a585b9a0fc3e9a176778cad0b465f",
+        "exceeds_existing_gamma_auc": false
+      },
+      "hrnet_w18": {
+        "metrics": {
+          "auc": [
+            0.6987025948103792,
+            0.8506937594528836,
+            0.7894005027006792,
+            0.7589611065665205,
+            0.8740766713417485,
+            0.7763142634657123,
+            0.7947533025253233,
+            0.7234514236035645,
+            0.9112559393861563,
+            0.8738077509484807
+          ],
+          "f1": [
+            0.0,
+            0.17777777777777778,
+            0.0,
+            0.02857142857142857,
+            0.5191489361702127,
+            0.3618421052631579,
+            0.3563636363636364,
+            0.27972027972027974,
+            0.7339805825242719,
+            0.7420965058236273
+          ],
+          "macro_auc": 0.8051417314801448,
+          "macro_f1": 0.31995012522143923,
+          "macro_ap": 0.4240780179651063,
+          "ap_by_class": [
+            0.07281952576649957,
+            0.28295865271097737,
+            0.16063260744029417,
+            0.24369885958561868,
+            0.4407400614820005,
+            0.4292721720018765,
+            0.5387007190687779,
+            0.4467843378647507,
+            0.7982969177192002,
+            0.8268763260110665
+          ],
+          "tp": [
+            0,
+            4,
+            0,
+            1,
+            61,
+            55,
+            49,
+            40,
+            189,
+            223
+          ],
+          "fp": [
+            0,
+            4,
+            1,
+            1,
+            59,
+            72,
+            33,
+            32,
+            66,
+            72
+          ],
+          "fn": [
+            24,
+            33,
+            46,
+            67,
+            54,
+            122,
+            144,
+            174,
+            71,
+            83
+          ]
+        },
+        "calibration": {
+          "oof_macro_f1": 0.43788877772663853,
+          "oof_f1_by_class_id": [
+            0.11483253588516747,
+            0.345679012345679,
+            0.1793103448275862,
+            0.31788079470198677,
+            0.53156146179402,
+            0.5096660808435852,
+            0.49818181818181817,
+            0.4507042253521127,
+            0.7117437722419929,
+            0.719327731092437
+          ],
+          "final_gates_by_class_id": [
+            0.075,
+            0.2,
+            0.175,
+            0.175,
+            0.375,
+            0.2,
+            0.175,
+            0.3,
+            0.225,
+            0.4
+          ],
+          "patients": 228
+        },
+        "binding": {
+          "kind": "probability_ensemble_not_new_single_model",
+          "weights": [
+            0.5,
+            0.5
+          ],
+          "source_checkpoints": [
+            {
+              "role": "existing_gamma_mambaout",
+              "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+              "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+              "weight": 0.5
+            },
+            {
+              "role": "hrnet_w18",
+              "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\best.pth",
+              "sha256": "df1a02333931e558c9feaababd1fda5a79db5ede3632a58ddf160d98d805f8dd",
+              "weight": 0.5
+            }
+          ],
+          "single_model_epoch": 5,
+          "probability_arithmetic": "float64 equal mean of saved Study mean image probabilities",
+          "aggregation": "Each source first averages image probabilities within the same Study; then sources are averaged 50:50"
+        },
+        "paired_auc_vs_existing_gamma": {
+          "delta": 0.0029642532605596017,
+          "ci95": [
+            -0.002707912611418506,
+            0.01084370451742599
+          ],
+          "repeats": 400,
+          "valid_repeats": 400,
+          "seed": 20261104,
+          "scope": "Patient-cluster paired percentile CI, conditional on fixed selected models; not model-selection corrected; no thresholds refit."
+        },
+        "predictions_sha256": "2c835f9eafddb3ff485e4e1adc1510d72b3c0afe5971d5b31eff90d8bf0f788a",
+        "candidate_gates_sha256": "e25d48e8422859dd632ec2b8dcc4d86bda607f43a9ea8a82c7fd8c90ab735c5c",
+        "exceeds_existing_gamma_auc": true
+      }
+    },
+    "highest_point_estimate_combination": "hrnet_w18",
+    "plan_sha256": "47d8ab7de9ba3c889f23f02e5da0a0f18b0367801bf980ace3331f44e5c2eca9",
+    "result_sha256": "ef6915dffa7c2e32b256fd664ae7c2d995e72b7f69eea7b14076db0f5d3c9980",
+    "appendix_path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\等权组合对照.md",
+    "appendix_sha256": "25fa6f92996ce19a7f750bf956fa60c0fa3b0544800daed8116f72f0b2526e3d",
+    "new_training_epochs": 0,
+    "paired_bootstrap_recomputed": false,
+    "probabilities_and_patient_cv_recomputed": true
+  },
+  "source_fingerprints": {
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\results.json": "ffc8d9f7ac95cf167178250b513422aed0c62f5a904d7f0c04aaabb50ee8b5b5",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\protected_inputs.json": "535cdd1687d7635993c258bcc745f9e83e44a50585f004f2bb2e3fe23dd98708",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\status.json": "caf70a8f994031cc9e5b835839c03d0c1a53ad3ea6aa4060eaf05c54069d3b73",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\pretrained_manifest.json": "28897ba33b7ea1c69b6fc1856b4a5d473bd569584a00fa2a7b1b0cf9d2f53fe4",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\pretrained\\license_sources.json": "70453f989938048a1fc685897014d2fdf51c1088f95252f3ced030ef03091eae",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\pretrained\\caformer_s18\\repository_metadata.json": "c2a54c428cb3daefac5b1a6c6e5fd8c0d236a993a0c18c71f4f87bfd899dc111",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\pretrained\\caformer_s18\\config.json": "4755c3164600420b4feace0fbb1aa8dc93d2c7a80eac6fa6a54dcff5d32d48aa",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\pretrained\\densenet121\\repository_metadata.json": "5a62a41be8ccc0d6983c1b0ebc399879aa6b4ee28e5874e6b41a51c6bb0effa2",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\pretrained\\densenet121\\config.json": "c503cee99158835b6dc7baf32396988a629eea2b067ce94967dc4321bb133590",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\pretrained\\hrnet_w18\\repository_metadata.json": "bac84640a060378a7618a6adfa8732ba7121189640451c929dce45704cdc863f",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\pretrained\\hrnet_w18\\config.json": "20d3469fbe0a84c523eee636ffac5998b7f7ed858f019281898ff7da6e697916",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\文献与选型.md": "92550af1d31928e75f0af08ff7e9ef15d5765429be3e11cbe3f1185280eb6499",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\医学顶刊权重适用性.md": "9184a54539010675257ff9529b98fa45fa13065854324ec0f13ce7f738f70d5d",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\upload_receipt.json": "38c187d6b4e3bdf4bb813e529ad9d9ed2bdfafc42269524cfd41149503f41f45",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\baseline_predictions.npz": "1a800ca0a41d1735fd604ce5fc82b59ad25a3654f4069605ace5494c6cb09383",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\verified_candidate_predictions.npz": "61576035a3467370ab9c337279757914550a12b4ff6ba0722f79ca14d13b8e23",
+    "E:\\比赛数据集\\MambaOut_ASL对照\\gates.json": "1ef20f260ee1ea2e3e7737a8aa472537ebb8f43dbdf3198cd3e5264acba5f380",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\candidate_gates.json": "4737f58acedbb4b0deffe39ff5ac52ac499597675dc2cf2575009d989f22ef39",
+    "E:\\比赛数据集\\MambaOut_100轮\\baseline_100\\history.json": "55ddab19d3b321371e7c3b4e282ffc985a498a34bd1a7e69790c3c01c1aca9c1",
+    "E:\\比赛数据集\\新模型对照_20261105\\results.json": "541b798da90b7589e382964a8c994c6f8604ea774ea19d598cb2ae7ba5427567",
+    "E:\\比赛数据集\\新模型对照_20261105\\report_checks.json": "2e9d7b77ade2432379a45fd2edd8d4fe76930e3e03cd90437fbfb960f679485b",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\candidate_gates.json": "c3a981716f2774f6a419d8563fd43c32de4a30618d399dbc227580945501401a",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\candidate_gates.json": "c303f1049b87da6f90a1b1edc9f5a1b9c59cdc605cacf6974a17108cf220d932",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\history.json": "6c21c7b7fdf5b2a719cec028cb94a8507c0dde354d4fed5de5ccba6faaa38250",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\results.json": "4aa547f515fe2c6c2915a62788aea3655572d2a236681245323c580f10807cd3",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\plan.json": "9a855c753e81e232a9dd2c6b6a3198856cfdc523a4bac8edf92e44c3d0d6218d",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\preflight_caformer_s18.json": "66b7cdc737650fb8ed4560fae58a6818a6a9cd4dc80cafec41760fbd55a2f1cf",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\epoch_1_predictions.npz": "7e7d732d6e0a43bea2ffa146749fb16533a31f373da5c862b6a4d64b4fd2ec73",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\epoch_2_predictions.npz": "8dfa9303830bc203aa4239925c1bcc957851fd362698cc88544e43be3305d422",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\epoch_3_predictions.npz": "1ec0b8c42c759de9f8b8691b299aa982796d29192e5bd03c05edbee4b27495ec",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\epoch_4_predictions.npz": "fea98ee6516f34b9b3ddc6163e5936f17af8663d54fff7beab288dea14fece67",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\epoch_5_predictions.npz": "b2712e05c87a1e3f1eddc912f0ce3194950d6a68f7122fefefa906ca2145a2ea",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\candidate_gates.json": "6c8ec52a36ac9a7a31d6bc00d24f031de4ea36a740fda523a960bd82920a2f88",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\history.json": "e7f71f36c71e85502f78966b9e42f8832162f5a2e7cc0443d153bc58fda92bd3",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\results.json": "f284fa2755287a410fce395d94d5cd198e970bf506e2b53341590c2363197af2",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\plan.json": "eb6cb252f559e61c30faec33f3e99b4d913a8425ef0566424c2a56412c777dc1",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\preflight_densenet121.json": "127373368b6117099a7bbe6a93ac35907ebc9305c48365e7759bd69bf2a043b9",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\epoch_1_predictions.npz": "69007a943ef8cf3649777fa1515a7e7661eb98d02c1febdbca62262968a07e04",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\epoch_2_predictions.npz": "9a19ebeb624c669facba2773e7e871eacf94b07b9592545e6a74164fb29a4d25",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\epoch_3_predictions.npz": "d951e99bb1c1f1a81a54693527a08d9fff1bf00db570582758ad0e5070446a85",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\epoch_4_predictions.npz": "47be130a52b59305c40d2b32a2935b8b3e7d6667ba629c72cb2dff9286cc47ca",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\epoch_5_predictions.npz": "785b92035efd008db1df833a91e2447724a5b7afc7bbf5dd719db5796d29c1bd",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\candidate_gates.json": "ff8a7e70dda694ee3f799a66be31c5c53de07b83c22eff1d832b810bd726f1fc",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\history.json": "ca77a15aefaa06769cff09816e18b2509574a1df3ac2e3969390b79498e7d615",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\results.json": "0e896c3dcd3385bb345a54992f064eb5c9633b7edde57684a9fac7c0001d4a71",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\plan.json": "aa22d262e4836ab4d1266e8f4a8af2080e1a73ab8d692d63c343e799e23bcd6e",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\preflight_hrnet_w18.json": "1ec4e7f272a29a2cb4915a2c6d05e0f2c8da6dbd04ecb2f26013f330f42e46fe",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\epoch_1_predictions.npz": "2539b55145cb14dd1bd3e79010b905217502c2c87716a1e0a2d8e856bc54aca9",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\epoch_2_predictions.npz": "b0762e9bb876d526e5327454de53b7ce1de5c741d33fa466416081d40be611f5",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\epoch_3_predictions.npz": "a281015348405152489fdd43c43d3182e9fcf239179334ae64df939967b6e17c",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\epoch_4_predictions.npz": "c1d860faefeba479f4ae0fdaf5da17e00c8f80b71eb52f545e33ddf02cb66bf8",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\epoch_5_predictions.npz": "9d2140dbfb3c45434642eb195e3d7292f465cc4e77c64dd6210b8533c3ab9ac6",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\candidate_gates.json": "69a46f89d723c072c218661c64a5cf33c529865a1d2d3283d242d634d8859145",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensemble_plan.json": "47d8ab7de9ba3c889f23f02e5da0a0f18b0367801bf980ace3331f44e5c2eca9",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensemble_results.json": "ef6915dffa7c2e32b256fd664ae7c2d995e72b7f69eea7b14076db0f5d3c9980",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\等权组合对照.md": "25fa6f92996ce19a7f750bf956fa60c0fa3b0544800daed8116f72f0b2526e3d",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\caformer_s18\\predictions.npz": "434aae4e2c8644957ff1cd98b6a3f73a3573154ad242abd9e6a8b36cfdbdb296",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\caformer_s18\\candidate_gates.json": "5940eb47dafa34e143b61187c4778425054fc882de0c87fe73b6e5753b383786",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\densenet121\\predictions.npz": "cf47f2913d6cf0f0a9cfee9e7e896447c639ea7f1847020b7385ffddb56f8fed",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\densenet121\\candidate_gates.json": "3e5cc26b7d797fccfd0869b392636eff795a585b9a0fc3e9a176778cad0b465f",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\hrnet_w18\\predictions.npz": "2c835f9eafddb3ff485e4e1adc1510d72b3c0afe5971d5b31eff90d8bf0f788a",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\hrnet_w18\\candidate_gates.json": "e25d48e8422859dd632ec2b8dcc4d86bda607f43a9ea8a82c7fd8c90ab735c5c"
+  },
+  "report_generator_sha256": "09dad5b610784989c44461a8f9e74016945fa71e392d3160ff55ba0efe47b69c",
+  "generated_at": "2026-11-05T16:07:39.094089+08:00"
+}

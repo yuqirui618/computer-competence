@@ -1,0 +1,89 @@
+{
+  "_id": "6397c4e3deb49fd720905056",
+  "id": "timm/tf_efficientnetv2_s.in1k",
+  "private": false,
+  "pipeline_tag": "image-classification",
+  "library_name": "timm",
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "dataset:imagenet-1k",
+    "arxiv:2104.00298",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "downloads": 4362,
+  "likes": 0,
+  "modelId": "timm/tf_efficientnetv2_s.in1k",
+  "author": "timm",
+  "sha": "3af791b42d7e895c9da9b5aa4ed4e6b648e4ac0b",
+  "lastModified": "2025-01-21T18:20:09.000Z",
+  "gated": false,
+  "disabled": false,
+  "model-index": null,
+  "config": {},
+  "cardData": {
+    "tags": [
+      "image-classification",
+      "timm",
+      "transformers"
+    ],
+    "library_name": "timm",
+    "license": "apache-2.0",
+    "datasets": [
+      "imagenet-1k"
+    ]
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModel"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes",
+      "blobId": "c7d9f3332a950355d5a77d85000f05e6f45435ea",
+      "size": 1477
+    },
+    {
+      "rfilename": "README.md",
+      "blobId": "2ed78705d1cb49cd24cfa5411e9d5f49bed472f5",
+      "size": 4084
+    },
+    {
+      "rfilename": "config.json",
+      "blobId": "cff407b51ea64ed52bc99a11baa262210b906734",
+      "size": 629
+    },
+    {
+      "rfilename": "model.safetensors",
+      "blobId": "f27615464989cc3f41d721c768a8e7b0f9eddd3a",
+      "size": 86523256,
+      "lfs": {
+        "sha256": "b8a4b5462df66612e3c0e63781f73f7890ccdac8bcd950b4fc0ba0c0f29bda1f",
+        "size": 86523256,
+        "pointerSize": 133
+      }
+    },
+    {
+      "rfilename": "pytorch_model.bin",
+      "blobId": "a92683e1b3e4af08e22fa01fb2b134e99ceb868a",
+      "size": 86711973,
+      "lfs": {
+        "sha256": "86760cd0b8e12fd6e665de2b8a6260e742016c44926b7d2b42d13b76c467a496",
+        "size": 86711973,
+        "pointerSize": 133
+      }
+    }
+  ],
+  "spaces": [],
+  "createdAt": "2022-12-13T00:18:43.000Z",
+  "safetensors": {
+    "parameters": {
+      "F32": 21612360
+    },
+    "total": 21612360
+  },
+  "usedStorage": 173235229
+}

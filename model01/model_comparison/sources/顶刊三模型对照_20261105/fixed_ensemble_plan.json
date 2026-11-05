@@ -1,0 +1,56 @@
+{
+  "kind": "fixed_probability_ensembles_not_new_single_models",
+  "predetermined_date": "2026-11-05",
+  "frozen_at": "2026-11-05T13:20:47+08:00",
+  "model_keys": [
+    "caformer_s18",
+    "densenet121",
+    "hrnet_w18"
+  ],
+  "alpha": 0.5,
+  "source_weights": [
+    0.5,
+    0.5
+  ],
+  "baseline": {
+    "checkpoint": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+    "checkpoint_sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+    "predictions": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\verified_candidate_predictions.npz",
+    "predictions_sha256": "61576035a3467370ab9c337279757914550a12b4ff6ba0722f79ca14d13b8e23",
+    "reference_auc": 0.8021774782195852
+  },
+  "cohort": {
+    "split": "official validation",
+    "images": 1422,
+    "studies": 859,
+    "patients": 228,
+    "classes": 10,
+    "same_study_aggregation": "mean image probabilities per source"
+  },
+  "threshold_protocol": {
+    "folds": 5,
+    "shuffle": true,
+    "seed": 42,
+    "grid": "0.025..0.975 step0.025",
+    "tie_break": "closest to 0.5, then smaller"
+  },
+  "bootstrap": {
+    "repeats": 400,
+    "seed": 20261104,
+    "unit": "patient cluster",
+    "percentiles": [
+      0.025,
+      0.975
+    ]
+  },
+  "probability_arithmetic": "float64 equal mean of saved Study mean image probabilities",
+  "single_checkpoint_selection": "Each journal model uses its own preexisting AUC-best epoch from exactly five full-data epochs; no checkpoint chosen by ensemble score",
+  "constraints": {
+    "require_three_models_times_five_epochs": true,
+    "search_mixing_weights": false,
+    "new_training_epochs": 0,
+    "test_inference": false,
+    "github_upload": false
+  },
+  "limitations": "Uses already selected models and repeatedly used validation; fixed alpha does not remove model/epoch selection bias."
+}

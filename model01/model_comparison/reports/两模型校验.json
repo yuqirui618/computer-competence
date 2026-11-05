@@ -1,0 +1,210 @@
+{
+  "state": "passed",
+  "experiment_state": "complete",
+  "full_two_by_five_completed": true,
+  "actual_complete_epochs_from_history": 10,
+  "runner_summary_epochs": 10,
+  "per_model": {
+    "convnext_tiny": {
+      "state": "complete",
+      "actual_epochs": 5,
+      "successful": true,
+      "best_epoch": 5
+    },
+    "efficientnetv2_s": {
+      "state": "complete",
+      "actual_epochs": 5,
+      "successful": true,
+      "best_epoch": 4
+    }
+  },
+  "checks": [
+    "pretrained_weights_fixed_revisions_and_archived_license_metadata",
+    "MambaOut_original_gamma_metrics_thresholds_and_historical_first5",
+    "convnext_tiny/epoch1:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "convnext_tiny/epoch2:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "convnext_tiny/epoch3:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "convnext_tiny/epoch4:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "convnext_tiny/epoch5:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "convnext_tiny:best_selection,SHA,GPU_verification,gates,bootstrap_points",
+    "efficientnetv2_s/epoch1:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "efficientnetv2_s/epoch2:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "efficientnetv2_s/epoch3:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "efficientnetv2_s/epoch4:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "efficientnetv2_s/epoch5:coverage,AUC,F1,AP,TP_FP_FN,patient_CV",
+    "efficientnetv2_s:best_selection,SHA,GPU_verification,gates,bootstrap_points"
+  ],
+  "all_saved_study_predictions_recomputed": true,
+  "patient_threshold_cv_recomputed": true,
+  "paired_bootstrap_recomputed": false,
+  "paired_bootstrap_point_differences_checked": true,
+  "protected_hashes_verified": {
+    "E:\\比赛数据集\\MambaOut_ASL对照\\best_model.pth": "9911ef5383bb320a4770a544b85e27d58c01ab57a69bb0963392a208073a2585",
+    "E:\\比赛数据集\\MambaOut_ASL对照\\gates.json": "1ef20f260ee1ea2e3e7737a8aa472537ebb8f43dbdf3198cd3e5264acba5f380",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\candidate_gates.json": "4737f58acedbb4b0deffe39ff5ac52ac499597675dc2cf2575009d989f22ef39",
+    "E:\\比赛数据集\\提交结果\\MambaOut_S7微调第1轮_20261104\\submission.csv": "d49b6a7ef02489af1ed2cc38f8f49bc5f592b6519f7ee24399d4e18ab95eeae8",
+    "E:\\比赛数据集\\喻数据产物\\manifest.csv": "b7c280dc0edc8b99d2aa1210651bab7ff9724d4c0a26b76b231c1935b275c142"
+  },
+  "pretraining_provenance": {
+    "convnext_tiny": {
+      "architecture": "convnext_tiny.fb_in1k",
+      "directory": "convnext_tiny",
+      "sha256": "08b9dc9c3a3a29421de7996761e176501896d1ae7fc3085cf56a643772329276",
+      "bytes": 114374272,
+      "repository": "timm/convnext_tiny.fb_in1k",
+      "revision": "b43a6303c9fcf176d2d707478a128c2c91e93528",
+      "license": "apache-2.0",
+      "pretraining_data": "ImageNet-1k",
+      "source_url": "https://huggingface.co/timm/convnext_tiny.fb_in1k",
+      "config": {
+        "architecture": "convnext_tiny",
+        "num_classes": 1000,
+        "num_features": 768,
+        "pretrained_cfg": {
+          "tag": "fb_in1k",
+          "custom_load": false,
+          "input_size": [
+            3,
+            224,
+            224
+          ],
+          "test_input_size": [
+            3,
+            288,
+            288
+          ],
+          "fixed_input_size": false,
+          "interpolation": "bicubic",
+          "crop_pct": 0.875,
+          "test_crop_pct": 1.0,
+          "crop_mode": "center",
+          "mean": [
+            0.485,
+            0.456,
+            0.406
+          ],
+          "std": [
+            0.229,
+            0.224,
+            0.225
+          ],
+          "num_classes": 1000,
+          "pool_size": [
+            7,
+            7
+          ],
+          "first_conv": "stem.0",
+          "classifier": "head.fc"
+        }
+      },
+      "repository_metadata_sha256": "a6fcc2bddf70d1d11d6c3bfa87ecde6bef5ec85efdd2932aa5f951d374c078bc",
+      "model_card_sha256": "8ee3fecbd9a3fd466045e27b31c326b92350e3bb2104313fd3bc13b65f13be39",
+      "license_text_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    "efficientnetv2_s": {
+      "architecture": "tf_efficientnetv2_s.in1k",
+      "directory": "efficientnetv2_s",
+      "sha256": "b8a4b5462df66612e3c0e63781f73f7890ccdac8bcd950b4fc0ba0c0f29bda1f",
+      "bytes": 86523256,
+      "repository": "timm/tf_efficientnetv2_s.in1k",
+      "revision": "3af791b42d7e895c9da9b5aa4ed4e6b648e4ac0b",
+      "license": "apache-2.0",
+      "pretraining_data": "ImageNet-1k",
+      "source_url": "https://huggingface.co/timm/tf_efficientnetv2_s.in1k",
+      "config": {
+        "architecture": "tf_efficientnetv2_s",
+        "num_classes": 1000,
+        "num_features": 1280,
+        "pretrained_cfg": {
+          "tag": "in1k",
+          "custom_load": false,
+          "input_size": [
+            3,
+            300,
+            300
+          ],
+          "test_input_size": [
+            3,
+            384,
+            384
+          ],
+          "fixed_input_size": false,
+          "interpolation": "bicubic",
+          "crop_pct": 1.0,
+          "crop_mode": "center",
+          "mean": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "std": [
+            0.5,
+            0.5,
+            0.5
+          ],
+          "num_classes": 1000,
+          "pool_size": [
+            10,
+            10
+          ],
+          "first_conv": "conv_stem",
+          "classifier": "classifier"
+        }
+      },
+      "repository_metadata_sha256": "af284cb55d049310f72b94aa3f350c387e4dac959ec306378b905159f1560c0c",
+      "model_card_sha256": "d6f9e20f8adba8fe3953efa6423b6d8f95b1121e198956e2566cc82075f521d9",
+      "license_text_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    }
+  },
+  "new_models_uploaded": false,
+  "previous_optimization_upload": {
+    "repository": "https://github.com/yuqirui618/computer-competence",
+    "branch": "feat/model01-mambaout",
+    "commit": "11e95521f926961461d5d9db131bff9cfcb706c6",
+    "remote_verified": true,
+    "main_before": "4bebb51180ef62ada40980d49894c816046eaa6c",
+    "main_after": "4bebb51180ef62ada40980d49894c816046eaa6c",
+    "scope": "Completed MambaOut optimization sources and aggregate reports, separate from new backbone experiments"
+  },
+  "source_fingerprints": {
+    "E:\\比赛数据集\\新模型对照_20261105\\results.json": "541b798da90b7589e382964a8c994c6f8604ea774ea19d598cb2ae7ba5427567",
+    "E:\\比赛数据集\\新模型对照_20261105\\protected_inputs.json": "ee3e8d44aaf1777af864c769e2b8ad961fde2aa22f35d1ff2f9a41bbb6ab3622",
+    "E:\\比赛数据集\\新模型对照_20261105\\status.json": "f40c5fe3e50d97c0cbb2dacb8de370c66a0af9373731552f8a1325d04a10b932",
+    "E:\\比赛数据集\\新模型对照_20261105\\pretrained_manifest.json": "0005033378608359f19cfe6b75b898816fd4c95951c55547298fce039cdfe375",
+    "E:\\比赛数据集\\新模型对照_20261105\\pretrained\\license_source.json": "81bc5d9f22b0f15be344d69ba7879339a998a37b987e456e2051a7b8e916dd1c",
+    "E:\\比赛数据集\\新模型对照_20261105\\pretrained\\convnext_tiny\\repository_metadata.json": "a6fcc2bddf70d1d11d6c3bfa87ecde6bef5ec85efdd2932aa5f951d374c078bc",
+    "E:\\比赛数据集\\新模型对照_20261105\\pretrained\\convnext_tiny\\config.json": "507c10b6f2482bb35e23fb131468aba967f9e0722d827ed1e333788f9364c8f8",
+    "E:\\比赛数据集\\新模型对照_20261105\\pretrained\\efficientnetv2_s\\repository_metadata.json": "af284cb55d049310f72b94aa3f350c387e4dac959ec306378b905159f1560c0c",
+    "E:\\比赛数据集\\新模型对照_20261105\\pretrained\\efficientnetv2_s\\config.json": "3a7310dac2ab01f44f8717a5f0b8d26762d8ea8f55d92a8fd5880e973d893cb4",
+    "E:\\比赛数据集\\新模型对照_20261105\\论文选型.md": "2b1b67833df6de19b4b1f9a6354c42abdcb45198405e3459e0578a4633adf17a",
+    "E:\\比赛数据集\\新模型对照_20261105\\upload_receipt.json": "38c187d6b4e3bdf4bb813e529ad9d9ed2bdfafc42269524cfd41149503f41f45",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\baseline_predictions.npz": "1a800ca0a41d1735fd604ce5fc82b59ad25a3654f4069605ace5494c6cb09383",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\verified_candidate_predictions.npz": "61576035a3467370ab9c337279757914550a12b4ff6ba0722f79ca14d13b8e23",
+    "E:\\比赛数据集\\MambaOut_ASL对照\\gates.json": "1ef20f260ee1ea2e3e7737a8aa472537ebb8f43dbdf3198cd3e5264acba5f380",
+    "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\candidate_gates.json": "4737f58acedbb4b0deffe39ff5ac52ac499597675dc2cf2575009d989f22ef39",
+    "E:\\比赛数据集\\MambaOut_100轮\\baseline_100\\history.json": "55ddab19d3b321371e7c3b4e282ffc985a498a34bd1a7e69790c3c01c1aca9c1",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\history.json": "74933d49498ab071385aa0ddd07f678e8e953745a09229d911e1c4c4f6738c25",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\results.json": "3c1a6bec8c97f0441e98b85942adc01b6de8f726d5ddb359450e84e31d87c010",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\plan.json": "d744fdf9453c530122d074a88bdddb317400c5acb6c2259fff265faf68f8f93a",
+    "E:\\比赛数据集\\新模型对照_20261105\\preflight_convnext_tiny.json": "b7e31deb56d91e01ef8d589ad2115027e4791e82a3eae2e0662bc6de47115581",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\epoch_1_predictions.npz": "6449585c88f04b0fc191e617b8705adc74c7b65e6922fbefdb2eceb26ea117a5",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\epoch_2_predictions.npz": "72a5aaf788101dff14522d6fce13250d2851d3f720ac9f78e29f027aa9006c94",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\epoch_3_predictions.npz": "494edb1ed42a2f59c77a826a760e16d1cdc66a4abff01252872b75867dc78bcf",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\epoch_4_predictions.npz": "02eff67c93c5d2b2c29541a6f1f2c15c8d12b2df1066b6d33804ff3b981da7f1",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\epoch_5_predictions.npz": "744e0b91e96217668a365a8a88cf67d9376e30333e4f599533e5b69382c2a4af",
+    "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\candidate_gates.json": "c3a981716f2774f6a419d8563fd43c32de4a30618d399dbc227580945501401a",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\history.json": "7ec3397640aedccf9f052c424dcbf5f4b859b81fc103c6fddf17ac38dafc5827",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\results.json": "41768c03a841b3849e87e6cfbdff7eb285e8479286a7ca4187f71984b8965871",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\plan.json": "a5bca8857b41d283e46f71d12a070555b98225fa95968bca2325b443b63e8026",
+    "E:\\比赛数据集\\新模型对照_20261105\\preflight_efficientnetv2_s.json": "261ed29a09251399e144fef7955919b8dc457f224b14dc6ba2fe711c0ed42f24",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\epoch_1_predictions.npz": "0aa13e9c981c20b59df940d05d806614fb853213846f2034407b0b46889b4085",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\epoch_2_predictions.npz": "c121c4065545dda49ef8a0299ce517aa0cfd99820586ce13561e61898acf5e75",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\epoch_3_predictions.npz": "a4774702bd9bdd96ae496b10cb7b93a80044a78d18908c922f2fe2cf86128ffd",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\epoch_4_predictions.npz": "893f9fe505c552b0fe3ce8421f9f64e9879b3115e0f1b75a7c01683066c8218a",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\epoch_5_predictions.npz": "60de6ed6a2d96c87e896b335f8e3ff7f598c2775acd85ef12115e7fcaff7f872",
+    "E:\\比赛数据集\\新模型对照_20261105\\efficientnetv2_s\\candidate_gates.json": "c303f1049b87da6f90a1b1edc9f5a1b9c59cdc605cacf6974a17108cf220d932"
+  },
+  "report_generator_sha256": "c3f1fb003887024c06dfe6e1798fd7e4546c4c6e36f68ac86b752404028ee858",
+  "generated_at": "2026-11-05T11:36:10.770251+08:00"
+}

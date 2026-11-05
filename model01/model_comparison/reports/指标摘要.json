@@ -1,0 +1,1085 @@
+{
+  "updated": "2026-11-05",
+  "cohort": {
+    "train_images_per_epoch": 30344,
+    "validation_images": 1422,
+    "validation_studies": 859,
+    "validation_patients": 228,
+    "classes": 10
+  },
+  "completed_new_backbone_epochs": 25,
+  "models": [
+    {
+      "key": "convnext_tiny",
+      "name": "ConvNeXt-Tiny",
+      "kind": "single_model",
+      "source_run": "新模型对照_20261105",
+      "epochs_completed": 5,
+      "best_epoch": 5,
+      "study_metrics": {
+        "auc": [
+          0.6896457085828344,
+          0.8126685079239825,
+          0.7552542916733516,
+          0.7162099353015543,
+          0.8666958859280037,
+          0.7865781930844806,
+          0.775941744853662,
+          0.7184199087154967,
+          0.8975600359573649,
+          0.8755510643075796
+        ],
+        "f1": [
+          0.0,
+          0.05263157894736842,
+          0.0,
+          0.0,
+          0.49523809523809526,
+          0.4013840830449827,
+          0.30158730158730157,
+          0.25263157894736843,
+          0.6829268292682927,
+          0.7461669505962522
+        ],
+        "macro_auc": 0.7894525276328309,
+        "macro_f1": 0.2932566417629661,
+        "auc_classes": 10,
+        "count": 859
+      },
+      "patient_oof_calibration": {
+        "oof_macro_f1": 0.43090180651352183,
+        "oof_f1_by_class_id": [
+          0.14285714285714285,
+          0.22448979591836735,
+          0.18840579710144928,
+          0.25,
+          0.5434782608695652,
+          0.4753747323340471,
+          0.5073170731707317,
+          0.49810366624525915,
+          0.7260504201680672,
+          0.7529411764705882
+        ],
+        "final_gates_by_class_id": [
+          0.05,
+          0.275,
+          0.175,
+          0.2,
+          0.3,
+          0.275,
+          0.125,
+          0.125,
+          0.3,
+          0.475
+        ],
+        "patients": 228
+      },
+      "macro_ap": 0.4119623999354782,
+      "checkpoint_sha256": "af58ccc38f2d5631d5018a8b33a43b3e9564e98bda5446c4425de27ed663c36e",
+      "gpu_reload_verification": {
+        "state": "passed",
+        "epoch": 5,
+        "max_abs_probability_difference": 0.0,
+        "metrics_reproduced": true,
+        "predictions_reproduced": true,
+        "validation_seconds": 59.673920299857855,
+        "bn_buffers_unchanged": true
+      },
+      "paired_auc_intervals": {
+        "original_mambaout": {
+          "delta": -0.012524427417256234,
+          "ci95": [
+            -0.023182906870440008,
+            -0.0008898290993216656
+          ],
+          "valid_repeats": 400,
+          "repeats": 400
+        },
+        "latest_gamma_candidate": {
+          "delta": -0.012724950586754269,
+          "ci95": [
+            -0.02339213381554573,
+            -0.0010137293831765217
+          ],
+          "valid_repeats": 400,
+          "repeats": 400
+        }
+      },
+      "comparison_limit": "Historical shared recipe, not a controlled proof of architecture superiority"
+    },
+    {
+      "key": "efficientnetv2_s",
+      "name": "EfficientNetV2-S",
+      "kind": "single_model",
+      "source_run": "新模型对照_20261105",
+      "epochs_completed": 5,
+      "best_epoch": 4,
+      "study_metrics": {
+        "auc": [
+          0.6786427145708582,
+          0.8003222200302492,
+          0.7689314936627627,
+          0.719714434446345,
+          0.8761863020102852,
+          0.7626538761038487,
+          0.7707603977034029,
+          0.7023726726074041,
+          0.904218569410556,
+          0.8676441040551242
+        ],
+        "f1": [
+          0.0,
+          0.05,
+          0.0,
+          0.0,
+          0.5224489795918368,
+          0.32142857142857145,
+          0.2727272727272727,
+          0.32398753894080995,
+          0.7294117647058823,
+          0.7312925170068028
+        ],
+        "macro_auc": 0.7851446784600837,
+        "macro_f1": 0.2951296644401176,
+        "auc_classes": 10,
+        "count": 859
+      },
+      "patient_oof_calibration": {
+        "oof_macro_f1": 0.41389517027548506,
+        "oof_f1_by_class_id": [
+          0.07179487179487179,
+          0.20454545454545456,
+          0.14285714285714285,
+          0.2188679245283019,
+          0.5663082437275986,
+          0.4753747323340471,
+          0.5226480836236934,
+          0.48064085447263016,
+          0.7341337907375644,
+          0.7217806041335453
+        ],
+        "final_gates_by_class_id": [
+          0.05,
+          0.175,
+          0.225,
+          0.15,
+          0.4,
+          0.3,
+          0.225,
+          0.2,
+          0.325,
+          0.4
+        ],
+        "patients": 228
+      },
+      "macro_ap": 0.39455008461738095,
+      "checkpoint_sha256": "c0e98673281b6b024d5c27d708c4aa8f2129cb676a3c4497403722f5bf4ded18",
+      "gpu_reload_verification": {
+        "state": "passed",
+        "epoch": 4,
+        "max_abs_probability_difference": 0.0,
+        "metrics_reproduced": true,
+        "predictions_reproduced": true,
+        "validation_seconds": 63.37142159999348,
+        "bn_buffers_unchanged": true
+      },
+      "paired_auc_intervals": {
+        "original_mambaout": {
+          "delta": -0.016832276590003414,
+          "ci95": [
+            -0.03371572710860628,
+            0.007483550271196259
+          ],
+          "valid_repeats": 400,
+          "repeats": 400
+        },
+        "latest_gamma_candidate": {
+          "delta": -0.01703279975950145,
+          "ci95": [
+            -0.03410515373045657,
+            0.007357224975965498
+          ],
+          "valid_repeats": 400,
+          "repeats": 400
+        }
+      },
+      "comparison_limit": "Historical shared recipe, not a controlled proof of architecture superiority"
+    },
+    {
+      "key": "caformer_s18",
+      "name": "CAFormer-S18",
+      "kind": "single_model",
+      "source_run": "顶刊三模型对照_20261105",
+      "epochs_completed": 5,
+      "best_epoch": 3,
+      "study_metrics": {
+        "auc": [
+          0.6882984031936128,
+          0.8323469454856317,
+          0.7598802074977271,
+          0.7293634267866438,
+          0.8693431510051426,
+          0.7557035637954173,
+          0.7776455211688372,
+          0.7241433021806853,
+          0.905062925388468,
+          0.8701261095155362
+        ],
+        "f1": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.4339622641509434,
+          0.2595419847328244,
+          0.3333333333333333,
+          0.2642857142857143,
+          0.7410207939508506,
+          0.7292035398230089
+        ],
+        "macro_auc": 0.7911913556017702,
+        "macro_f1": 0.2761347630276675,
+        "auc_classes": 10,
+        "count": 859
+      },
+      "patient_oof_calibration": {
+        "oof_macro_f1": 0.4297349571931816,
+        "oof_f1_by_class_id": [
+          0.12244897959183673,
+          0.21238938053097345,
+          0.25,
+          0.2332155477031802,
+          0.5379310344827586,
+          0.495114006514658,
+          0.5163398692810458,
+          0.4507512520868113,
+          0.7398230088495575,
+          0.7393364928909952
+        ],
+        "final_gates_by_class_id": [
+          0.05,
+          0.125,
+          0.225,
+          0.125,
+          0.325,
+          0.2,
+          0.225,
+          0.225,
+          0.425,
+          0.35
+        ],
+        "patients": 228
+      },
+      "macro_ap": 0.4106647422830513,
+      "checkpoint_sha256": "9201f8715dd393445262b49c523d2c61c542ff5ba63fc752806fda0a9a4384c2",
+      "gpu_reload_verification": {
+        "state": "passed",
+        "epoch": 3,
+        "max_abs_probability_difference": 0.0,
+        "metrics_reproduced": true,
+        "predictions_reproduced": true,
+        "validation_seconds": 57.49136479990557,
+        "bn_buffers_unchanged": true
+      },
+      "paired_auc_intervals": {
+        "original_mambaout": {
+          "delta": -0.010785599448316918,
+          "ci95": [
+            -0.021349451660562596,
+            0.0013273792120277715
+          ],
+          "valid_repeats": 400,
+          "repeats": 400
+        },
+        "latest_gamma_candidate": {
+          "delta": -0.010986122617814953,
+          "ci95": [
+            -0.02165430088680296,
+            0.0017643152203827258
+          ],
+          "valid_repeats": 400,
+          "repeats": 400
+        }
+      },
+      "comparison_limit": "Historical shared recipe, not a controlled proof of architecture superiority"
+    },
+    {
+      "key": "densenet121",
+      "name": "DenseNet-121",
+      "kind": "single_model",
+      "source_run": "顶刊三模型对照_20261105",
+      "epochs_completed": 5,
+      "best_epoch": 4,
+      "study_metrics": {
+        "auc": [
+          0.6579840319361278,
+          0.8014072466627211,
+          0.737312155730253,
+          0.6874209860935525,
+          0.8624707807386629,
+          0.7672929403383204,
+          0.7598375577650188,
+          0.6967036151561256,
+          0.8950269680236291,
+          0.8611140658795164
+        ],
+        "f1": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.3925233644859813,
+          0.25,
+          0.2033898305084746,
+          0.2518518518518518,
+          0.6986027944111777,
+          0.7138047138047138
+        ],
+        "macro_auc": 0.7726570348323928,
+        "macro_f1": 0.2510172555062199,
+        "auc_classes": 10,
+        "count": 859
+      },
+      "patient_oof_calibration": {
+        "oof_macro_f1": 0.4215920552406354,
+        "oof_f1_by_class_id": [
+          0.09606986899563319,
+          0.2647058823529412,
+          0.2,
+          0.24864864864864866,
+          0.5441696113074205,
+          0.48846153846153845,
+          0.47619047619047616,
+          0.45045045045045046,
+          0.7240773286467487,
+          0.7231467473524962
+        ],
+        "final_gates_by_class_id": [
+          0.05,
+          0.15,
+          0.125,
+          0.125,
+          0.35,
+          0.25,
+          0.15,
+          0.325,
+          0.35,
+          0.375
+        ],
+        "patients": 228
+      },
+      "macro_ap": 0.39353846381136004,
+      "checkpoint_sha256": "1a93f24e3de177fe9d9bf6ece5fae564fb2cd2d06d99c927494664cec4ba26fb",
+      "gpu_reload_verification": {
+        "state": "passed",
+        "epoch": 4,
+        "max_abs_probability_difference": 0.0,
+        "metrics_reproduced": true,
+        "predictions_reproduced": true,
+        "validation_seconds": 74.49744419986382,
+        "bn_buffers_unchanged": true
+      },
+      "paired_auc_intervals": {
+        "original_mambaout": {
+          "delta": -0.029319920217694362,
+          "ci95": [
+            -0.04104034808823495,
+            -0.015173335180764042
+          ],
+          "valid_repeats": 400,
+          "repeats": 400
+        },
+        "latest_gamma_candidate": {
+          "delta": -0.029520443387192397,
+          "ci95": [
+            -0.04128865696966757,
+            -0.01476120624023907
+          ],
+          "valid_repeats": 400,
+          "repeats": 400
+        }
+      },
+      "comparison_limit": "Historical shared recipe, not a controlled proof of architecture superiority"
+    },
+    {
+      "key": "hrnet_w18",
+      "name": "HRNet-W18",
+      "kind": "single_model",
+      "source_run": "顶刊三模型对照_20261105",
+      "epochs_completed": 5,
+      "best_epoch": 5,
+      "study_metrics": {
+        "auc": [
+          0.7023952095808383,
+          0.7608009469323338,
+          0.7733568640034226,
+          0.7279039934557894,
+          0.8709618980832164,
+          0.7707018241463293,
+          0.7758289377460362,
+          0.7115663261609795,
+          0.9050372415564402,
+          0.8660308005058563
+        ],
+        "f1": [
+          0.0,
+          0.0975609756097561,
+          0.0,
+          0.056338028169014086,
+          0.5228215767634855,
+          0.36363636363636365,
+          0.3271375464684015,
+          0.22813688212927757,
+          0.7215686274509804,
+          0.7284552845528456
+        ],
+        "macro_auc": 0.7864584042171241,
+        "macro_f1": 0.30456552847801244,
+        "auc_classes": 10,
+        "count": 859
+      },
+      "patient_oof_calibration": {
+        "oof_macro_f1": 0.4260043798489682,
+        "oof_f1_by_class_id": [
+          0.04597701149425287,
+          0.2608695652173913,
+          0.20967741935483872,
+          0.2857142857142857,
+          0.5311475409836065,
+          0.5064695009242144,
+          0.49725776965265084,
+          0.48111332007952284,
+          0.724025974025974,
+          0.7177914110429447
+        ],
+        "final_gates_by_class_id": [
+          0.075,
+          0.175,
+          0.125,
+          0.175,
+          0.3,
+          0.225,
+          0.225,
+          0.25,
+          0.175,
+          0.6
+        ],
+        "patients": 228
+      },
+      "macro_ap": 0.40380087983299723,
+      "checkpoint_sha256": "df1a02333931e558c9feaababd1fda5a79db5ede3632a58ddf160d98d805f8dd",
+      "gpu_reload_verification": {
+        "state": "passed",
+        "epoch": 5,
+        "max_abs_probability_difference": 0.0,
+        "metrics_reproduced": true,
+        "predictions_reproduced": true,
+        "validation_seconds": 62.39330179989338,
+        "bn_buffers_unchanged": true
+      },
+      "paired_auc_intervals": {
+        "original_mambaout": {
+          "delta": -0.015518550832963052,
+          "ci95": [
+            -0.030332059994353986,
+            0.003095666756777024
+          ],
+          "valid_repeats": 400,
+          "repeats": 400
+        },
+        "latest_gamma_candidate": {
+          "delta": -0.015719074002461086,
+          "ci95": [
+            -0.030340650795932973,
+            0.0032152555838972446
+          ],
+          "valid_repeats": 400,
+          "repeats": 400
+        }
+      },
+      "comparison_limit": "Historical shared recipe, not a controlled proof of architecture superiority"
+    }
+  ],
+  "baselines": [
+    {
+      "key": "original_mambaout",
+      "name": "原保护性微调MambaOut",
+      "kind": "existing_single_model",
+      "study_metrics": {
+        "auc": [
+          0.6784680638722556,
+          0.8625632932202276,
+          0.7884512540777582,
+          0.7597977243994942,
+          0.8660472183263207,
+          0.7670154248885795,
+          0.7959280524047363,
+          0.7177642541476491,
+          0.9089957621677155,
+          0.8747385029961352
+        ],
+        "f1": [
+          0.0,
+          0.24489795918367346,
+          0.041666666666666664,
+          0.028985507246376812,
+          0.4824561403508772,
+          0.3521594684385382,
+          0.37630662020905925,
+          0.3106796116504854,
+          0.7128712871287128,
+          0.7491525423728813
+        ],
+        "macro_auc": 0.8019769550500871,
+        "macro_f1": 0.3299175803247271,
+        "auc_classes": 10,
+        "count": 859
+      },
+      "patient_oof_calibration": {
+        "oof_macro_f1": 0.451054963682343,
+        "oof_f1_by_class_id": [
+          0.16176470588235295,
+          0.37209302325581395,
+          0.208955223880597,
+          0.30697674418604654,
+          0.5223367697594502,
+          0.47619047619047616,
+          0.4974271012006861,
+          0.4818941504178273,
+          0.7445008460236887,
+          0.7384105960264901
+        ],
+        "final_gates_by_class_id": [
+          0.1,
+          0.25,
+          0.125,
+          0.15,
+          0.375,
+          0.3,
+          0.125,
+          0.15,
+          0.3,
+          0.425
+        ],
+        "patients": 228
+      }
+    },
+    {
+      "key": "gamma_mambaout",
+      "name": "Gamma加轻噪声MambaOut",
+      "kind": "existing_single_model",
+      "study_metrics": {
+        "auc": [
+          0.6776696606786426,
+          0.8603603603603603,
+          0.7890929996256484,
+          0.7602811035918794,
+          0.8666316035530621,
+          0.7677444206968537,
+          0.7968188395649535,
+          0.7203904948199665,
+          0.9082477205599075,
+          0.874537578744578
+        ],
+        "f1": [
+          0.0,
+          0.27450980392156865,
+          0.041666666666666664,
+          0.028985507246376812,
+          0.4978540772532189,
+          0.3443708609271523,
+          0.40522875816993464,
+          0.3322884012539185,
+          0.7203065134099617,
+          0.7521079258010118
+        ],
+        "macro_auc": 0.8021774782195852,
+        "macro_f1": 0.339731851464981,
+        "auc_classes": 10,
+        "count": 859
+      },
+      "patient_oof_calibration": {
+        "oof_macro_f1": 0.44249116923580356,
+        "oof_f1_by_class_id": [
+          0.15748031496062992,
+          0.35443037974683544,
+          0.1984732824427481,
+          0.27884615384615385,
+          0.5217391304347826,
+          0.46123260437375746,
+          0.4895833333333333,
+          0.48246844319775595,
+          0.7327731092436974,
+          0.7478849407783418
+        ],
+        "final_gates_by_class_id": [
+          0.1,
+          0.3,
+          0.15,
+          0.125,
+          0.4,
+          0.25,
+          0.15,
+          0.225,
+          0.25,
+          0.525
+        ],
+        "patients": 228
+      },
+      "checkpoint_sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9"
+    }
+  ],
+  "fixed_probability_ensembles": [
+    {
+      "key": "caformer_s18",
+      "name": "MambaOut＋CAFormer-S18",
+      "kind": "fixed_probability_ensemble_not_single_model",
+      "new_training_epochs": 0,
+      "metrics": {
+        "macro_auc": 0.8030723387147158,
+        "auc_by_class": [
+          0.6837824351297406,
+          0.8545077924639968,
+          0.7800684528584416,
+          0.7591284301331153,
+          0.8736909770920992,
+          0.7702089235714168,
+          0.7948077611290046,
+          0.7288777801927118,
+          0.9104661615513036,
+          0.8751846730253282
+        ],
+        "macro_f1_at_0_5": 0.3048937197881576,
+        "f1_at_0_5_by_class": [
+          0.0,
+          0.09523809523809523,
+          0.0,
+          0.0,
+          0.46956521739130436,
+          0.3250883392226148,
+          0.36900369003690037,
+          0.31438127090301005,
+          0.7386363636363636,
+          0.7370242214532872
+        ],
+        "macro_ap": 0.4278627618870966,
+        "ap_by_class": [
+          0.0700891266838213,
+          0.34493483364545485,
+          0.17296595178917196,
+          0.23549037470529793,
+          0.4288651287914639,
+          0.4067245665740268,
+          0.5276811290038433,
+          0.46169152507048794,
+          0.7981226454999837,
+          0.8320623371074148
+        ],
+        "tp_at_0_5": [
+          0,
+          2,
+          0,
+          0,
+          54,
+          46,
+          50,
+          47,
+          195,
+          213
+        ],
+        "fp_at_0_5": [
+          0,
+          3,
+          0,
+          0,
+          61,
+          60,
+          28,
+          38,
+          73,
+          59
+        ],
+        "fn_at_0_5": [
+          24,
+          35,
+          46,
+          68,
+          61,
+          131,
+          143,
+          167,
+          65,
+          93
+        ]
+      },
+      "patient_oof_calibration": {
+        "oof_macro_f1": 0.4609758471453912,
+        "oof_f1_by_class_id": [
+          0.1456953642384106,
+          0.4444444444444444,
+          0.1951219512195122,
+          0.28292682926829266,
+          0.5521885521885522,
+          0.4948453608247423,
+          0.5275459098497496,
+          0.4673748103186646,
+          0.7443478260869565,
+          0.7552674230145867
+        ],
+        "final_gates_by_class_id": [
+          0.075,
+          0.25,
+          0.15,
+          0.15,
+          0.325,
+          0.275,
+          0.175,
+          0.25,
+          0.375,
+          0.4
+        ],
+        "patients": 228
+      },
+      "paired_auc_vs_existing_gamma": {
+        "delta": 0.000894860495130656,
+        "ci95": [
+          -0.003825461489312676,
+          0.006662924665742882
+        ],
+        "repeats": 400,
+        "valid_repeats": 400,
+        "seed": 20261104,
+        "scope": "Patient-cluster paired percentile CI, conditional on fixed selected models; not model-selection corrected; no thresholds refit."
+      },
+      "binding": {
+        "kind": "probability_ensemble_not_new_single_model",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "source_checkpoints": [
+          {
+            "role": "existing_gamma_mambaout",
+            "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+            "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+            "weight": 0.5
+          },
+          {
+            "role": "caformer_s18",
+            "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\caformer_s18\\best.pth",
+            "sha256": "9201f8715dd393445262b49c523d2c61c542ff5ba63fc752806fda0a9a4384c2",
+            "weight": 0.5
+          }
+        ],
+        "single_model_epoch": 3,
+        "probability_arithmetic": "float64 equal mean of saved Study mean image probabilities",
+        "aggregation": "Each source first averages image probabilities within the same Study; then sources are averaged 50:50"
+      },
+      "exceeds_existing_gamma_auc": true
+    },
+    {
+      "key": "densenet121",
+      "name": "MambaOut＋DenseNet-121",
+      "kind": "fixed_probability_ensemble_not_single_model",
+      "new_training_epochs": 0,
+      "metrics": {
+        "macro_auc": 0.7966953369145889,
+        "auc_by_class": [
+          0.6689620758483034,
+          0.8502334451239562,
+          0.7745066581100595,
+          0.742340298951439,
+          0.8703950444132773,
+          0.7751130771907153,
+          0.7877826012541038,
+          0.7192784177352749,
+          0.9071401053037114,
+          0.8712016452150481
+        ],
+        "macro_f1_at_0_5": 0.2988121840653434,
+        "f1_at_0_5_by_class": [
+          0.0,
+          0.0975609756097561,
+          0.0,
+          0.0,
+          0.4642857142857143,
+          0.31851851851851853,
+          0.3371647509578544,
+          0.31186440677966104,
+          0.7204724409448819,
+          0.738255033557047
+        ],
+        "macro_ap": 0.4238754235197611,
+        "ap_by_class": [
+          0.0667584411369909,
+          0.3313318973219846,
+          0.18288716912448794,
+          0.22989867995213753,
+          0.41712347557986656,
+          0.4258406064931019,
+          0.515856191183587,
+          0.4474040918198734,
+          0.7878275382516922,
+          0.833826144333889
+        ],
+        "tp_at_0_5": [
+          0,
+          2,
+          0,
+          0,
+          52,
+          43,
+          44,
+          46,
+          183,
+          220
+        ],
+        "fp_at_0_5": [
+          0,
+          2,
+          0,
+          0,
+          57,
+          50,
+          24,
+          35,
+          65,
+          70
+        ],
+        "fn_at_0_5": [
+          24,
+          35,
+          46,
+          68,
+          63,
+          134,
+          149,
+          168,
+          77,
+          86
+        ]
+      },
+      "patient_oof_calibration": {
+        "oof_macro_f1": 0.4499882172501014,
+        "oof_f1_by_class_id": [
+          0.15,
+          0.39080459770114945,
+          0.20754716981132076,
+          0.2484472049689441,
+          0.5543859649122806,
+          0.4847250509164969,
+          0.496551724137931,
+          0.478125,
+          0.7483221476510067,
+          0.7409733124018838
+        ],
+        "final_gates_by_class_id": [
+          0.075,
+          0.175,
+          0.15,
+          0.15,
+          0.35,
+          0.275,
+          0.175,
+          0.25,
+          0.3,
+          0.375
+        ],
+        "patients": 228
+      },
+      "paired_auc_vs_existing_gamma": {
+        "delta": -0.005482141304996246,
+        "ci95": [
+          -0.010438138850036754,
+          -0.0007001549634796536
+        ],
+        "repeats": 400,
+        "valid_repeats": 400,
+        "seed": 20261104,
+        "scope": "Patient-cluster paired percentile CI, conditional on fixed selected models; not model-selection corrected; no thresholds refit."
+      },
+      "binding": {
+        "kind": "probability_ensemble_not_new_single_model",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "source_checkpoints": [
+          {
+            "role": "existing_gamma_mambaout",
+            "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+            "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+            "weight": 0.5
+          },
+          {
+            "role": "densenet121",
+            "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\best.pth",
+            "sha256": "1a93f24e3de177fe9d9bf6ece5fae564fb2cd2d06d99c927494664cec4ba26fb",
+            "weight": 0.5
+          }
+        ],
+        "single_model_epoch": 4,
+        "probability_arithmetic": "float64 equal mean of saved Study mean image probabilities",
+        "aggregation": "Each source first averages image probabilities within the same Study; then sources are averaged 50:50"
+      },
+      "exceeds_existing_gamma_auc": false
+    },
+    {
+      "key": "hrnet_w18",
+      "name": "MambaOut＋HRNet-W18",
+      "kind": "fixed_probability_ensemble_not_single_model",
+      "new_training_epochs": 0,
+      "metrics": {
+        "macro_auc": 0.8051417314801448,
+        "auc_by_class": [
+          0.6987025948103792,
+          0.8506937594528836,
+          0.7894005027006792,
+          0.7589611065665205,
+          0.8740766713417485,
+          0.7763142634657123,
+          0.7947533025253233,
+          0.7234514236035645,
+          0.9112559393861563,
+          0.8738077509484807
+        ],
+        "macro_f1_at_0_5": 0.31995012522143923,
+        "f1_at_0_5_by_class": [
+          0.0,
+          0.17777777777777778,
+          0.0,
+          0.02857142857142857,
+          0.5191489361702127,
+          0.3618421052631579,
+          0.3563636363636364,
+          0.27972027972027974,
+          0.7339805825242719,
+          0.7420965058236273
+        ],
+        "macro_ap": 0.4240780179651063,
+        "ap_by_class": [
+          0.07281952576649957,
+          0.28295865271097737,
+          0.16063260744029417,
+          0.24369885958561868,
+          0.4407400614820005,
+          0.4292721720018765,
+          0.5387007190687779,
+          0.4467843378647507,
+          0.7982969177192002,
+          0.8268763260110665
+        ],
+        "tp_at_0_5": [
+          0,
+          4,
+          0,
+          1,
+          61,
+          55,
+          49,
+          40,
+          189,
+          223
+        ],
+        "fp_at_0_5": [
+          0,
+          4,
+          1,
+          1,
+          59,
+          72,
+          33,
+          32,
+          66,
+          72
+        ],
+        "fn_at_0_5": [
+          24,
+          33,
+          46,
+          67,
+          54,
+          122,
+          144,
+          174,
+          71,
+          83
+        ]
+      },
+      "patient_oof_calibration": {
+        "oof_macro_f1": 0.43788877772663853,
+        "oof_f1_by_class_id": [
+          0.11483253588516747,
+          0.345679012345679,
+          0.1793103448275862,
+          0.31788079470198677,
+          0.53156146179402,
+          0.5096660808435852,
+          0.49818181818181817,
+          0.4507042253521127,
+          0.7117437722419929,
+          0.719327731092437
+        ],
+        "final_gates_by_class_id": [
+          0.075,
+          0.2,
+          0.175,
+          0.175,
+          0.375,
+          0.2,
+          0.175,
+          0.3,
+          0.225,
+          0.4
+        ],
+        "patients": 228
+      },
+      "paired_auc_vs_existing_gamma": {
+        "delta": 0.0029642532605596017,
+        "ci95": [
+          -0.002707912611418506,
+          0.01084370451742599
+        ],
+        "repeats": 400,
+        "valid_repeats": 400,
+        "seed": 20261104,
+        "scope": "Patient-cluster paired percentile CI, conditional on fixed selected models; not model-selection corrected; no thresholds refit."
+      },
+      "binding": {
+        "kind": "probability_ensemble_not_new_single_model",
+        "weights": [
+          0.5,
+          0.5
+        ],
+        "source_checkpoints": [
+          {
+            "role": "existing_gamma_mambaout",
+            "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+            "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+            "weight": 0.5
+          },
+          {
+            "role": "hrnet_w18",
+            "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\hrnet_w18\\best.pth",
+            "sha256": "df1a02333931e558c9feaababd1fda5a79db5ede3632a58ddf160d98d805f8dd",
+            "weight": 0.5
+          }
+        ],
+        "single_model_epoch": 5,
+        "probability_arithmetic": "float64 equal mean of saved Study mean image probabilities",
+        "aggregation": "Each source first averages image probabilities within the same Study; then sources are averaged 50:50"
+      },
+      "exceeds_existing_gamma_auc": true
+    }
+  ],
+  "fixed_ensemble_plan_sha256": "47d8ab7de9ba3c889f23f02e5da0a0f18b0367801bf980ace3331f44e5c2eca9",
+  "highest_single_among_new": "caformer_s18",
+  "highest_combination": "hrnet_w18",
+  "new_training_epochs_for_combinations": 0,
+  "sources": {
+    "E:\\比赛数据集\\新模型对照_20261105\\results.json": "541b798da90b7589e382964a8c994c6f8604ea774ea19d598cb2ae7ba5427567",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\results.json": "ffc8d9f7ac95cf167178250b513422aed0c62f5a904d7f0c04aaabb50ee8b5b5",
+    "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensemble_results.json": "ef6915dffa7c2e32b256fd664ae7c2d995e72b7f69eea7b14076db0f5d3c9980"
+  },
+  "interpretation": "Five new single models did not exceed the existing Gamma MambaOut point AUC. Fixed probability combinations are separate two-model inference schemes; any point gains require uncertainty and deployment checks. Reused internal validation is not an independent hidden-test result."
+}

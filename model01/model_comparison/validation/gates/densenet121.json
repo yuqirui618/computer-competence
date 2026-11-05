@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "key": "densenet121",
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "final_gates_by_class_id": [
+    0.05,
+    0.15,
+    0.125,
+    0.125,
+    0.35,
+    0.25,
+    0.15,
+    0.325,
+    0.35,
+    0.375
+  ],
+  "binding": {
+    "kind": "single_model",
+    "source_checkpoints": [
+      {
+        "role": "densenet121",
+        "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\best.pth",
+        "sha256": "1a93f24e3de177fe9d9bf6ece5fae564fb2cd2d06d99c927494664cec4ba26fb",
+        "weight": 1.0
+      }
+    ]
+  },
+  "source_gate_file": "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\candidate_gates.json",
+  "source_gate_sha256": "ff8a7e70dda694ee3f799a66be31c5c53de07b83c22eff1d832b810bd726f1fc",
+  "final_gate_fit_scope": "All official validation labels, reused for tuning; optimistic in-sample F1",
+  "patient_fivefold_oof_f1_reference": 0.4215920552406354,
+  "decision_rule_for_local_metrics": "Probability >= Gate",
+  "validation_studies": 859,
+  "validation_patients": 228,
+  "not_a_test_submission": true
+}

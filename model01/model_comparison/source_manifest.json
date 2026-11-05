@@ -1,0 +1,257 @@
+{
+  "snapshot_date": "2026-11-05",
+  "kind": "Unmodified executed five-backbone and fixed-ensemble source snapshots; not a portable training API",
+  "source_data_root": "E:\\比赛数据集",
+  "files": [
+    {
+      "repository_path": "sources/新模型对照_20261105/run_backbones.py",
+      "data_relative_path": "新模型对照_20261105/run_backbones.py",
+      "sha256": "b3989a0b24100ad32cb4022bc81fd5f50b96aa206d086a0e50133a5c855ee2cb",
+      "bytes": 29963
+    },
+    {
+      "repository_path": "sources/新模型对照_20261105/build_model_report.py",
+      "data_relative_path": "新模型对照_20261105/build_model_report.py",
+      "sha256": "c3f1fb003887024c06dfe6e1798fd7e4546c4c6e36f68ac86b752404028ee858",
+      "bytes": 34536
+    },
+    {
+      "repository_path": "sources/新模型对照_20261105/start_backbones.ps1",
+      "data_relative_path": "新模型对照_20261105/start_backbones.ps1",
+      "sha256": "2c6b34ff74c88c221d31d8179b3616422a347a7398b074db0a7b99e9312afc13",
+      "bytes": 2011
+    },
+    {
+      "repository_path": "sources/新模型对照_20261105/pretrained_manifest.json",
+      "data_relative_path": "新模型对照_20261105/pretrained_manifest.json",
+      "sha256": "0005033378608359f19cfe6b75b898816fd4c95951c55547298fce039cdfe375",
+      "bytes": 2927
+    },
+    {
+      "repository_path": "sources/新模型对照_20261105/pretrained/convnext_tiny/config.json",
+      "data_relative_path": "新模型对照_20261105/pretrained/convnext_tiny/config.json",
+      "sha256": "507c10b6f2482bb35e23fb131468aba967f9e0722d827ed1e333788f9364c8f8",
+      "bytes": 657
+    },
+    {
+      "repository_path": "sources/新模型对照_20261105/pretrained/convnext_tiny/README.md",
+      "data_relative_path": "新模型对照_20261105/pretrained/convnext_tiny/README.md",
+      "sha256": "8ee3fecbd9a3fd466045e27b31c326b92350e3bb2104313fd3bc13b65f13be39",
+      "bytes": 15631
+    },
+    {
+      "repository_path": "sources/新模型对照_20261105/pretrained/convnext_tiny/repository_metadata.json",
+      "data_relative_path": "新模型对照_20261105/pretrained/convnext_tiny/repository_metadata.json",
+      "sha256": "a6fcc2bddf70d1d11d6c3bfa87ecde6bef5ec85efdd2932aa5f951d374c078bc",
+      "bytes": 2183
+    },
+    {
+      "repository_path": "sources/新模型对照_20261105/pretrained/efficientnetv2_s/config.json",
+      "data_relative_path": "新模型对照_20261105/pretrained/efficientnetv2_s/config.json",
+      "sha256": "3a7310dac2ab01f44f8717a5f0b8d26762d8ea8f55d92a8fd5880e973d893cb4",
+      "bytes": 629
+    },
+    {
+      "repository_path": "sources/新模型对照_20261105/pretrained/efficientnetv2_s/README.md",
+      "data_relative_path": "新模型对照_20261105/pretrained/efficientnetv2_s/README.md",
+      "sha256": "d6f9e20f8adba8fe3953efa6423b6d8f95b1121e198956e2566cc82075f521d9",
+      "bytes": 4084
+    },
+    {
+      "repository_path": "sources/新模型对照_20261105/pretrained/efficientnetv2_s/repository_metadata.json",
+      "data_relative_path": "新模型对照_20261105/pretrained/efficientnetv2_s/repository_metadata.json",
+      "sha256": "af284cb55d049310f72b94aa3f350c387e4dac959ec306378b905159f1560c0c",
+      "bytes": 2183
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/run_journal_models.py",
+      "data_relative_path": "顶刊三模型对照_20261105/run_journal_models.py",
+      "sha256": "fcaec78b9a4a5fa8b0039552d24fcbc58832c46656f5fe7815e778ed43d4c1fe",
+      "bytes": 36547
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/build_journal_report.py",
+      "data_relative_path": "顶刊三模型对照_20261105/build_journal_report.py",
+      "sha256": "09dad5b610784989c44461a8f9e74016945fa71e392d3160ff55ba0efe47b69c",
+      "bytes": 55189
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/evaluate_fixed_ensembles.py",
+      "data_relative_path": "顶刊三模型对照_20261105/evaluate_fixed_ensembles.py",
+      "sha256": "2745cb5361059fe1a4ea6f9222a5b5d6f1e321598384da8b2dc6e4bb500f844b",
+      "bytes": 20495
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/download_pretrained.py",
+      "data_relative_path": "顶刊三模型对照_20261105/download_pretrained.py",
+      "sha256": "0947c609456bba3f7fb51d441b4579d8865d428ad527d4c75172bcdf89cd9e80",
+      "bytes": 3830
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/start_journal.ps1",
+      "data_relative_path": "顶刊三模型对照_20261105/start_journal.ps1",
+      "sha256": "2a147715437f3c2181809c324f26892f78b84f878f1a0a45b9aa87d47245a155",
+      "bytes": 2387
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/fixed_ensemble_plan.json",
+      "data_relative_path": "顶刊三模型对照_20261105/fixed_ensemble_plan.json",
+      "sha256": "47d8ab7de9ba3c889f23f02e5da0a0f18b0367801bf980ace3331f44e5c2eca9",
+      "bytes": 1869
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained_manifest.json",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained_manifest.json",
+      "sha256": "28897ba33b7ea1c69b6fc1856b4a5d473bd569584a00fa2a7b1b0cf9d2f53fe4",
+      "bytes": 4128
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained/caformer_s18/config.json",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained/caformer_s18/config.json",
+      "sha256": "4755c3164600420b4feace0fbb1aa8dc93d2c7a80eac6fa6a54dcff5d32d48aa",
+      "bytes": 575
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained/caformer_s18/README.md",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained/caformer_s18/README.md",
+      "sha256": "804ddc51ecc99a2b11d2ca0251c26265c07f2cc6a7d46f55330ecb61c9a7ff0d",
+      "bytes": 3630
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained/caformer_s18/repository_metadata.json",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained/caformer_s18/repository_metadata.json",
+      "sha256": "c2a54c428cb3daefac5b1a6c6e5fd8c0d236a993a0c18c71f4f87bfd899dc111",
+      "bytes": 1513
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained/densenet121/config.json",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained/densenet121/config.json",
+      "sha256": "c503cee99158835b6dc7baf32396988a629eea2b067ce94967dc4321bb133590",
+      "bytes": 668
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained/densenet121/README.md",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained/densenet121/README.md",
+      "sha256": "8b3b5b7500f9e0ff5777d63719ca6480d93c72f15109d5c85d3d7e339ef708f8",
+      "bytes": 4026
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained/densenet121/repository_metadata.json",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained/densenet121/repository_metadata.json",
+      "sha256": "5a62a41be8ccc0d6983c1b0ebc399879aa6b4ee28e5874e6b41a51c6bb0effa2",
+      "bytes": 1597
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained/hrnet_w18/config.json",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained/hrnet_w18/config.json",
+      "sha256": "20d3469fbe0a84c523eee636ffac5998b7f7ed858f019281898ff7da6e697916",
+      "bytes": 572
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained/hrnet_w18/README.md",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained/hrnet_w18/README.md",
+      "sha256": "7e045056328991652aff499111db673ed569c354c8f35f5c02d21b0771027b26",
+      "bytes": 3786
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained/hrnet_w18/repository_metadata.json",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained/hrnet_w18/repository_metadata.json",
+      "sha256": "bac84640a060378a7618a6adfa8732ba7121189640451c929dce45704cdc863f",
+      "bytes": 1570
+    },
+    {
+      "repository_path": "sources/新模型对照_20261105/pretrained/LICENSE.apache-2.0.txt",
+      "data_relative_path": "新模型对照_20261105/pretrained/LICENSE.apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "repository_path": "sources/新模型对照_20261105/pretrained/license_source.json",
+      "data_relative_path": "新模型对照_20261105/pretrained/license_source.json",
+      "sha256": "81bc5d9f22b0f15be344d69ba7879339a998a37b987e456e2051a7b8e916dd1c",
+      "bytes": 282
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained/LICENSE.apache-2.0.txt",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained/LICENSE.apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained/LICENSE.hrnet-MIT.txt",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained/LICENSE.hrnet-MIT.txt",
+      "sha256": "285c174bc9a991f013d2f205c63f1d7ec90bb91e7acb428151f119a76cfd6d00",
+      "bytes": 1078
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/pretrained/license_sources.json",
+      "data_relative_path": "顶刊三模型对照_20261105/pretrained/license_sources.json",
+      "sha256": "70453f989938048a1fc685897014d2fdf51c1088f95252f3ced030ef03091eae",
+      "bytes": 402
+    },
+    {
+      "repository_path": "sources/顶刊三模型对照_20261105/papers/paper_downloads.json",
+      "data_relative_path": "顶刊三模型对照_20261105/papers/paper_downloads.json",
+      "sha256": "d15622d87dd6b053190317fc923a742f3593836ec4c8c2fb5b3b297f265d628e",
+      "bytes": 3100
+    }
+  ],
+  "shared_dependencies": [
+    {
+      "repository_path": "model01/optimization/sources/MambaOut_100轮/train_and_optimize.py",
+      "data_relative_path": "MambaOut_100轮/train_and_optimize.py",
+      "sha256": "6d818b8bf456e24a055006fe9535d055b23ace4f5df83807713e09aad56515d9",
+      "bytes": 16898
+    },
+    {
+      "repository_path": "model01/optimization/sources/全量基线/train_full.py",
+      "data_relative_path": "全量基线/train_full.py",
+      "sha256": "f94fda336d4451a1258272622992a3c9ea9fac21d864a2308ba6fc456fa360d3",
+      "bytes": 9183
+    },
+    {
+      "repository_path": "model01/optimization/sources/本地跑通/run_local.py",
+      "data_relative_path": "本地跑通/run_local.py",
+      "sha256": "a1ce02f9dbb2b67c52ab3b33d0d2602901d22e29d86ef2e404768f7b6da06628",
+      "bytes": 15748
+    },
+    {
+      "repository_path": "model01/optimization/sources/本地跑通/dataset/__init__.py",
+      "data_relative_path": "本地跑通/dataset/__init__.py",
+      "sha256": "ef317e634dd40251a50e2d747c0e4849e95bc9f9cd714c9c6738a6211394bf35",
+      "bytes": 4239
+    },
+    {
+      "repository_path": "model01/optimization/sources/本地跑通/dataset/evaluate.py",
+      "data_relative_path": "本地跑通/dataset/evaluate.py",
+      "sha256": "a456a9edb0293ea2a1a4021706fd11528a8561f497db838b27f8ac726d43e6ae",
+      "bytes": 7819
+    },
+    {
+      "repository_path": "model01/optimization/sources/本地跑通/dataset/tools/build_cache.py",
+      "data_relative_path": "本地跑通/dataset/tools/build_cache.py",
+      "sha256": "fc2f6eb59ec7983abad638116a38a10033e64f3316056181332139ef5a9256f0",
+      "bytes": 3548
+    },
+    {
+      "repository_path": "model01/optimization/sources/本地跑通/dataset/tools/build_manifest.py",
+      "data_relative_path": "本地跑通/dataset/tools/build_manifest.py",
+      "sha256": "9e9e42c94ec59f3513c6ddc7fc75d573150e13e4bf50c1985358e4211b411fb4",
+      "bytes": 6800
+    },
+    {
+      "repository_path": "model01/optimization/sources/MambaOut_泛化优化/experiment_metrics.py",
+      "data_relative_path": "MambaOut_泛化优化/experiment_metrics.py",
+      "sha256": "07ecbdf7f27e1e2fad629ef646ebcba50a24bd0509eb264ce19c7ae7fa925b1a",
+      "bytes": 8998
+    }
+  ],
+  "shared_dependency_instructions": "Deploy model01/optimization sources first; comparison deployment verifies existing E-drive dependency hashes.",
+  "exclusions": [
+    "pretrained and trained weights",
+    "patient-level NPZ and prediction CSV",
+    "raw images and manifest.csv",
+    "PDF manuscripts restricted to local reading",
+    "temporary caches, locks, logs and launch receipts"
+  ]
+}

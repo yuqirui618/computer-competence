@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "key": "ensemble_densenet121",
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "final_gates_by_class_id": [
+    0.075,
+    0.175,
+    0.15,
+    0.15,
+    0.35,
+    0.275,
+    0.175,
+    0.25,
+    0.3,
+    0.375
+  ],
+  "binding": {
+    "kind": "probability_ensemble_not_new_single_model",
+    "weights": [
+      0.5,
+      0.5
+    ],
+    "source_checkpoints": [
+      {
+        "role": "existing_gamma_mambaout",
+        "path": "E:\\比赛数据集\\MambaOut_二次数据增强_20261104\\C_gamma_noise\\best.pth",
+        "sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+        "weight": 0.5
+      },
+      {
+        "role": "densenet121",
+        "path": "E:\\比赛数据集\\顶刊三模型对照_20261105\\densenet121\\best.pth",
+        "sha256": "1a93f24e3de177fe9d9bf6ece5fae564fb2cd2d06d99c927494664cec4ba26fb",
+        "weight": 0.5
+      }
+    ],
+    "single_model_epoch": 4,
+    "probability_arithmetic": "float64 equal mean of saved Study mean image probabilities",
+    "aggregation": "Each source first averages image probabilities within the same Study; then sources are averaged 50:50"
+  },
+  "source_gate_file": "E:\\比赛数据集\\顶刊三模型对照_20261105\\fixed_ensembles\\densenet121\\candidate_gates.json",
+  "source_gate_sha256": "3e5cc26b7d797fccfd0869b392636eff795a585b9a0fc3e9a176778cad0b465f",
+  "final_gate_fit_scope": "All official validation labels, reused for tuning; optimistic in-sample F1",
+  "patient_fivefold_oof_f1_reference": 0.4499882172501014,
+  "decision_rule_for_local_metrics": "Probability >= Gate",
+  "validation_studies": 859,
+  "validation_patients": 228,
+  "not_a_test_submission": true
+}

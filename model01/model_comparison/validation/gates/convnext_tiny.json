@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "key": "convnext_tiny",
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "final_gates_by_class_id": [
+    0.05,
+    0.275,
+    0.175,
+    0.2,
+    0.3,
+    0.275,
+    0.125,
+    0.125,
+    0.3,
+    0.475
+  ],
+  "binding": {
+    "kind": "single_model",
+    "source_checkpoints": [
+      {
+        "role": "convnext_tiny",
+        "path": "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\best.pth",
+        "sha256": "af58ccc38f2d5631d5018a8b33a43b3e9564e98bda5446c4425de27ed663c36e",
+        "weight": 1.0
+      }
+    ]
+  },
+  "source_gate_file": "E:\\比赛数据集\\新模型对照_20261105\\convnext_tiny\\candidate_gates.json",
+  "source_gate_sha256": "c3a981716f2774f6a419d8563fd43c32de4a30618d399dbc227580945501401a",
+  "final_gate_fit_scope": "All official validation labels, reused for tuning; optimistic in-sample F1",
+  "patient_fivefold_oof_f1_reference": 0.43090180651352183,
+  "decision_rule_for_local_metrics": "Probability >= Gate",
+  "validation_studies": 859,
+  "validation_patients": 228,
+  "not_a_test_submission": true
+}
