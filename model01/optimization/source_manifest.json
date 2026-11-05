@@ -1,0 +1,231 @@
+{
+  "snapshot_date": "2026-11-05",
+  "kind": "Unmodified executed experiment sources, not a portable training API",
+  "source_data_root": "E:\\比赛数据集",
+  "files": [
+    {
+      "repository_path": "sources/MambaOut_100轮/train_and_optimize.py",
+      "data_relative_path": "MambaOut_100轮/train_and_optimize.py",
+      "sha256": "6d818b8bf456e24a055006fe9535d055b23ace4f5df83807713e09aad56515d9",
+      "bytes": 16898
+    },
+    {
+      "repository_path": "sources/MambaOut_ASL对照/LICENSE.ASL.txt",
+      "data_relative_path": "MambaOut_ASL对照/LICENSE.ASL.txt",
+      "sha256": "2607aa89e6140627b561f7ab715201111f9f643bac2df843c713b094a8a34f89",
+      "bytes": 1069
+    },
+    {
+      "repository_path": "sources/MambaOut_ASL对照/asl_loss.py",
+      "data_relative_path": "MambaOut_ASL对照/asl_loss.py",
+      "sha256": "daf4375cbe6c8237711e34b2fe0a8700a9570fa804f0f600bbc7a203174bea6c",
+      "bytes": 1298
+    },
+    {
+      "repository_path": "sources/MambaOut_ASL对照/asl_metadata.json",
+      "data_relative_path": "MambaOut_ASL对照/asl_metadata.json",
+      "sha256": "f234be0763f93c7e93ece0323c616dc22ff38d1412cb84b1bbdc5cd7879fa59f",
+      "bytes": 1008
+    },
+    {
+      "repository_path": "sources/MambaOut_ASL对照/compare_champion.py",
+      "data_relative_path": "MambaOut_ASL对照/compare_champion.py",
+      "sha256": "c4d692e41d7c4279917ed246bc4145394aa509c91cf479c503d6eef91ade7c7c",
+      "bytes": 6464
+    },
+    {
+      "repository_path": "sources/MambaOut_ASL对照/run_optimization.py",
+      "data_relative_path": "MambaOut_ASL对照/run_optimization.py",
+      "sha256": "ab1f9b2548b36ef452e8cf39ea156aeb4c3752748a1c1af7aec72764013c0c00",
+      "bytes": 20015
+    },
+    {
+      "repository_path": "sources/MambaOut_F1专项优化_20261104/average_probe/audit_saved.py",
+      "data_relative_path": "MambaOut_F1专项优化_20261104/average_probe/audit_saved.py",
+      "sha256": "c9a59b5e37da28aa64d818938ca71f4f5a758a8384d7c2ee67db78ad3dd13a80",
+      "bytes": 3802
+    },
+    {
+      "repository_path": "sources/MambaOut_F1专项优化_20261104/average_probe/probe_average.py",
+      "data_relative_path": "MambaOut_F1专项优化_20261104/average_probe/probe_average.py",
+      "sha256": "1f04bbb2a983ffe4a1442eb8358f8cbee30219169528b2b924aa34d9541e3f3b",
+      "bytes": 13373
+    },
+    {
+      "repository_path": "sources/MambaOut_F1专项优化_20261104/build_summary.py",
+      "data_relative_path": "MambaOut_F1专项优化_20261104/build_summary.py",
+      "sha256": "9c546294b203bf733a99b3faf95be76aff547e7821ba053831e0b924ded94fd3",
+      "bytes": 13813
+    },
+    {
+      "repository_path": "sources/MambaOut_F1专项优化_20261104/ensemble_thresholds/run_ensemble_thresholds.py",
+      "data_relative_path": "MambaOut_F1专项优化_20261104/ensemble_thresholds/run_ensemble_thresholds.py",
+      "sha256": "4f4f749391c8bc8cbbfb5491adc633889c6d166773c6d6b1f70a111b3cc64eb3",
+      "bytes": 10390
+    },
+    {
+      "repository_path": "sources/MambaOut_F1专项优化_20261104/ensemble_thresholds/threshold_core.py",
+      "data_relative_path": "MambaOut_F1专项优化_20261104/ensemble_thresholds/threshold_core.py",
+      "sha256": "4677f85fd819d2a639ab6f1c3014e65f82df31859f3a04974af65ac09ea5b6cb",
+      "bytes": 16913
+    },
+    {
+      "repository_path": "sources/MambaOut_F1专项优化_20261104/large_validation/transfer_check.py",
+      "data_relative_path": "MambaOut_F1专项优化_20261104/large_validation/transfer_check.py",
+      "sha256": "5c84db9a4f561f2b99178e67668cf1f6abe170a8eaa27e4532964de9dad580bc",
+      "bytes": 5844
+    },
+    {
+      "repository_path": "sources/MambaOut_F1专项优化_20261104/threshold_search/audit_saved.py",
+      "data_relative_path": "MambaOut_F1专项优化_20261104/threshold_search/audit_saved.py",
+      "sha256": "a624845e383d7156092fd067f075576d6b53a0cc172bf3aa47988d2e237e1c46",
+      "bytes": 4654
+    },
+    {
+      "repository_path": "sources/MambaOut_F1专项优化_20261104/threshold_search/run_thresholds.py",
+      "data_relative_path": "MambaOut_F1专项优化_20261104/threshold_search/run_thresholds.py",
+      "sha256": "eaae9497ca458b3032b4c56367030134be93584a439c7bb83d7f445d80a57d7b",
+      "bytes": 16508
+    },
+    {
+      "repository_path": "sources/MambaOut_F1正则化优化_20261104/build_report.py",
+      "data_relative_path": "MambaOut_F1正则化优化_20261104/build_report.py",
+      "sha256": "bba984c06a9cdad24798069531627c779b535b9c085f497aceccfd7cd202527d",
+      "bytes": 20955
+    },
+    {
+      "repository_path": "sources/MambaOut_F1正则化优化_20261104/diagnosis/diagnose.py",
+      "data_relative_path": "MambaOut_F1正则化优化_20261104/diagnosis/diagnose.py",
+      "sha256": "5d5f440d5df1c34d2497990bd0d4ddf69c50d92288c81c63b308cce26eb94b5b",
+      "bytes": 9958
+    },
+    {
+      "repository_path": "sources/MambaOut_F1正则化优化_20261104/run_regularization.py",
+      "data_relative_path": "MambaOut_F1正则化优化_20261104/run_regularization.py",
+      "sha256": "8d4d857eb2726a6d2871576575d47a4793b59298e9d0d8fc0748c909b6869ef0",
+      "bytes": 15684
+    },
+    {
+      "repository_path": "sources/MambaOut_F1正则化优化_20261104/verify_f1_candidate.py",
+      "data_relative_path": "MambaOut_F1正则化优化_20261104/verify_f1_candidate.py",
+      "sha256": "79e0ae1a668e6428e7a30ec0e4a6d9c4afe092ff22089df428a97ac04a4baaa6",
+      "bytes": 2303
+    },
+    {
+      "repository_path": "sources/MambaOut_二次数据增强_20261104/build_summary.py",
+      "data_relative_path": "MambaOut_二次数据增强_20261104/build_summary.py",
+      "sha256": "dba359bcc9308262a5f5d64031b6fc8481a3d0e250fe05aadf8d02c900484e81",
+      "bytes": 29122
+    },
+    {
+      "repository_path": "sources/MambaOut_二次数据增强_20261104/run_gamma.py",
+      "data_relative_path": "MambaOut_二次数据增强_20261104/run_gamma.py",
+      "sha256": "e562f6646b8917a6787e4ba3fd2e7f96c108a9e7e15fcc7467490b9511837db8",
+      "bytes": 26508
+    },
+    {
+      "repository_path": "sources/MambaOut_二次数据增强_20261104/verify_candidate.py",
+      "data_relative_path": "MambaOut_二次数据增强_20261104/verify_candidate.py",
+      "sha256": "eb79968d17bc8e84179e8ee076ad02a7a530a303ff7053c6e40b7dda584a7405",
+      "bytes": 5951
+    },
+    {
+      "repository_path": "sources/MambaOut_数据增强与大验证_20261104/build_report.py",
+      "data_relative_path": "MambaOut_数据增强与大验证_20261104/build_report.py",
+      "sha256": "0839babc5451879063ead03d6c4b69e4610ffd34c1dcb6a6fba8fb510f8079a3",
+      "bytes": 30507
+    },
+    {
+      "repository_path": "sources/MambaOut_数据增强与大验证_20261104/cohort_audit/audit_counts.py",
+      "data_relative_path": "MambaOut_数据增强与大验证_20261104/cohort_audit/audit_counts.py",
+      "sha256": "ca0f23d84e2d0353d12381e8fb606a8312a3798b0e9105314c3190700698edb3",
+      "bytes": 8239
+    },
+    {
+      "repository_path": "sources/MambaOut_数据增强与大验证_20261104/resolution_probe/probe_resolution.py",
+      "data_relative_path": "MambaOut_数据增强与大验证_20261104/resolution_probe/probe_resolution.py",
+      "sha256": "b632861904378d879829b0f6836681845885693c60b812ae20aefefb23198e49",
+      "bytes": 9276
+    },
+    {
+      "repository_path": "sources/MambaOut_数据增强与大验证_20261104/run_augmentation.py",
+      "data_relative_path": "MambaOut_数据增强与大验证_20261104/run_augmentation.py",
+      "sha256": "dc1e6e3d1b21626042ae55025a28cec64ffaa6dd6ea2ee3075df9a575e831259",
+      "bytes": 27812
+    },
+    {
+      "repository_path": "sources/MambaOut_泛化优化/calibrate_selected.py",
+      "data_relative_path": "MambaOut_泛化优化/calibrate_selected.py",
+      "sha256": "8f2ce528c9e6d174e133254c70a3fbaa2d71c51e34c8c6b9bc47d3fb1975960c",
+      "bytes": 5954
+    },
+    {
+      "repository_path": "sources/MambaOut_泛化优化/experiment_metrics.py",
+      "data_relative_path": "MambaOut_泛化优化/experiment_metrics.py",
+      "sha256": "07ecbdf7f27e1e2fad629ef646ebcba50a24bd0509eb264ce19c7ae7fa925b1a",
+      "bytes": 8998
+    },
+    {
+      "repository_path": "sources/MambaOut_泛化优化/patient_split.py",
+      "data_relative_path": "MambaOut_泛化优化/patient_split.py",
+      "sha256": "1e9338cf3b16f6dd50aea3acefa02dc393df7cdfaf46fa5f32d27f4cf264ac06",
+      "bytes": 4676
+    },
+    {
+      "repository_path": "sources/MambaOut_泛化优化/train_generalization.py",
+      "data_relative_path": "MambaOut_泛化优化/train_generalization.py",
+      "sha256": "8d4d46e61beecf4a26649f782228306100017b4c08873f8c6fb6b5feb17ed25d",
+      "bytes": 20432
+    },
+    {
+      "repository_path": "sources/全量基线/train_full.py",
+      "data_relative_path": "全量基线/train_full.py",
+      "sha256": "f94fda336d4451a1258272622992a3c9ea9fac21d864a2308ba6fc456fa360d3",
+      "bytes": 9183
+    },
+    {
+      "repository_path": "sources/本地跑通/dataset/__init__.py",
+      "data_relative_path": "本地跑通/dataset/__init__.py",
+      "sha256": "ef317e634dd40251a50e2d747c0e4849e95bc9f9cd714c9c6738a6211394bf35",
+      "bytes": 4239
+    },
+    {
+      "repository_path": "sources/本地跑通/dataset/evaluate.py",
+      "data_relative_path": "本地跑通/dataset/evaluate.py",
+      "sha256": "a456a9edb0293ea2a1a4021706fd11528a8561f497db838b27f8ac726d43e6ae",
+      "bytes": 7819
+    },
+    {
+      "repository_path": "sources/本地跑通/dataset/tools/audit.py",
+      "data_relative_path": "本地跑通/dataset/tools/audit.py",
+      "sha256": "0ab9909671ef36afdafd3ea7bcddd1ae89b6a5f6ed94233de5978c7c76d3dd2a",
+      "bytes": 5369
+    },
+    {
+      "repository_path": "sources/本地跑通/dataset/tools/build_cache.py",
+      "data_relative_path": "本地跑通/dataset/tools/build_cache.py",
+      "sha256": "fc2f6eb59ec7983abad638116a38a10033e64f3316056181332139ef5a9256f0",
+      "bytes": 3548
+    },
+    {
+      "repository_path": "sources/本地跑通/dataset/tools/build_manifest.py",
+      "data_relative_path": "本地跑通/dataset/tools/build_manifest.py",
+      "sha256": "9e9e42c94ec59f3513c6ddc7fc75d573150e13e4bf50c1985358e4211b411fb4",
+      "bytes": 6800
+    },
+    {
+      "repository_path": "sources/本地跑通/run_local.py",
+      "data_relative_path": "本地跑通/run_local.py",
+      "sha256": "a1ce02f9dbb2b67c52ab3b33d0d2602901d22e29d86ef2e404768f7b6da06628",
+      "bytes": 15748
+    }
+  ],
+  "excluded": [
+    "weights/checkpoints",
+    "images/dataset",
+    "patient-level NPZ and CSV",
+    "patient_split.json",
+    "secrets",
+    "temporary caches and logs"
+  ]
+}

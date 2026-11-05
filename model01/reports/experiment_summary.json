@@ -1,10 +1,10 @@
 {
-  "recorded_on": "2026-11-04",
-  "state": "paused_after_epoch",
+  "recorded_on": "2026-11-05",
+  "state": "historical_long_run_stopped_followed_by_optimization",
   "architecture": "mambaout_tiny",
   "planned_epochs": 100,
-  "completed_epochs": 45,
-  "resume_epoch": 46,
+  "completed_epochs": 86,
+  "resume_epoch": null,
   "train_images_per_epoch": 30344,
   "train_studies": 18513,
   "validation_images": 1422,
@@ -90,71 +90,71 @@
       "count": 859
     }
   },
-  "latest_epoch": 45,
+  "latest_epoch": 86,
   "latest_validation": {
     "image": {
       "auc": [
-        0.48538469461324546,
-        0.7100893258787995,
-        0.5052034058656575,
-        0.6329879679144386,
-        0.7810271791379587,
-        0.716603659458642,
-        0.7015203890759447,
-        0.6644183478871826,
-        0.8775014326647566,
-        0.8474400670921289
+        0.5930579874343394,
+        0.7444058865111497,
+        0.5714928110071598,
+        0.6201128936423054,
+        0.7917476165678576,
+        0.7139237528773291,
+        0.7290130939019828,
+        0.6723907027430063,
+        0.8898847500795924,
+        0.8569403534609721
       ],
       "f1": [
         0.0,
-        0.25,
-        0.075,
-        0.12987012987012986,
-        0.391025641025641,
-        0.36533957845433257,
-        0.336,
-        0.34179357021996615,
-        0.6915629322268326,
-        0.7425821972734563
+        0.26373626373626374,
+        0.13953488372093023,
+        0.13114754098360656,
+        0.4077669902912621,
+        0.3607305936073059,
+        0.3828125,
+        0.34305317324185247,
+        0.6926070038910506,
+        0.7528455284552845
       ],
-      "macro_auc": 0.6922176469588754,
-      "macro_f1": 0.3323174049070359,
+      "macro_auc": 0.7182969848225695,
+      "macro_f1": 0.34742344779275564,
       "auc_classes": 10,
       "count": 1422
     },
     "study": {
       "auc": [
-        0.5013473053892216,
-        0.7497369632406129,
-        0.5460318733622118,
-        0.6497917751171265,
-        0.7861266947171576,
-        0.7174934141855958,
-        0.6926939893261137,
-        0.6711584438165616,
-        0.8643668935405163,
-        0.8460181540970818
+        0.5910928143712575,
+        0.819704741237588,
+        0.5663270763142414,
+        0.6335799806648323,
+        0.7702840112201964,
+        0.7150413373759466,
+        0.7347282515676298,
+        0.6690574512787074,
+        0.8725728778733786,
+        0.8531421007221455
       ],
       "f1": [
         0.0,
-        0.25,
-        0.0967741935483871,
-        0.10869565217391304,
-        0.41379310344827586,
-        0.3902439024390244,
-        0.3696969696969697,
-        0.3848101265822785,
-        0.703125,
-        0.7120743034055728
+        0.2857142857142857,
+        0.18181818181818182,
+        0.0821917808219178,
+        0.4406779661016949,
+        0.39473684210526316,
+        0.3953488372093023,
+        0.37755102040816324,
+        0.7056672760511883,
+        0.7361769352290679
       ],
-      "macro_auc": 0.70247655067922,
-      "macro_f1": 0.3429213251294422,
+      "macro_auc": 0.7225530642625924,
+      "macro_f1": 0.3599883125459065,
       "auc_classes": 10,
       "count": 859
     }
   },
-  "total_training_seconds": 14884.871188700898,
-  "total_validation_seconds": 2990.640548398951,
+  "total_training_seconds": 27861.259486300638,
+  "total_validation_seconds": 5497.410411498742,
   "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
   "environment": {
     "python": "3.13.11",
@@ -173,10 +173,10 @@
     "train_full.py": "f94fda336d4451a1258272622992a3c9ea9fac21d864a2308ba6fc456fa360d3"
   },
   "notes": [
-    "100 epochs are planned. The experiment is paused after epoch 45.",
-    "Metrics describe the official validation split used for model selection.",
-    "The official hidden-test score is pending evaluation.",
-    "Per-patient threshold folds reuse a model selected on the full validation split.",
-    "ASL fine-tuning has not been trained in this snapshot."
-  ]
+    "Historical main run stopped after 86 epochs; epoch 3 remained its AUC best.",
+    "Subsequent fine-tuning and optimization are separate runs, not added to the 86-epoch counter.",
+    "Optimization source snapshots, prerequisites and validated reports are under model01/optimization.",
+    "Model selection reused internal validation; no independent hidden-test score is claimed."
+  ],
+  "optimization_summary": "../optimization/reports/metrics_summary.json"
 }

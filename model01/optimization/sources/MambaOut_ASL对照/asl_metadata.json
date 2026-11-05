@@ -1,0 +1,22 @@
+{
+  "source_urls": {
+    "implementation": "https://raw.githubusercontent.com/Alibaba-MIIL/ASL/main/src/loss_functions/losses.py",
+    "license": "https://raw.githubusercontent.com/Alibaba-MIIL/ASL/main/LICENSE"
+  },
+  "upstream_reference": "Alibaba-MIIL/ASL AsymmetricLoss (not AsymmetricLossOptimized)",
+  "default_parameters": {
+    "gamma_neg": 4,
+    "gamma_pos": 1,
+    "clip": 0.05,
+    "eps": 1e-08,
+    "disable_torch_grad_focal_loss": true
+  },
+  "reduction": "mean over all batch x class elements; upstream sum divided by logits.numel()",
+  "compute_dtype": "float32, with autocast explicitly disabled",
+  "focal_gradient": "weights.detach(); does not change the global torch grad flag",
+  "license": "MIT",
+  "license_file": "LICENSE.ASL.txt",
+  "retrieved_at_utc": "2026-11-04T10:41:38.969808+00:00",
+  "upstream_source_sha256": "ce743a0cd3156a4eae10bbf673ce97fed161e20621d0550d13bd4a48b1ea9c28",
+  "upstream_license_sha256": "2607aa89e6140627b561f7ab715201111f9f643bac2df843c713b094a8a34f89"
+}

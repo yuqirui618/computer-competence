@@ -1,0 +1,104 @@
+{
+  "updated": "2026-11-05",
+  "training": {
+    "historical_long_run_completed_epochs": 86,
+    "new_gamma_noise_epochs": 6,
+    "images_per_epoch": 30344,
+    "validation_images": 1422,
+    "validation_studies": 859,
+    "validation_patients": 228
+  },
+  "original_champion": {
+    "auc": 0.8019769550500871,
+    "f1_at_0_5": 0.3299175803247271,
+    "patient_coarse_oof_f1": 0.451054963682343,
+    "checkpoint_sha256": "9911ef5383bb320a4770a544b85e27d58c01ab57a69bb0963392a208073a2585"
+  },
+  "new_auc_candidate": {
+    "stage": "C_gamma_noise",
+    "epoch": 1,
+    "auc": 0.8021774782195852,
+    "f1_at_0_5": 0.339731851464981,
+    "patient_coarse_oof_f1": 0.44249116923580356,
+    "checkpoint_sha256": "b0066e479b1b0c383fa7daa2067ff0d6c954d20fbf81d1202af95481d67cc5f9",
+    "reload_validation_predictions_max_difference": 0.0,
+    "paired_auc_vs_original": {
+      "delta": 0.00020052316949803473,
+      "ci95": [
+        -0.00145192079516063,
+        0.0018395844142223448
+      ],
+      "valid_repeats": 400,
+      "repeats": 400
+    },
+    "paired_auc_vs_previous_ensemble": {
+      "delta": 0.00012127552845164757,
+      "ci95": [
+        -0.0007785723464444783,
+        0.0010289099352104145
+      ],
+      "valid_repeats": 400,
+      "repeats": 400
+    },
+    "paired_oof_f1_vs_original": {
+      "delta": -0.00856379444653943,
+      "ci95": [
+        -0.02024093667197338,
+        0.002720833551299595
+      ],
+      "repeats": 400,
+      "scope": "Conditional on fixed cross-fitted decisions and selected checkpoints; thresholds not refitted in bootstrap"
+    }
+  },
+  "epochs": [
+    {
+      "stage": "A_control",
+      "epoch": 1,
+      "train_images": 30344,
+      "auc": 0.801872994520602,
+      "f1_at_0_5": 0.3397823722910306,
+      "patient_coarse_oof_f1": 0.44859257392798024
+    },
+    {
+      "stage": "A_control",
+      "epoch": 2,
+      "train_images": 30344,
+      "auc": 0.8016381869986586,
+      "f1_at_0_5": 0.3426254599290093,
+      "patient_coarse_oof_f1": 0.4568632242034646
+    },
+    {
+      "stage": "B_gamma",
+      "epoch": 1,
+      "train_images": 30344,
+      "auc": 0.8019105807166337,
+      "f1_at_0_5": 0.33967093973986806,
+      "patient_coarse_oof_f1": 0.44549986727484575
+    },
+    {
+      "stage": "B_gamma",
+      "epoch": 2,
+      "train_images": 30344,
+      "auc": 0.8016915483472656,
+      "f1_at_0_5": 0.34305026788573073,
+      "patient_coarse_oof_f1": 0.4548507593048553
+    },
+    {
+      "stage": "C_gamma_noise",
+      "epoch": 1,
+      "train_images": 30344,
+      "auc": 0.8021774782195852,
+      "f1_at_0_5": 0.339731851464981,
+      "patient_coarse_oof_f1": 0.44249116923580356
+    },
+    {
+      "stage": "C_gamma_noise",
+      "epoch": 2,
+      "train_images": 30344,
+      "auc": 0.8020269639812406,
+      "f1_at_0_5": 0.34623240237891356,
+      "patient_coarse_oof_f1": 0.44007234489307256
+    }
+  ],
+  "interpretation": "Small AUC point-estimate gain; paired patient intervals include zero; OOF F1 declined. Reused internal validation, not independent test evidence. Original model and submission preserved."
+}

@@ -7,7 +7,7 @@
 | [论文](01_literature/README.md) | PDF、文献索引、引用与来源记录 |
 | [官方数据集](03_datasets/README.md) | 公开 Release、下载与还原步骤、类别表和校验记录 |
 | [数据代码](dataset/README.md) | 清单、缓存、审计、DataLoader、评估和测试日志 |
-| [MambaOut 模型](model01/README.md) | 已验证的训练源码、E 盘准备工具、依赖、权重来源和 45 轮实验记录 |
+| [MambaOut 模型](model01/README.md) | 已验证的训练源码、E 盘准备工具、依赖、权重来源、86轮历史与后续优化实验记录 |
 | [队友模型](model02/) | 队友后续上传另一套模型的入口 |
 | [赛题相关资料](赛题相关资料/README.md) | 任务说明、两份正式规则及一页备赛方案 |
 
