@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "native_initialization": {
+    "model": "caformer_s18.sail_in1k_384",
+    "repository": "timm/caformer_s18.sail_in1k_384",
+    "source_url": "https://huggingface.co/timm/caformer_s18.sail_in1k_384",
+    "revision": "c46cc16d67a7d68806b7554b93e16b13506b7035",
+    "filename": "model.safetensors",
+    "sha256": "629149fd6170274f8f19d1fbbb9b155b13933ff3d2f9e991ac0339d993426806",
+    "license": "apache-2.0",
+    "pretraining_data": "ImageNet-1k",
+    "bundled": false
+  },
+  "reference_checkpoint": {
+    "filename": "best.pth",
+    "sha256": "e4396db33d9fa25751205fc4d848766ff894ec4d104d884b77847e4afd01b250",
+    "epoch": 5,
+    "validation_macro_auc": 0.80477870054969,
+    "validation_patient_oof_macro_f1": 0.4578443406291471,
+    "status": "candidate; paired AUC gain over preserved Mamba interval includes zero",
+    "bundled": false
+  },
+  "official_manifest_sha256": "b7c280dc0edc8b99d2aa1210651bab7ff9724d4c0a26b76b231c1935b275c142",
+  "official_test_csv_sha256": "63e107d840cbf27aee7c1c0ced1157aef454baa1141fdc3851e6c3011471529e",
+  "note": "No weights/data/environment bundled. Training uses the native ImageNet source; inference uses a complete trained checkpoint and its matching Gates. Fresh retraining creates a new file SHA and its own Gates."
+}

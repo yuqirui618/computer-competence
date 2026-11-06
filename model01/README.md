@@ -21,6 +21,10 @@
 
 新增的ConvNeXt-Tiny、EfficientNetV2-S、CAFormer-S18、DenseNet-121、HRNet-W18各5轮全量对照，共25轮，以及三个固定组合的代码、文献与官方结构验证CSV，集中在[model_comparison](model_comparison/README.md)。最高组合验证AUC为0.80514173；其差值区间跨0，未替换原有单模型。验证CSV每份8590行，不能代替14140行的正式测试提交。
 
+## 原生384 CAFormer候选与正式测试结果
+
+最新从原生ImageNet-384权重重新适配的CAFormer-S18，全骨干训练5轮，代码、配置、验证总结及正式测试预测独立放在[caformer_native384](caformer_native384/README.md)。第5轮验证AUC为0.80477870、患者分折阈值F1为0.45784434；相对原保留MambaOut的提升区间跨0，作为候选保留。正式测试CSV覆盖1,414次Study、14,140行，不是历史859次Study的验证预测。大权重仍保留本地，按该目录说明指定checkpoint。
+
 ## 环境与工作区
 
 这些脚本保留原实验的 Windows、CUDA 和 E 盘要求。本机使用 Python 3.13、PyTorch 2.10.0+cu128、torchvision 0.25.0+cu128 和 timm 1.0.22。以下 PowerShell 命令从仓库根目录执行，虚拟环境放在 E 盘。

@@ -1,0 +1,53 @@
+{
+  "state": "passed",
+  "checked_at": "2026-11-06T15:45:20.696803+08:00",
+  "no_training": true,
+  "full_official_test": {
+    "images": 2218,
+    "studies": 1414,
+    "patients": 136,
+    "submission_rows": 14140
+  },
+  "inference_source_and_input_sha256": {
+    "E:\\比赛数据集\\代码发布\\caformer_native384_payload\\infer.py": "bc1d359f3bcb41c8419bafa783193531452af9dfbcccebf35856c79e64ff7243",
+    "E:\\比赛数据集\\代码发布\\caformer_native384_payload\\data_pipeline.py": "f4ab6ba46a70aeb083b6fb7e56ba21b2415a01b48d422f49668999963b1a1f8f",
+    "E:\\比赛数据集\\代码发布\\caformer_native384_payload\\pretrained_config.json": "40b80e3fa85d543c3f924a48e9a5c83607fdbb62962acc749692c8222fca6dca",
+    "E:\\比赛数据集\\CAFormer384_原生全骨干_20261106\\best.pth": "e4396db33d9fa25751205fc4d848766ff894ec4d104d884b77847e4afd01b250",
+    "E:\\比赛数据集\\CAFormer384_原生全骨干_20261106\\gates.json": "b244c233ccc43ca20d612a835d159aa4758599e3694f7bea7de5750612d7bc06",
+    "E:\\比赛数据集\\喻数据产物\\manifest.csv": "b7c280dc0edc8b99d2aa1210651bab7ff9724d4c0a26b76b231c1935b275c142",
+    "E:\\比赛数据集\\raw\\cxr_first\\test.csv": "63e107d840cbf27aee7c1c0ced1157aef454baa1141fdc3851e6c3011471529e",
+    "E:\\比赛数据集\\提交结果\\CAFormer384_原生第5轮_20261106\\submission.csv": "2b7ddeec8f605e1fef96807ecdd17d042a8ba06e2163d4a4433f12a35f38ba66",
+    "E:\\比赛数据集\\提交结果\\CAFormer384_原生第5轮_20261106\\work\\test_image_probabilities.npz": "e98f4a9f91c8dc4d594364071ff98e917e45e17ea7ae79df4c118f1fddf8f7b3",
+    "E:\\比赛数据集\\提交结果\\CAFormer384_原生第5轮_20261106\\work\\test_study_probabilities.npz": "127f900f4f8021838712271f32bc8e73699e0d7bdf5d97812086682ea69efb79"
+  },
+  "comparison": {
+    "images": {
+      "shape": [
+        2218,
+        10
+      ],
+      "max_abs_probability_difference": 0.0,
+      "all_IDs_and_probabilities_exactly_equal": true,
+      "actual_sha256": "e98f4a9f91c8dc4d594364071ff98e917e45e17ea7ae79df4c118f1fddf8f7b3",
+      "reference_sha256": "e98f4a9f91c8dc4d594364071ff98e917e45e17ea7ae79df4c118f1fddf8f7b3"
+    },
+    "studies": {
+      "shape": [
+        1414,
+        10
+      ],
+      "max_abs_probability_difference": 0.0,
+      "all_IDs_and_probabilities_exactly_equal": true,
+      "actual_sha256": "127f900f4f8021838712271f32bc8e73699e0d7bdf5d97812086682ea69efb79",
+      "reference_sha256": "127f900f4f8021838712271f32bc8e73699e0d7bdf5d97812086682ea69efb79"
+    }
+  },
+  "submission_byte_for_byte_equal": true,
+  "submission_sha256": "2b7ddeec8f605e1fef96807ecdd17d042a8ba06e2163d4a4433f12a35f38ba66",
+  "checkpoint_sha256": "e4396db33d9fa25751205fc4d848766ff894ec4d104d884b77847e4afd01b250",
+  "no_model_import_or_GPU_in_comparison": true,
+  "test_labels_available": false,
+  "test_AUC_or_F1_computed": false,
+  "checker_sha256": "e5b00fde2533e2a10bdaa1fd1a71c9ef0faa67862e21342e583ef2f7209b482c",
+  "source_snapshot_sha256": "10a7f308e1073af5a59d963d144e02bdb1b094e5041185c23b88ae82a2aebf00"
+}

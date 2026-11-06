@@ -1,0 +1,63 @@
+{
+  "state": "passed",
+  "created_at": "2026-11-06T15:36:24.782746+08:00",
+  "model_config_sha256": "2665a4930712a45fae57df4019a5661cf60e196e8ac06bae6fbe3c9fed6dd386",
+  "source_inputs": {
+    "E:\\比赛数据集\\CAFormer384_原生全骨干_20261106\\best.pth": "e4396db33d9fa25751205fc4d848766ff894ec4d104d884b77847e4afd01b250",
+    "E:\\比赛数据集\\CAFormer384_原生全骨干_20261106\\gates.json": "b244c233ccc43ca20d612a835d159aa4758599e3694f7bea7de5750612d7bc06",
+    "E:\\比赛数据集\\CAFormer384_原生全骨干_20261106\\pretrained\\config.json": "6c03c9a2c9c75760b485f2ca621c09bf0186e718dbbdc0a43665e2920f22d9b0",
+    "E:\\比赛数据集\\喻数据产物\\manifest.csv": "b7c280dc0edc8b99d2aa1210651bab7ff9724d4c0a26b76b231c1935b275c142",
+    "E:\\比赛数据集\\raw\\cxr_first\\test.csv": "63e107d840cbf27aee7c1c0ced1157aef454baa1141fdc3851e6c3011471529e",
+    "E:\\比赛数据集\\CAFormer384_原生全骨干_20261106\\predictions\\epoch_05.npz": "00e56139a419cfd76ae4985896796325daffc3415050dec411acbfdf77ccfe10"
+  },
+  "submission": {
+    "path": "E:\\比赛数据集\\提交结果\\CAFormer384_原生第5轮_20261106\\submission.csv",
+    "sha256": "2b7ddeec8f605e1fef96807ecdd17d042a8ba06e2163d4a4433f12a35f38ba66",
+    "bytes": 685841,
+    "rows": 14140,
+    "columns": [
+      "Subject_id",
+      "Study_id",
+      "Predict_class",
+      "Probability",
+      "Gate"
+    ],
+    "encoding": "UTF-8 without BOM",
+    "probability_decimal_places": 12
+  },
+  "validation_recheck": {
+    "state": "passed",
+    "images": 1422,
+    "studies": 859,
+    "patients": 228,
+    "macro_auc": 0.80477870054969,
+    "macro_f1_at05": 0.3089877462117915,
+    "max_abs_image_probability_difference": 0.0,
+    "max_abs_Study_probability_difference": 0.0
+  },
+  "test": {
+    "images": 2218,
+    "studies": 1414,
+    "patients": 136,
+    "labels_available": false
+  },
+  "prediction_artifacts": {
+    "E:\\比赛数据集\\提交结果\\CAFormer384_原生第5轮_20261106\\work\\test_image_probabilities.npz": "e98f4a9f91c8dc4d594364071ff98e917e45e17ea7ae79df4c118f1fddf8f7b3",
+    "E:\\比赛数据集\\提交结果\\CAFormer384_原生第5轮_20261106\\work\\test_study_probabilities.npz": "127f900f4f8021838712271f32bc8e73699e0d7bdf5d97812086682ea69efb79"
+  },
+  "inference_seconds": {
+    "validation": 103.96341470000334,
+    "test": 146.55725260009058
+  },
+  "exporter_sha256": "e56c9f4b03aadd7c05cf82c2522f045e316a11848b93242f4443828fcb179ede",
+  "no_training": true,
+  "no_test_threshold_fitting": true,
+  "github_uploaded": false,
+  "original_training_reports_unchanged": true,
+  "independent_validation": {
+    "path": "E:\\比赛数据集\\提交结果\\CAFormer384_原生第5轮_20261106\\独立校验.json",
+    "sha256": "ee08317fbdbd0d7a975717c7b005f00aef0a0e6e163b7ade00f598863fd9fc3b",
+    "validator_sha256": "49189b7b0b2ba871183a9b11ef35bbdfa513eef2b842a02b3a161494c61f68e8",
+    "state": "passed"
+  }
+}

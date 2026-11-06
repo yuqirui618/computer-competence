@@ -1,0 +1,68 @@
+{
+  "state": "passed",
+  "checked_at": "2026-11-06T15:38:45.946800+08:00",
+  "cohort": {
+    "images": 2218,
+    "studies": 1414,
+    "patients": 136,
+    "classes_per_study": 10
+  },
+  "checkpoint_sha256": "e4396db33d9fa25751205fc4d848766ff894ec4d104d884b77847e4afd01b250",
+  "native_pretrained_sha256": "629149fd6170274f8f19d1fbbb9b155b13933ff3d2f9e991ac0339d993426806",
+  "best_epoch": 5,
+  "gates": [
+    0.05,
+    0.2,
+    0.125,
+    0.175,
+    0.25,
+    0.225,
+    0.175,
+    0.225,
+    0.225,
+    0.4
+  ],
+  "aggregation": "FP32 image probability mean, independently regrouped in official Study first-seen order",
+  "max_abs_csv_rounding_difference": 4.999889391399392e-13,
+  "study_npz_recomputed_exactly": true,
+  "all_paths_and_IDs_match_official_csv_and_manifest": true,
+  "threshold_decisions_unchanged_by_rounding": true,
+  "positive_study_counts_by_class": [
+    330,
+    64,
+    217,
+    204,
+    501,
+    836,
+    794,
+    979,
+    764,
+    234
+  ],
+  "test_labels_available": false,
+  "test_AUC_or_F1_computed": false,
+  "submission": {
+    "sha256": "2b7ddeec8f605e1fef96807ecdd17d042a8ba06e2163d4a4433f12a35f38ba66",
+    "bytes": 685841,
+    "rows": 14140,
+    "columns": [
+      "Subject_id",
+      "Study_id",
+      "Predict_class",
+      "Probability",
+      "Gate"
+    ],
+    "encoding": "UTF-8 without BOM"
+  },
+  "validation_recheck": {
+    "state": "passed",
+    "images": 1422,
+    "studies": 859,
+    "patients": 228,
+    "macro_auc": 0.80477870054969,
+    "macro_f1_at05": 0.3089877462117915,
+    "max_abs_image_probability_difference": 0.0,
+    "max_abs_Study_probability_difference": 0.0
+  },
+  "scope": "Prediction CSV schema/coverage/identity/FP32 aggregation verification; not an official score or T4 latency certification."
+}

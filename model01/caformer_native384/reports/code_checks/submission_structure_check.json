@@ -1,0 +1,14 @@
+{
+  "state": "structure_passed",
+  "rows": 14140,
+  "studies": 1414,
+  "patients": 136,
+  "submission_sha256": "2b7ddeec8f605e1fef96807ecdd17d042a8ba06e2163d4a4433f12a35f38ba66",
+  "official_test_csv_sha256": "63e107d840cbf27aee7c1c0ced1157aef454baa1141fdc3851e6c3011471529e",
+  "gates_sha256": "4326cb626cb28f3f309ee6204891ae3f956981cd8810f778ce574a3019a3769e",
+  "checkpoint_file_checked": true,
+  "expected_checkpoint_sha256": "e4396db33d9fa25751205fc4d848766ff894ec4d104d884b77847e4afd01b250",
+  "does_not_recompute_model_predictions": true,
+  "test_labels_available": false,
+  "test_AUC_or_F1_computed": false
+}

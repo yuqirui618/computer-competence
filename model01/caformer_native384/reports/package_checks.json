@@ -1,0 +1,69 @@
+{
+  "state": "passed",
+  "AST": "all packaged Python files",
+  "CLI_help_exit_codes": {
+    "train.py": 0,
+    "infer.py": 0,
+    "tools/check_submission.py": 0
+  },
+  "training_CPU_preflight": {
+    "state": "passed",
+    "no_CUDA_initialized": true,
+    "coverage": {
+      "train": {
+        "images": 30344,
+        "studies": 18513,
+        "patients": 11055
+      },
+      "val": {
+        "images": 1422,
+        "studies": 859,
+        "patients": 228
+      },
+      "test": {
+        "images": 2218,
+        "studies": 1414,
+        "patients": 136
+      }
+    },
+    "loss_math_checks": {
+      "stable_probability_mean_BCE_matches_direct": true,
+      "max_abs_loss_difference": 5.960464477539063e-08,
+      "accumulated_gradient_matches_full_window": true,
+      "max_abs_gradient_difference": 0.0,
+      "uneven_last_window_gradient_matches": true,
+      "max_abs_last_window_gradient_difference": 0.0,
+      "final17_study_window_gradient_matches": true,
+      "max_abs_final17_gradient_difference": 0.0,
+      "extreme_logits_loss_and_gradient_finite": true,
+      "normalization": "Actual Study count per optimizer window, not division by microbatch count"
+    },
+    "strict_pretrained_nonclassifier_tensors": 204
+  },
+  "inference_postguard_CPU_check": {
+    "state": "passed",
+    "raw_validation_images": 1422,
+    "validation_studies": 859,
+    "checkpoint_sha256": "e4396db33d9fa25751205fc4d848766ff894ec4d104d884b77847e4afd01b250"
+  },
+  "submission_structure_check": "passed against all14140 officialtest rows with Gates and actual checkpoint SHA",
+  "GPU_exact_replay": {
+    "state": "passed",
+    "tested_infer_SHA_before_only_guards": "bc1d359f3bcb41c8419bafa783193531452af9dfbcccebf35856c79e64ff7243",
+    "image_probability_maxdiff": 0.0,
+    "study_probability_maxdiff": 0.0,
+    "submission_sha256": "2b7ddeec8f605e1fef96807ecdd17d042a8ba06e2163d4a4433f12a35f38ba66",
+    "guard_only_diff": "infer_guard_only.diff"
+  },
+  "no_new_training_or_installations": true,
+  "published_source_sha256": {
+    "train.py": "922ea1a3061a6eea892bed7d2c862bd623eca0e82606b5eb17a50eac2e47657b",
+    "common.py": "76f4e5dc82f70addec6e4a3998f7eec2a050dc69fe24647a4fd4f408543b9d9f",
+    "training_core.py": "435925ec1b3ba3832d630662cb0ebcba70f13f50cdf89df3756f463274a7ab24",
+    "data_pipeline.py": "f4ab6ba46a70aeb083b6fb7e56ba21b2415a01b48d422f49668999963b1a1f8f",
+    "infer.py": "3e150691d0cccc8d6514205181ae3acdb4477573f221f4e494ac46d7097ea802",
+    "tools/check_submission.py": "ba7fc8638ede4303527dd4846aeff67f3fd46eedba401930521310acb816f6af",
+    "recipe.json": "338164159b75cc0af7fcfa27cfabdee7ed7c54ea31e2367325e3a43c793f3459",
+    "pretrained_config.json": "40b80e3fa85d543c3f924a48e9a5c83607fdbb62962acc749692c8222fca6dca"
+  }
+}

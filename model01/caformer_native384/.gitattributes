@@ -1,0 +1,3 @@
+* -text
+# Blank unified-diff context lines contain a context-marker space.
+reports/infer_guard_only.diff -whitespace

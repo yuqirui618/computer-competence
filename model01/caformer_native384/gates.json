@@ -1,0 +1,46 @@
+{
+  "oof_macro_f1": 0.4578443406291471,
+  "oof_f1_by_class_id": [
+    0.1218274111675127,
+    0.36363636363636365,
+    0.25316455696202533,
+    0.296875,
+    0.5342019543973942,
+    0.4838095238095238,
+    0.5331179321486268,
+    0.4952681388012618,
+    0.7338842975206612,
+    0.7626582278481012
+  ],
+  "final_gates_by_class_id": [
+    0.05,
+    0.2,
+    0.125,
+    0.175,
+    0.25,
+    0.225,
+    0.175,
+    0.225,
+    0.225,
+    0.4
+  ],
+  "patients": 228,
+  "checkpoint_sha256": "e4396db33d9fa25751205fc4d848766ff894ec4d104d884b77847e4afd01b250",
+  "best_epoch": 5,
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "pretrained_sha256": "629149fd6170274f8f19d1fbbb9b155b13933ff3d2f9e991ac0339d993426806",
+  "candidate_only": true,
+  "gate_fit_source": "Full official validation; patient OOF threshold metrics separately",
+  "checkpoint_filename": "best.pth"
+}

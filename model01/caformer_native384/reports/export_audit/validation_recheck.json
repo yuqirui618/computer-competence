@@ -1,0 +1,10 @@
+{
+  "state": "passed",
+  "images": 1422,
+  "studies": 859,
+  "patients": 228,
+  "macro_auc": 0.80477870054969,
+  "macro_f1_at05": 0.3089877462117915,
+  "max_abs_image_probability_difference": 0.0,
+  "max_abs_Study_probability_difference": 0.0
+}

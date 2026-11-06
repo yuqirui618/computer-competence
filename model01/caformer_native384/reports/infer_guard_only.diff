@@ -1,0 +1,24 @@
+--- GPU_verified_infer.py
++++ published_infer.py
+@@ -28,6 +28,7 @@
+ 
+ def main(a):
+     out=a.output_dir.expanduser().resolve();package=Path(__file__).resolve().parent
++    require(not out.exists() or (out.is_dir() and not any(out.iterdir())),'Refuse to overwrite any existing nonempty output directory; choose a new empty directory')
+     require(out!=package and not out.is_relative_to(package),'Choose output outside the source package')
+     require(out not in (a.checkpoint.expanduser().resolve().parent,a.gates.expanduser().resolve().parent,a.manifest.expanduser().resolve().parent),'Output must be separate from checkpoint/Gates/manifest directories')
+     raw=a.data_root.expanduser().resolve();require(not out.is_relative_to(raw) and not raw.is_relative_to(out),'Keep output separate from raw data')
+@@ -91,9 +92,12 @@
+             with context:logits=model(image)
+             values.append(logits.float().sigmoid().cpu().numpy());seen.extend(index.tolist())
+     require(seen==list(range(len(rows))),'Image inference coverage differs')
+-    image_p=np.concatenate(values);keys=list(groups);indices=OrderedDict((k,[]) for k in groups)
++    image_p=np.concatenate(values)
++    require(image_p.dtype==np.float32 and image_p.shape==(len(rows),10) and np.isfinite(image_p).all() and ((image_p>=0)&(image_p<=1)).all(),'Invalid image probability array')
++    keys=list(groups);indices=OrderedDict((k,[]) for k in groups)
+     for i,study_index in enumerate(dataset.study_indices):indices[keys[study_index]].append(i)
+     probabilities={key:image_p[v].mean(0,dtype=np.float32) for key,v in indices.items()}
++    require(all(v.shape==(10,) and v.dtype==np.float32 and np.isfinite(v).all() and ((v>=0)&(v<=1)).all() for v in probabilities.values()),'Invalid Study probability array')
+     output=out/'submission.csv'
+     with output.open('w',encoding='utf-8',newline='') as f:
+         writer=csv.writer(f,lineterminator='\n');writer.writerow(COLUMNS)

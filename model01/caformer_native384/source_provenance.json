@@ -1,0 +1,20 @@
+{
+  "source_experiment_label": "CAFormer384_原生全骨干_20261106",
+  "source_files_sha256": {
+    "common.py": "96b0922f667f9a82c3f48fc39ff651d8f0cf2b7d6a5351a0d4042ade41cd9b13",
+    "data_pipeline.py": "f4ab6ba46a70aeb083b6fb7e56ba21b2415a01b48d422f49668999963b1a1f8f",
+    "train_native.py": "8cfde695e6a8302b545dfc000a79a26f165b2ffc3b1e8135dff8722058f27bb4",
+    "pretrained_manifest.json": "381ee9a22fd9094b3d2e421b387ac22eb59486fd4d6b990a584b3d140d599388"
+  },
+  "adaptations": [
+    "common replaced by explicit CLI paths and small immutable input guard; historical414file guard excluded",
+    "training_core loss/model/optimizer/schedule/data loop copied unchanged; platform lock adds POSIX support",
+    "data_pipeline copied byte-for-byte",
+    "infer uses the complete native384 trained model, raw image sigmoid probabilities and float32 Study mean",
+    "Guard-only change after exact GPU replay recorded in reports/infer_guard_only.diff"
+  ],
+  "historical_warm_start_or_feature_cache_used": false,
+  "weights_or_official_data_bundled": false,
+  "GPU_verified_infer_sha256_before_only_guards": "bc1d359f3bcb41c8419bafa783193531452af9dfbcccebf35856c79e64ff7243",
+  "published_infer_sha256": "3e150691d0cccc8d6514205181ae3acdb4477573f221f4e494ac46d7097ea802"
+}
