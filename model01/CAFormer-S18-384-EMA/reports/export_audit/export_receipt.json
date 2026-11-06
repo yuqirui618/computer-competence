@@ -1,0 +1,83 @@
+{
+  "state": "passed",
+  "created_at": "2026-11-06T23:02:36.753550+08:00",
+  "model_config_sha256": "dba503e97138f740a8a0362be1ce1140393fcf84a985d9d5711647e49deade81",
+  "source_inputs": {
+    "E:\\比赛数据集\\CAFormer384_三项优化_20261106\\A_BCE_EMA\\best_ema.pth": "f1f862bd6c76235e59e96b17b4bdae92aa497846b4eef42e8fb33b2b34ddee85",
+    "E:\\比赛数据集\\CAFormer384_三项优化_20261106\\A_BCE_EMA\\gates_ema.json": "678fb6ccffcdc1e2d77e48c380debab3a75c0765da1b79e88f2d413f70b474dd",
+    "E:\\比赛数据集\\CAFormer384_原生全骨干_20261106\\pretrained\\config.json": "6c03c9a2c9c75760b485f2ca621c09bf0186e718dbbdc0a43665e2920f22d9b0",
+    "E:\\比赛数据集\\喻数据产物\\manifest.csv": "b7c280dc0edc8b99d2aa1210651bab7ff9724d4c0a26b76b231c1935b275c142",
+    "E:\\比赛数据集\\raw\\cxr_first\\test.csv": "63e107d840cbf27aee7c1c0ced1157aef454baa1141fdc3851e6c3011471529e",
+    "E:\\比赛数据集\\CAFormer384_三项优化_20261106\\A_BCE_EMA\\predictions\\ema_epoch_01.npz": "84de88e32b80f1240f6f1e476d6eda6d6ca4850fae95ab10f122d855f15f99cc"
+  },
+  "submission": {
+    "path": "E:\\比赛数据集\\提交结果\\CAFormer-S18-384-EMA\\submission.csv",
+    "sha256": "8c3749feda0a592c823df234b5ebc8e470701eb1fa7a5ebc1b322719562d524c",
+    "bytes": 681599,
+    "rows": 14140,
+    "columns": [
+      "Subject_id",
+      "Study_id",
+      "Predict_class",
+      "Probability",
+      "Gate"
+    ],
+    "encoding": "UTF-8 without BOM"
+  },
+  "validation_recheck": {
+    "state": "passed",
+    "images": 1422,
+    "studies": 859,
+    "patients": 228,
+    "macro_auc": 0.8061307765133356,
+    "macro_f1_at05": 0.3147037443711392,
+    "max_abs_image_probability_difference": 0.0,
+    "max_abs_Study_probability_difference": 0.0
+  },
+  "test": {
+    "images": 2218,
+    "studies": 1414,
+    "patients": 136,
+    "labels_available": false
+  },
+  "prediction_artifacts": {
+    "E:\\比赛数据集\\提交结果\\CAFormer-S18-384-EMA\\work\\test_image_probabilities.npz": "215e4a438fda28cd46c081b765def5b5d49c87e5a10a4a0e2a2f3fe6c203af69",
+    "E:\\比赛数据集\\提交结果\\CAFormer-S18-384-EMA\\work\\test_study_probabilities.npz": "743a10ea525a8a31b134e4c29b0b585e464336873ceccc617879d5d5195f055d"
+  },
+  "inference_seconds": {
+    "validation": 81.30064549995586,
+    "test": 147.467964499956
+  },
+  "exporter_sha256": "021dfd4a1e12ef3b7233a734f67a02d7beae319746415992fbb8f1f2d049e397",
+  "no_training": true,
+  "no_test_threshold_fitting": true,
+  "github_uploaded": false,
+  "original_training_reports_unchanged": true,
+  "independent_validation": {
+    "path": "E:\\比赛数据集\\提交结果\\CAFormer-S18-384-EMA\\独立校验.json",
+    "sha256": "2f5f32a12ac16a512e38efe8f42b198b5fa2a3486fcd8fe2ea8074ccd6beb45f",
+    "validator_sha256": "5c3bcd70dbbd3b249b3347d365f67e48f3210e6f4b41022b2697ed97528b4445",
+    "state": "passed"
+  },
+  "inference_original_output": {
+    "path": "E:\\比赛数据集\\提交结果\\CAFormer-S18-384-EMA\\CAFormer-S18-384-EMA.csv",
+    "sha256": "8c3749feda0a592c823df234b5ebc8e470701eb1fa7a5ebc1b322719562d524c",
+    "bytes": 681599,
+    "rows": 14140,
+    "columns": [
+      "Subject_id",
+      "Study_id",
+      "Predict_class",
+      "Probability",
+      "Gate"
+    ],
+    "encoding": "UTF-8 without BOM",
+    "probability_decimal_places": 12
+  },
+  "official_filename_verification": {
+    "path": "E:\\比赛数据集\\提交结果\\CAFormer-S18-384-EMA\\official_filename_verification.json",
+    "sha256": "0b9db44557fa6a716858b669befa3a99eff37c934cde56d1f2fce7186e67c831",
+    "state": "passed",
+    "numeric_source_file_identical": true
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "state": "passed",
+  "time": "2026-11-06T23:05:55.104010+08:00",
+  "official_required_filename": "submission.csv",
+  "official_required_encoding": "UTF-8",
+  "official_rule_source": {
+    "path": "E:\\比赛数据集\\reference_materials\\赛题相关资料\\任务描述.docx",
+    "sha256": "07fdf8cd576a19e2290c1b9ca503f78c8760eeee811d9d9a19342376ca7c3267",
+    "paragraphs": [
+      {
+        "body_paragraph_1based": 40,
+        "text": "对于测试集中的每次检查即Study_id，模型需输出对应的类别id及其概率值。将最终结果生成⼀个.csv格式的结果⽂件，命名为\"submission.csv\"，编码为UTF-8，格式示例如下："
+      }
+    ]
+  },
+  "model_named_inference_output": {
+    "path": "E:\\比赛数据集\\提交结果\\CAFormer-S18-384-EMA\\CAFormer-S18-384-EMA.csv",
+    "sha256": "8c3749feda0a592c823df234b5ebc8e470701eb1fa7a5ebc1b322719562d524c"
+  },
+  "official_submission": {
+    "path": "E:\\比赛数据集\\提交结果\\CAFormer-S18-384-EMA\\submission.csv",
+    "sha256": "8c3749feda0a592c823df234b5ebc8e470701eb1fa7a5ebc1b322719562d524c",
+    "bytes": 681599,
+    "rows": 14140,
+    "columns": [
+      "Subject_id",
+      "Study_id",
+      "Predict_class",
+      "Probability",
+      "Gate"
+    ],
+    "encoding": "UTF-8 without BOM"
+  },
+  "byte_for_byte_identical": true,
+  "independent_numerical_validation": {
+    "path": "E:\\比赛数据集\\提交结果\\CAFormer-S18-384-EMA\\独立校验.json",
+    "sha256": "2f5f32a12ac16a512e38efe8f42b198b5fa2a3486fcd8fe2ea8074ccd6beb45f",
+    "validated_original_csv_sha256": "8c3749feda0a592c823df234b5ebc8e470701eb1fa7a5ebc1b322719562d524c"
+  },
+  "official_ID_and_order_rechecked_on_canonical_file": true,
+  "no_extra_inference_or_training": true,
+  "export_receipt_sha256_before_canonicalization": "4f01e751c33397ed77bf53173ad868a3c867d32f7c0950f331f7bdcd4b8fe6d2"
+}

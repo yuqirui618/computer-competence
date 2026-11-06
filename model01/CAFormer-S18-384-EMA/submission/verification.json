@@ -1,0 +1,60 @@
+{
+  "state": "passed",
+  "model": "CAFormer-S18-384-EMA",
+  "file": "submission.csv",
+  "sha256": "8c3749feda0a592c823df234b5ebc8e470701eb1fa7a5ebc1b322719562d524c",
+  "bytes": 681599,
+  "rows": 14140,
+  "columns": [
+    "Subject_id",
+    "Study_id",
+    "Predict_class",
+    "Probability",
+    "Gate"
+  ],
+  "encoding": "UTF-8 without BOM",
+  "test_images": 2218,
+  "test_studies": 1414,
+  "test_patients": 136,
+  "classes_per_Study": 10,
+  "checkpoint_sha256": "f1f862bd6c76235e59e96b17b4bdae92aa497846b4eef42e8fb33b2b34ddee85",
+  "gates": [
+    0.1,
+    0.25,
+    0.15,
+    0.175,
+    0.2,
+    0.175,
+    0.225,
+    0.25,
+    0.225,
+    0.3
+  ],
+  "image_to_Study_FP32_mean_independently_recomputed": true,
+  "all_official_IDs_order_and_classes_checked": true,
+  "max_abs_csv_rounding_difference": 5.000444502911705e-13,
+  "threshold_decisions_unchanged": true,
+  "validation_recheck": {
+    "state": "passed",
+    "images": 1422,
+    "studies": 859,
+    "patients": 228,
+    "macro_auc": 0.8061307765133356,
+    "macro_f1_at05": 0.3147037443711392,
+    "max_abs_image_probability_difference": 0.0,
+    "max_abs_Study_probability_difference": 0.0
+  },
+  "official_required_filename": "submission.csv",
+  "official_required_encoding": "UTF-8",
+  "official_task_docx_sha256": "07fdf8cd576a19e2290c1b9ca503f78c8760eeee811d9d9a19342376ca7c3267",
+  "official_name_copy_identical_to_inference_output": true,
+  "test_labels_available": false,
+  "test_AUC_or_F1_computed": false,
+  "exporter_sha256": "021dfd4a1e12ef3b7233a734f67a02d7beae319746415992fbb8f1f2d049e397",
+  "independent_validator_sha256": "5c3bcd70dbbd3b249b3347d365f67e48f3210e6f4b41022b2697ed97528b4445",
+  "audit_files_sha256": {
+    "reports\\export_audit\\export_receipt.json": "3fc1b15e28a738e38af4cb4352c80b9e26e5ebe6174fc891d23f3fc8d25dd8bd",
+    "reports\\export_audit\\independent_validation.json": "2f5f32a12ac16a512e38efe8f42b198b5fa2a3486fcd8fe2ea8074ccd6beb45f",
+    "reports\\export_audit\\official_filename_verification.json": "0b9db44557fa6a716858b669befa3a99eff37c934cde56d1f2fce7186e67c831"
+  }
+}

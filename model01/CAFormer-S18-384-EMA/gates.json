@@ -1,0 +1,48 @@
+{
+  "oof_macro_f1": 0.4714205094643349,
+  "oof_f1_by_class_id": [
+    0.16,
+    0.4523809523809524,
+    0.2975206611570248,
+    0.2716049382716049,
+    0.5414012738853503,
+    0.45627376425855515,
+    0.5399644760213144,
+    0.5048231511254019,
+    0.7406199021207178,
+    0.7496159754224271
+  ],
+  "final_gates_by_class_id": [
+    0.1,
+    0.25,
+    0.15,
+    0.175,
+    0.2,
+    0.175,
+    0.225,
+    0.25,
+    0.225,
+    0.3
+  ],
+  "patients": 228,
+  "checkpoint": "E:\\比赛数据集\\CAFormer384_三项优化_20261106\\A_BCE_EMA\\best_ema.pth",
+  "checkpoint_sha256": "f1f862bd6c76235e59e96b17b4bdae92aa497846b4eef42e8fb33b2b34ddee85",
+  "best_epoch": 1,
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "pretrained_sha256": "629149fd6170274f8f19d1fbbb9b155b13933ff3d2f9e991ac0339d993426806",
+  "arm": "A_BCE_EMA",
+  "variant": "ema",
+  "candidate_only": true,
+  "gate_fit_source": "Full official validation; patient OOF F1 separate"
+}

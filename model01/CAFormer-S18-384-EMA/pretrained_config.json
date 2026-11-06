@@ -1,0 +1,35 @@
+{
+  "architecture": "caformer_s18",
+  "num_classes": 1000,
+  "num_features": 512,
+  "pretrained_cfg": {
+    "tag": "sail_in1k_384",
+    "custom_load": false,
+    "input_size": [
+      3,
+      384,
+      384
+    ],
+    "fixed_input_size": false,
+    "interpolation": "bicubic",
+    "crop_pct": 1.0,
+    "crop_mode": "center",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "num_classes": 1000,
+    "pool_size": [
+      12,
+      12
+    ],
+    "first_conv": "stem.conv",
+    "classifier": "head.fc.fc2"
+  }
+}
