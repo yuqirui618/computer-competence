@@ -1,14 +1,14 @@
 """
-MambaOut-Tiny 多标签分类模型（陈负责）。
+CAFormer-S18-384 多标签分类模型（Echo-12345 / feat/model）。
 
-接口（与《今日计划》第四节完全一致）：
+接口保持不变：
     build_model(num_classes=10, pretrained=True, drop_path=0.0) -> nn.Module
     load_checkpoint(model, ckpt_path, strict=True) -> nn.Module
 
 权重来源：
-    timm/mambaout_tiny.in1k（ImageNet-1K / Apache-2.0 / 非 gated）
-    固定 revision: d080941663a60c42d015ecf8d8fad86d12694208
-    输出为 10 个 logits（不是 Softmax）；损失用 BCEWithLogitsLoss，推理时 sigmoid。
+    timm / caformer_s18.sail_in1k_384（ImageNet-1K 原生 384 / Apache-2.0 / 非 gated）
+    预训练权重 SHA-256: 629149fd6170274f8f19d1fbbb9b155b13933ff3d2f9e991ac0339d993426806
+    输出为 10 个 logits（不是 Softmax）；训练默认 RGB Loss，推理时 sigmoid。
 """
 from __future__ import annotations
 
@@ -21,15 +21,15 @@ def build_model(
     pretrained: bool = True,
     drop_path: float = 0.0,
 ) -> nn.Module:
-    """构建 MambaOut-Tiny。
+    """构建 CAFormer-S18（原生 384）。
 
     num_classes=10 会把 ImageNet 的 1000 类头替换成 10 类头，骨干权重仍从
-    ImageNet 预训练权重加载（timm 只跳过头，不会静默随机初始化骨干）。
+    ImageNet-1K 原生 384 预训练权重加载（timm 只跳过头）。
     """
     import timm
 
     model = timm.create_model(
-        "hf-hub:timm/mambaout_tiny.in1k",
+        "caformer_s18.sail_in1k_384",
         pretrained=pretrained,
         num_classes=num_classes,
         drop_path_rate=drop_path,

@@ -1,26 +1,29 @@
-# MambaOut-Tiny 权重合规材料（陈负责存档）
+# CAFormer-S18-384 权重合规材料（Echo-12345 / feat/model）
 
-- 模型名：`timm/mambaout_tiny.in1k`（MambaOut-Tiny）
+- 模型名：`caformer_s18.sail_in1k_384`（CAFormer-S18，原生 384）
 - 用途：比赛分类骨干，ImageNet-1K 预训练，非医学数据
 - 许可证：Apache-2.0（全文见同目录 `LICENSE`）
 - 获取方式：非 gated，无需登录 / 单独授权
 
-## 权重信息（已核验，2026-11-02）
+## 预训练权重信息
 
 | 项目 | 值 |
 |---|---|
-| HuggingFace | https://huggingface.co/timm/mambaout_tiny.in1k |
-| 固定 revision | d080941663a60c42d015ecf8d8fad86d12694208 |
-| 权重文件 | model.safetensors |
-| 实际大小 | 106,197,008 字节（约 106.2 MB） |
-| SHA-256 | ac9535c5b9fe1d325c5bf58dd4ffc3201c1fc04992b37e393977a7526cccafb4 |
-| 参数量 / FLOPs | 26.5M / 4.5G @224 |
+| HuggingFace | https://huggingface.co/timm/caformer_s18.sail_in1k_384 |
+| 预训练数据 | ImageNet-1K（native 384） |
+| 许可证 | Apache-2.0 |
+| SHA-256 | 629149fd6170274f8f19d1fbbb9b155b13933ff3d2f9e991ac0339d993426806 |
+| 参数量 | 约 26M（CAFormer-S18） |
 
-## 官方仓库（作者 yu weihao，备查）
+## 训练/续训权重
 
-- 仓库：https://github.com/yuweihao/MambaOut
-- LICENSE：Apache-2.0
-- 作者原版权重（备查，本方案不使用）：
-  https://github.com/yuweihao/MambaOut/releases/download/model/mambaout_tiny.pth
-- 官方 ImageNet 训练配方（仅参考，不是微调配置）：
-  lr 4e-3 / adamw / batch 4096 / warmup 20 epochs / drop_path 0.2 / AMP
+- 正式候选：`CAFormer-S18-384-EMA-RGB/`（本地两阶段 + EMA + RGB Loss）
+- 原版 BCE 冠军权重/提交仍保留在仓库 `feat/model01-mambaout` 分支，不在本分支覆盖
+- 训练得到的 EMA 权重是本地训练产物，不属于预训练权重，不在此静态申报
+
+## RGB Loss 说明
+
+- 论文：Lin et al., MICCAI 2026, "Reference-Guided Gradient Balancing Loss for Long-Tailed Multi-label Medical Image Classification"
+- 官方实现：https://github.com/xup6YJ/RGB-Loss （GPL-3.0）
+- 仅用于训练，推理不使用；无外部医学数据/医学预训练权重
+- 详见同目录 `RGB_LOSS_NOTICE.md`
