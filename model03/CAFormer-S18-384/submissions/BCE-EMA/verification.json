@@ -1,0 +1,64 @@
+{
+  "state": "passed",
+  "model": "BCE-EMA",
+  "arm": "A0_BCE_EMA",
+  "track": "ema",
+  "epoch": 5,
+  "source_total_epoch": 5,
+  "checkpoint_sha256": "b79101eabe721b55f19e1865223163c7cf58d63ba538c7f2cc4377329a6650e2",
+  "selected_validation_AUC": 0.8076126370828616,
+  "validation_recheck": {
+    "state": "passed",
+    "images": 1422,
+    "studies": 859,
+    "patients": 228,
+    "macro_auc": 0.8076126370828616,
+    "macro_f1_at05": 0.3011522203449735,
+    "max_abs_image_probability_difference": 0.0,
+    "max_abs_Study_probability_difference": 0.0
+  },
+  "official_submission": {
+    "filename": "submission.csv",
+    "sha256": "1ee3fdce8d54c3e353d13583cd8313dcc37b6db04fe614ffd55e4056597a56f3",
+    "bytes": 684427,
+    "rows": 14140,
+    "columns": [
+      "Subject_id",
+      "Study_id",
+      "Predict_class",
+      "Probability",
+      "Gate"
+    ],
+    "encoding": "UTF-8 without BOM"
+  },
+  "official_test": {
+    "images": 2218,
+    "studies": 1414,
+    "patients": 136,
+    "classes_per_study": 10,
+    "labels_available": false
+  },
+  "gate_values": [
+    0.1,
+    0.275,
+    0.125,
+    0.225,
+    0.25,
+    0.25,
+    0.225,
+    0.25,
+    0.3,
+    0.375
+  ],
+  "gate_sha256": "b4092e38f4d18e615a3da5f66a0c3a5eaf767ee0f2abd0c03df6fa798383454a",
+  "independent_FP32_image_to_Study_recomputed": true,
+  "all_IDs_and_order_match_official": true,
+  "max_abs_csv_rounding_difference": 4.998779168374767e-13,
+  "threshold_decisions_unchanged": true,
+  "source_export_receipt_sha256": "cabcf3e469aa606a9c47c87a3efcdd658b6f84c4c75d91a8bd859b87e94c7449",
+  "source_independent_report_sha256": "d9023ee323a4818262943baff945c49b8075ac5db1987455f5ae48a3c20859cf",
+  "actual_exporter_sha256": "3c11dfb7d118fcc9b27b0c8e27019425dd5c437363a302407554a8d0c13f3cd1",
+  "actual_independent_validator_sha256": "24c6d931d9aff10aa8df7155d292950078f7d599637f389751862e95b51d3705",
+  "no_test_label_threshold_fitting": true,
+  "no_hidden_test_metrics": true
+}

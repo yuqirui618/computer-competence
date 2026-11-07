@@ -1,0 +1,165 @@
+{
+  "state": "verified_source_summary",
+  "scores_are": "official validation, never hidden test scores",
+  "validation": {
+    "studies": 859,
+    "images": 1422,
+    "patients": 228
+  },
+  "delivered_models": {
+    "BCE-Raw": {
+      "arm": "A0_BCE_EMA",
+      "variant": "raw",
+      "epoch": 5,
+      "macro_auc": 0.8074637227207407,
+      "macro_f1_at_0_5": 0.3031590196232405,
+      "patient_oof_macro_f1": 0.46658678855684393,
+      "checkpoint_sha256": "15c2721649f76978a4d063fafa90cc7b27e01338c40470eaa14349f11c169552",
+      "prediction_sha256": "3f43d64ab205a68c071d0b521761023d42588852d3423343d81d7d9366ffad91",
+      "paired_comparison_vs_fixed_old_EMA": {
+        "candidate": "A0_BCE_EMA/raw",
+        "reference": "old_EMA_fixed",
+        "metrics": {
+          "macro_auc": {
+            "point_delta": 0.0013329462074050946,
+            "ci95": [
+              -0.005359317479773986,
+              0.008726920538980382
+            ],
+            "interval_includes_zero": true,
+            "validation_supports_positive_delta": false,
+            "decision": "inconclusive_crosses_zero"
+          },
+          "macro_f1_at_0_5": {
+            "point_delta": -0.011544724747898694,
+            "ci95": [
+              -0.02625119945119178,
+              0.005075870757102863
+            ],
+            "interval_includes_zero": true,
+            "validation_supports_positive_delta": false,
+            "decision": "inconclusive_crosses_zero"
+          },
+          "patient_oof_macro_f1": {
+            "point_delta": -0.004833720907490957,
+            "ci95": [
+              -0.021110957393494143,
+              0.014091569930278915
+            ],
+            "interval_includes_zero": true,
+            "validation_supports_positive_delta": false,
+            "decision": "inconclusive_crosses_zero"
+          }
+        }
+      }
+    },
+    "BCE-EMA": {
+      "arm": "A0_BCE_EMA",
+      "variant": "ema",
+      "epoch": 5,
+      "macro_auc": 0.8076126370828616,
+      "macro_f1_at_0_5": 0.3011522203449735,
+      "patient_oof_macro_f1": 0.4596310206783499,
+      "checkpoint_sha256": "b79101eabe721b55f19e1865223163c7cf58d63ba538c7f2cc4377329a6650e2",
+      "prediction_sha256": "270a1f45beb5f046f450c11f707b5ca9fdf91dbc123ec486cdf9c69fd114d527",
+      "paired_comparison_vs_fixed_old_EMA": {
+        "candidate": "A0_BCE_EMA/ema",
+        "reference": "old_EMA_fixed",
+        "metrics": {
+          "macro_auc": {
+            "point_delta": 0.001481860569525928,
+            "ci95": [
+              -0.005670420618753463,
+              0.009277571090609888
+            ],
+            "interval_includes_zero": true,
+            "validation_supports_positive_delta": false,
+            "decision": "inconclusive_crosses_zero"
+          },
+          "macro_f1_at_0_5": {
+            "point_delta": -0.013551524026165662,
+            "ci95": [
+              -0.02814320563402265,
+              0.0023704700710774867
+            ],
+            "interval_includes_zero": true,
+            "validation_supports_positive_delta": false,
+            "decision": "inconclusive_crosses_zero"
+          },
+          "patient_oof_macro_f1": {
+            "point_delta": -0.011789488785985014,
+            "ci95": [
+              -0.03413481206160549,
+              0.0091219106903683
+            ],
+            "interval_includes_zero": true,
+            "validation_supports_positive_delta": false,
+            "decision": "inconclusive_crosses_zero"
+          }
+        }
+      }
+    },
+    "Photo-Raw": {
+      "arm": "A2_photo",
+      "variant": "raw",
+      "epoch": 5,
+      "macro_auc": 0.808368401265456,
+      "macro_f1_at_0_5": 0.2939043705543625,
+      "patient_oof_macro_f1": 0.46641067328164015,
+      "checkpoint_sha256": "13e0c12f568e852af63685e759801def6958f30571fb923ea72719a6f2f58221",
+      "prediction_sha256": "a52c5083a4bc0c853c9b1258bfaeaa529f41b2caf8f76700fc44a06d558a964a",
+      "paired_comparison_vs_fixed_old_EMA": {
+        "candidate": "A2_photo/raw",
+        "reference": "old_EMA_fixed",
+        "metrics": {
+          "macro_auc": {
+            "point_delta": 0.002237624752120304,
+            "ci95": [
+              -0.004772580236537494,
+              0.009070584952658863
+            ],
+            "interval_includes_zero": true,
+            "validation_supports_positive_delta": false,
+            "decision": "inconclusive_crosses_zero"
+          },
+          "macro_f1_at_0_5": {
+            "point_delta": -0.020799373816776656,
+            "ci95": [
+              -0.03709810836160463,
+              -0.002956222700818535
+            ],
+            "interval_includes_zero": false,
+            "validation_supports_positive_delta": false,
+            "decision": "negative_interval"
+          },
+          "patient_oof_macro_f1": {
+            "point_delta": -0.005009836182694738,
+            "ci95": [
+              -0.024050732912901635,
+              0.013100333821301192
+            ],
+            "interval_includes_zero": true,
+            "validation_supports_positive_delta": false,
+            "decision": "inconclusive_crosses_zero"
+          }
+        }
+      }
+    }
+  },
+  "not_delivered_photo_EMA": {
+    "macro_auc": 0.8082075348289474,
+    "patient_oof_macro_f1": 0.47801102071604673,
+    "reason": "Separate non-delivered candidate; its F1 is not the Photo-Raw score"
+  },
+  "fixed_old_EMA": {
+    "macro_auc": 0.8061307765133356,
+    "patient_oof_macro_f1": 0.4714205094643349,
+    "untouched": true
+  },
+  "source_summary_sha256": "bb1c063e59b8d47c0661714ca74916e611c17f988a25acc8d121b5c3291f0010",
+  "experiment_actual_training_epochs": 23,
+  "experiment_raw_EMA_evaluations": 46,
+  "global_original_points_with_old_EMA": 47,
+  "S36_cancelled_epoch5_by_explicit_user_stop": true,
+  "statistical_limitations": "Fixed selected weights/OOF decisions; no reselection or multiple-comparison correction; no claim of significant or hidden-test improvement"
+}

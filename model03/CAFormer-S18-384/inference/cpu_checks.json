@@ -1,0 +1,140 @@
+{
+  "state": "passed",
+  "scope": "CPU-only metadata/numeric/model-load checks; no GPU/image forward/training",
+  "no_GPU": true,
+  "no_training": true,
+  "no_image_forward": true,
+  "unit_checks": {
+    "state": "passed",
+    "analytical_FP32_Study_mean_exact": true,
+    "interleaved_image_and_firstseen_Study_order_correct": true,
+    "columns": 5,
+    "fixture_rows": 20,
+    "rejected_cases": [
+      "duplicate_image_ID",
+      "missing_image_ID",
+      "unsafe_image_ID",
+      "Study_multiple_subjects",
+      "float64_probability_array",
+      "bad_header",
+      "missing_CSV_class",
+      "wrong_CSV_Study_order",
+      "wrong_Gate",
+      "wrong_probability_precision",
+      "nonfinite_probability",
+      "wrong_12decimal_probability",
+      "unexpected_BOM"
+    ],
+    "max_fixture_rounding_difference": 0.0
+  },
+  "AST_all_sources_passed": true,
+  "official_test_coverage": {
+    "images": 2218,
+    "studies": 1414,
+    "patients": 136
+  },
+  "manifest_test_image_order": {
+    "state": "identical",
+    "images": 2218,
+    "manifest_sha256": "b7c280dc0edc8b99d2aa1210651bab7ff9724d4c0a26b76b231c1935b275c142"
+  },
+  "raw_files_present": 2218,
+  "actual_export_replay": {
+    "a0_raw": {
+      "state": "passed",
+      "images": 2218,
+      "studies": 1414,
+      "patients": 136,
+      "rows": 14140,
+      "FP32_image_to_Study_maxdiff": 0.0,
+      "CSV_byte_for_byte_equal": true,
+      "submission_sha256": "ac769124d862d48c0bc94c093246be0ed378819a73ee559e534a860eb508c638",
+      "max_rounding_difference": 4.999889391399392e-13,
+      "no_new_GPU_forward": true
+    },
+    "photo_raw": {
+      "state": "passed",
+      "images": 2218,
+      "studies": 1414,
+      "patients": 136,
+      "rows": 14140,
+      "FP32_image_to_Study_maxdiff": 0.0,
+      "CSV_byte_for_byte_equal": true,
+      "submission_sha256": "4a1e0277ef1260bab1a519a31b99dbf08436acb0e99c4320aae4a5ce2c2218e8",
+      "max_rounding_difference": 4.998779168374767e-13,
+      "no_new_GPU_forward": true
+    },
+    "a0_ema": {
+      "state": "passed",
+      "images": 2218,
+      "studies": 1414,
+      "patients": 136,
+      "rows": 14140,
+      "FP32_image_to_Study_maxdiff": 0.0,
+      "CSV_byte_for_byte_equal": true,
+      "submission_sha256": "1ee3fdce8d54c3e353d13583cd8313dcc37b6db04fe614ffd55e4056597a56f3",
+      "max_rounding_difference": 4.998779168374767e-13,
+      "no_new_GPU_forward": true
+    }
+  },
+  "complete_checkpoint_CPU_load": {
+    "a0_raw": {
+      "state": "passed",
+      "checkpoint_sha256": "15c2721649f76978a4d063fafa90cc7b27e01338c40470eaa14349f11c169552",
+      "parameters": 24313146,
+      "all_parameters_frozen": true,
+      "training_mode": false,
+      "hidden_head_shape": [
+        10,
+        2048
+      ]
+    },
+    "a0_ema": {
+      "state": "passed",
+      "checkpoint_sha256": "b79101eabe721b55f19e1865223163c7cf58d63ba538c7f2cc4377329a6650e2",
+      "parameters": 24313146,
+      "all_parameters_frozen": true,
+      "training_mode": false,
+      "hidden_head_shape": [
+        10,
+        2048
+      ]
+    },
+    "photo_raw": {
+      "state": "passed",
+      "checkpoint_sha256": "13e0c12f568e852af63685e759801def6958f30571fb923ea72719a6f2f58221",
+      "parameters": 24313146,
+      "all_parameters_frozen": true,
+      "training_mode": false,
+      "hidden_head_shape": [
+        10,
+        2048
+      ]
+    }
+  },
+  "CUDA_initialized": false,
+  "source_sha256": {
+    "check_cpu.py": "385a0e6706b60f26b1e4b84c246b412a8e201a65a055f4ea838db06f5074aef5",
+    "common.py": "856eef75ca119c0f9199c8282156ac5e41a7c0fbf0a1ab9dda0cbe53f342fc76",
+    "infer.py": "8323c11f6a26431c3e0cc1ae0d0efce10b867eb7d3273d00db85530ae4f025ad",
+    "profiles.json": "953716fc4b0b759860ed2232c7ae35c7b4d48d78b89dec7d48a0d07d22a5f9d6",
+    "provenance.json": "65140d1ae549f7121dd8e9c7c496b8b89b0cee7f3e544cd49e971b9a130e023e",
+    "validate.py": "fb0dec8894181f5c0b7f0760db724f198279d2bc0bf4dd0797249a87c297da9a",
+    "validator_integration_checks.json": "3605869003519de5caa20fed7d025bd506f1dd44189b0e047a7325b0f1ccaffc"
+  },
+  "reference_replay_phases": [
+    {
+      "models": [
+        "a0_raw",
+        "photo_raw"
+      ],
+      "scope": "initial CPU suite plus these two already-completed source exports"
+    },
+    {
+      "models": [
+        "a0_ema"
+      ],
+      "scope": "only the newly completed export; earlier references and model loads not repeated"
+    }
+  ]
+}

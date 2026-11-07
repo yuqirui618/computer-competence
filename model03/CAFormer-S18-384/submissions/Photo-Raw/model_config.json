@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "model": {
+    "name": "CAFormer-S18-384-Photo-Raw",
+    "architecture": "caformer_s18",
+    "variant": "caformer_s18.sail_in1k_384",
+    "checkpoint": {
+      "path": "E:\\比赛数据集\\CAFormer_EMA_增强损失深度_20261106\\A2_photo\\best.pth",
+      "sha256": "13e0c12f568e852af63685e759801def6958f30571fb923ea72719a6f2f58221",
+      "epoch": 5,
+      "source_total_epoch": 5,
+      "arm": "A2_photo",
+      "track": "raw"
+    },
+    "native_pretrained_sha256": "629149fd6170274f8f19d1fbbb9b155b13933ff3d2f9e991ac0339d993426806"
+  },
+  "gates": {
+    "path": "E:\\比赛数据集\\CAFormer_EMA_增强损失深度_20261106\\A2_photo\\gates.json",
+    "sha256": "9e05bad07ff3926096727f714c1a4dbbe3f086a7251dc2c2b249971e4c4a1689",
+    "class_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "values": [
+      0.05,
+      0.3,
+      0.125,
+      0.2,
+      0.225,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4
+    ]
+  },
+  "preprocessing": {
+    "size": 384,
+    "interpolation": "bicubic",
+    "resize_mode": "full_field_pad",
+    "RGB": true,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "center_crop": false
+  },
+  "inference": {
+    "image_batch_size": 4,
+    "autocast": "float16",
+    "probability_dtype": "float32",
+    "aggregation": "float32_mean_image_sigmoid_probabilities_by_Study"
+  },
+  "official_test_csv": {
+    "path": "E:\\比赛数据集\\raw\\cxr_first\\test.csv",
+    "sha256": "63e107d840cbf27aee7c1c0ced1157aef454baa1141fdc3851e6c3011471529e"
+  },
+  "manifest": {
+    "path": "E:\\比赛数据集\\喻数据产物\\manifest.csv",
+    "sha256": "b7c280dc0edc8b99d2aa1210651bab7ff9724d4c0a26b76b231c1935b275c142"
+  },
+  "source_config": {
+    "path": "E:\\比赛数据集\\CAFormer384_原生全骨干_20261106\\pretrained\\config.json",
+    "sha256": "6c03c9a2c9c75760b485f2ca621c09bf0186e718dbbdc0a43665e2920f22d9b0"
+  },
+  "highest_validation_single_model_candidate": true,
+  "statistically_confirmed_AUC_improvement": false,
+  "confidence_interval_source": "See current local experiment summary; development-validation best point, not confirmed external improvement"
+}

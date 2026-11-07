@@ -1,0 +1,35 @@
+{
+  "state": "passed",
+  "scope": "CPU-only metadata/numeric/model-load checks; no GPU/image forward/training",
+  "no_GPU": true,
+  "no_training": true,
+  "no_image_forward": true,
+  "official_test_coverage": {
+    "images": 2218,
+    "studies": 1414,
+    "patients": 136
+  },
+  "actual_export_replay": {
+    "a0_ema": {
+      "state": "passed",
+      "images": 2218,
+      "studies": 1414,
+      "patients": 136,
+      "rows": 14140,
+      "FP32_image_to_Study_maxdiff": 0.0,
+      "CSV_byte_for_byte_equal": true,
+      "submission_sha256": "1ee3fdce8d54c3e353d13583cd8313dcc37b6db04fe614ffd55e4056597a56f3",
+      "max_rounding_difference": 4.998779168374767e-13,
+      "no_new_GPU_forward": true
+    }
+  },
+  "source_sha256": {
+    "check_cpu.py": "385a0e6706b60f26b1e4b84c246b412a8e201a65a055f4ea838db06f5074aef5",
+    "common.py": "856eef75ca119c0f9199c8282156ac5e41a7c0fbf0a1ab9dda0cbe53f342fc76",
+    "infer.py": "8323c11f6a26431c3e0cc1ae0d0efce10b867eb7d3273d00db85530ae4f025ad",
+    "profiles.json": "953716fc4b0b759860ed2232c7ae35c7b4d48d78b89dec7d48a0d07d22a5f9d6",
+    "provenance.json": "65140d1ae549f7121dd8e9c7c496b8b89b0cee7f3e544cd49e971b9a130e023e",
+    "validate.py": "fb0dec8894181f5c0b7f0760db724f198279d2bc0bf4dd0797249a87c297da9a",
+    "validator_integration_checks.json": "3605869003519de5caa20fed7d025bd506f1dd44189b0e047a7325b0f1ccaffc"
+  }
+}

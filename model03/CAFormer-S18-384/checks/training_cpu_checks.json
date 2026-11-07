@@ -1,0 +1,125 @@
+{
+  "state": "passed",
+  "mode": "CPU check only",
+  "checks": {
+    "all_initial_state_tensors_equal_frozen_factory": {
+      "passed": true,
+      "tensors": 206,
+      "native_audit": {
+        "architecture": "caformer_s18",
+        "source_sha256": "629149fd6170274f8f19d1fbbb9b155b13933ff3d2f9e991ac0339d993426806",
+        "strict_1000_tensor_count": 206,
+        "strict_1000_all_tensors_equal": true,
+        "preserved_non_fc2_tensors": 204,
+        "expected_non_fc2_tensors": 204,
+        "only_final_fc2_replaced": true,
+        "initialization_seed": 42
+      }
+    },
+    "optimizer_groups_match": {
+      "passed": true,
+      "groups": [
+        {
+          "name": "backbone_decay",
+          "lr": 5e-05,
+          "weight_decay": 0.05,
+          "tensors": 83
+        },
+        {
+          "name": "backbone_no_decay",
+          "lr": 5e-05,
+          "weight_decay": 0.0,
+          "tensors": 121
+        },
+        {
+          "name": "classifier_decay",
+          "lr": 0.0005,
+          "weight_decay": 0.05,
+          "tensors": 1
+        },
+        {
+          "name": "classifier_no_decay",
+          "lr": 0.0005,
+          "weight_decay": 0.0,
+          "tensors": 1
+        }
+      ]
+    },
+    "complete_image_Study_BCE_and_last17_gradient": {
+      "passed": true,
+      "value_error": 1.1920928955078125e-07,
+      "gradient_error": 1.4901161193847656e-08,
+      "last17_error": 1.862645149230957e-09
+    },
+    "EMA_recurrence_and_raw_unchanged": {
+      "passed": true,
+      "first_decay": 0.18181818181818182,
+      "successful_updates": 1
+    },
+    "unchanged_transforms_none_RNG_and_photo_runtime": {
+      "passed": true,
+      "official_train_examples": 2,
+      "source_bytes_identical": true
+    },
+    "training_math_loader_validation_AST_matches_frozen": {
+      "passed": true,
+      "includes_predict_inference_mode": true
+    },
+    "parser_paths_and_pretraining_retry_gate": {
+      "passed": true,
+      "missing_paths_rejected": true,
+      "uncommitted_epoch_rejected_before_training": true,
+      "protected_output_locations_rejected_before_mkdir": 6
+    }
+  },
+  "coverage": {
+    "train": {
+      "images": 30344,
+      "studies": 18513,
+      "patients": 11055
+    },
+    "val": {
+      "images": 1422,
+      "studies": 859,
+      "patients": 228
+    },
+    "test": {
+      "images": 2218,
+      "studies": 1414,
+      "patients": 136
+    }
+  },
+  "train_priors": [
+    0.033598012207637876,
+    0.04861448711716091,
+    0.05088316318262842,
+    0.07756711500027008,
+    0.1298546966996165,
+    0.2098525360557446,
+    0.21433587208988278,
+    0.24350456436017934,
+    0.25139091449251877,
+    0.36098957489331823
+  ],
+  "source_sha256": {
+    "train.py": "36a3574563defb32919c80e684e6d38495df58ef63bd5e777d6bbcf9dee31464",
+    "portable_model.py": "7ec170456ccb57fe790aebdf648a2341ab787e87744d82df8f7958a31a96ee35",
+    "portable_training.py": "6cdc826425609ef9ae15ee1a68ca2a01aca845c1b4739b82d791ed1febe44d34",
+    "data_pipeline.py": "f4ab6ba46a70aeb083b6fb7e56ba21b2415a01b48d422f49668999963b1a1f8f",
+    "augmentation.py": "f30476d066f3f652c5fc32071c448908124b43f3a260285a38343aacf8234294"
+  },
+  "pretrained_sha256": "629149fd6170274f8f19d1fbbb9b155b13933ff3d2f9e991ac0339d993426806",
+  "training_run": false,
+  "GPU_initialized": false,
+  "no_dependencies_on_old_champion_or_protection_files": true,
+  "independent_readonly_review": {
+    "state": "passed",
+    "output_protection_before_mkdir": true,
+    "checkpoint_fresh_scope_metadata": true,
+    "resume_optimizer_scaler_EMA_and_epoch_artifacts": true,
+    "five_epoch_raw_EMA_selections_and_gates": true,
+    "no_GPU_or_real_training_for_review": true
+  },
+  "parser_help_exit0": true,
+  "frozen_original_training_sources_unchanged": true
+}

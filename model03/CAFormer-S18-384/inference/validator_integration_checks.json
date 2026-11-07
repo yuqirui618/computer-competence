@@ -1,0 +1,29 @@
+{
+  "state": "passed",
+  "mode": "CPU-only existing Photo-Raw evidence fixture; no new GPU forward",
+  "full_validator_result": {
+    "state": "passed",
+    "model": "photo_raw",
+    "checkpoint_sha256": "13e0c12f568e852af63685e759801def6958f30571fb923ea72719a6f2f58221",
+    "checkpoint_file_checked": false,
+    "rows": 14140,
+    "images": 2218,
+    "studies": 1414,
+    "patients": 136,
+    "submission_sha256": "4a1e0277ef1260bab1a519a31b99dbf08436acb0e99c4320aae4a5ce2c2218e8",
+    "gates_sha256": "e45979b5c1d13df814ca47964a9ccaaa5a7545ebb5701e910a7a04974cb92aec",
+    "official_test_sha256": "63e107d840cbf27aee7c1c0ced1157aef454baa1141fdc3851e6c3011471529e",
+    "scope": "structure_Gates_and_exact_FP32_aggregation",
+    "image_to_Study_FP32_recomputed": true,
+    "rounding_max_difference": 4.998779168374767e-13,
+    "no_model_import_or_GPU": true,
+    "test_labels_available": false,
+    "test_AUC_or_F1_computed": false
+  },
+  "wrong_model_receipt_rejected": true,
+  "fixture_removed": true,
+  "original_CSV_modified": false,
+  "weights_loaded": false,
+  "CUDA_used": false,
+  "validator_sha256": "fb0dec8894181f5c0b7f0760db724f198279d2bc0bf4dd0797249a87c297da9a"
+}

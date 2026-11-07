@@ -1,0 +1,72 @@
+{
+  "pretrained": {
+    "repository": "timm/caformer_s18.sail_in1k_384",
+    "revision": "c46cc16d67a7d68806b7554b93e16b13506b7035",
+    "sha256": "629149fd6170274f8f19d1fbbb9b155b13933ff3d2f9e991ac0339d993426806",
+    "bytes": 105387838,
+    "filename": "model.safetensors",
+    "source_url": "https://huggingface.co/timm/caformer_s18.sail_in1k_384",
+    "license": "apache-2.0",
+    "license_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "pretraining_data": "ImageNet-1k",
+    "additional_medical_or_ImageNet21k_pretraining": false,
+    "weights_included": false
+  },
+  "models": {
+    "BCE-Raw": {
+      "architecture": "caformer_s18",
+      "native_input": [
+        3,
+        384,
+        384
+      ],
+      "arm": "A0_BCE_EMA",
+      "variant": "raw",
+      "epoch": 5,
+      "checkpoint_sha256": "15c2721649f76978a4d063fafa90cc7b27e01338c40470eaa14349f11c169552",
+      "checkpoint_file_not_in_repository": true,
+      "suggested_external_filename": "BCE-Raw.pth",
+      "validation_prediction_sha256": "3f43d64ab205a68c071d0b521761023d42588852d3423343d81d7d9366ffad91",
+      "submission_path": "submissions/BCE-Raw/submission.csv",
+      "model_config_path": "submissions/BCE-Raw/model_config.json",
+      "gates_path": "submissions/BCE-Raw/gates.json"
+    },
+    "BCE-EMA": {
+      "architecture": "caformer_s18",
+      "native_input": [
+        3,
+        384,
+        384
+      ],
+      "arm": "A0_BCE_EMA",
+      "variant": "ema",
+      "epoch": 5,
+      "checkpoint_sha256": "b79101eabe721b55f19e1865223163c7cf58d63ba538c7f2cc4377329a6650e2",
+      "checkpoint_file_not_in_repository": true,
+      "suggested_external_filename": "BCE-EMA.pth",
+      "validation_prediction_sha256": "270a1f45beb5f046f450c11f707b5ca9fdf91dbc123ec486cdf9c69fd114d527",
+      "submission_path": "submissions/BCE-EMA/submission.csv",
+      "model_config_path": "submissions/BCE-EMA/model_config.json",
+      "gates_path": "submissions/BCE-EMA/gates.json"
+    },
+    "Photo-Raw": {
+      "architecture": "caformer_s18",
+      "native_input": [
+        3,
+        384,
+        384
+      ],
+      "arm": "A2_photo",
+      "variant": "raw",
+      "epoch": 5,
+      "checkpoint_sha256": "13e0c12f568e852af63685e759801def6958f30571fb923ea72719a6f2f58221",
+      "checkpoint_file_not_in_repository": true,
+      "suggested_external_filename": "Photo-Raw.pth",
+      "validation_prediction_sha256": "a52c5083a4bc0c853c9b1258bfaeaa529f41b2caf8f76700fc44a06d558a964a",
+      "submission_path": "submissions/Photo-Raw/submission.csv",
+      "model_config_path": "submissions/Photo-Raw/model_config.json",
+      "gates_path": "submissions/Photo-Raw/gates.json"
+    }
+  },
+  "no_weights_environment_data_or_prediction_NPZ_in_repository": true
+}

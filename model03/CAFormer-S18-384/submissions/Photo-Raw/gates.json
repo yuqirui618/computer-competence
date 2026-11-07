@@ -1,0 +1,47 @@
+{
+  "oof_macro_f1": 0.46641067328164015,
+  "oof_f1_by_class_id": [
+    0.12972972972972974,
+    0.5352112676056338,
+    0.21052631578947367,
+    0.27586206896551724,
+    0.538961038961039,
+    0.48565965583174,
+    0.5215889464594128,
+    0.4774436090225564,
+    0.7332185886402753,
+    0.7559055118110236
+  ],
+  "final_gates_by_class_id": [
+    0.05,
+    0.3,
+    0.125,
+    0.2,
+    0.225,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4
+  ],
+  "patients": 228,
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "arm": "A2_photo",
+  "architecture": "caformer_s18",
+  "variant": "raw",
+  "best_epoch": 5,
+  "checkpoint": "E:\\比赛数据集\\CAFormer_EMA_增强损失深度_20261106\\A2_photo\\best.pth",
+  "checkpoint_sha256": "13e0c12f568e852af63685e759801def6958f30571fb923ea72719a6f2f58221",
+  "gate_fit_source": "full official validation; patient OOF F1 separate"
+}

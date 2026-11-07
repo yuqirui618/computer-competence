@@ -1,0 +1,69 @@
+{
+  "experiment": "CAFormer_EMA_增强损失深度_20261106",
+  "frozen_source_files": {
+    "experiment_common.py": {
+      "sha256": "e4d6eaf9f6edee54380e8b3b81c9a8f882f0c97f5dd3153b7c200c7f4bf98dd3",
+      "snapshot": "frozen_sources/experiment_common.py"
+    },
+    "trainer.py": {
+      "sha256": "b847d8a73e351c8a9480f78e27ca0838f158249e7e6baf4d68ab0e26a40bf9c2",
+      "snapshot": "frozen_sources/trainer.py"
+    },
+    "training_utils.py": {
+      "sha256": "a94e2e0221fb89aac18c7b922697f8bcf639db8f2a2a5031f987eed5e972103d",
+      "snapshot": "frozen_sources/training_utils.py"
+    },
+    "data_pipeline.py": {
+      "sha256": "f4ab6ba46a70aeb083b6fb7e56ba21b2415a01b48d422f49668999963b1a1f8f",
+      "snapshot": "frozen_sources/data_pipeline.py"
+    },
+    "augmentation.py": {
+      "sha256": "f30476d066f3f652c5fc32071c448908124b43f3a260285a38343aacf8234294",
+      "snapshot": "frozen_sources/augmentation.py"
+    },
+    "asl_study.py": {
+      "sha256": "df76c79ce8c5350e873e0c66f2c3b971ed48ea6c980b1cb01b55793163f1dd6d",
+      "snapshot": "frozen_sources/asl_study.py"
+    },
+    "models.py": {
+      "sha256": "aaab78bc69dd71d378ae82a8fddce16b6c295fd21ecb06cc93e271a5603f8e9f",
+      "snapshot": "frozen_sources/models.py"
+    }
+  },
+  "portable_same_function_bodies": {
+    "trainer.py": [
+      "setup",
+      "lr_factor",
+      "log_probabilities",
+      "ShadowEMA",
+      "training_epoch",
+      "losses_for",
+      "group_updates"
+    ],
+    "training_utils.py": [
+      "seed",
+      "loader",
+      "predict",
+      "fit_gates",
+      "calibration",
+      "metrics"
+    ]
+  },
+  "portable_adaptations": [
+    "Explicit manifest/raw/pretrained/output parameters",
+    "Single selected arm per invocation",
+    "No historical champion/protection dependencies",
+    "Check branch is CPU only"
+  ],
+  "training_data_and_weights_included": false,
+  "timm_version": "1.0.22",
+  "timm_metaformer_source_sha256": "619aa0b2d6be1150bb0d0ce118f2a5f692d2ad185bb195e23c28f3f78c956403",
+  "portable_source_sha256": {
+    "train.py": "36a3574563defb32919c80e684e6d38495df58ef63bd5e777d6bbcf9dee31464",
+    "portable_model.py": "7ec170456ccb57fe790aebdf648a2341ab787e87744d82df8f7958a31a96ee35",
+    "portable_training.py": "6cdc826425609ef9ae15ee1a68ca2a01aca845c1b4739b82d791ed1febe44d34",
+    "data_pipeline.py": "f4ab6ba46a70aeb083b6fb7e56ba21b2415a01b48d422f49668999963b1a1f8f",
+    "augmentation.py": "f30476d066f3f652c5fc32071c448908124b43f3a260285a38343aacf8234294"
+  },
+  "portable_CPU_check": "checks/training_cpu_checks.json"
+}

@@ -1,0 +1,13 @@
+{
+  "derived_from": "Executed Photo-Raw exporter work/infer.py",
+  "derived_source_sha256": "dd4723023ac9ccd2a7cd2c0376a95e15da003b8a303cc769528461b2b280628d",
+  "changes": [
+    "Three explicit frozen model profiles instead of one model",
+    "No historical absolute paths, validation NPZ, protection map or training runner imported",
+    "Official test row order was CPU-verified identical to the frozen manifest test row order; pinned official CSV preserves global batch4 and final2",
+    "Canonical submission.csv plus optional local image/Study audit NPZ",
+    "Cross-platform CLI and output lock; no Windows msvcrt dependency",
+    "Same complete timm head, RGB384 bicubic pad, normalization, FP16 forward, FP32 sigmoid and Study means"
+  ],
+  "no_claim": "No GPU run of this portable refactor has been performed by its author; actual numerical contract and source export are separately recorded"
+}

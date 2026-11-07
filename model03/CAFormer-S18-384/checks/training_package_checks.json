@@ -1,0 +1,25 @@
+{
+  "state": "passed",
+  "training_package_frozen": true,
+  "CPU_groups": 7,
+  "owned_files_sha256": {
+    "train.py": "36a3574563defb32919c80e684e6d38495df58ef63bd5e777d6bbcf9dee31464",
+    "portable_model.py": "7ec170456ccb57fe790aebdf648a2341ab787e87744d82df8f7958a31a96ee35",
+    "portable_training.py": "6cdc826425609ef9ae15ee1a68ca2a01aca845c1b4739b82d791ed1febe44d34",
+    "data_pipeline.py": "f4ab6ba46a70aeb083b6fb7e56ba21b2415a01b48d422f49668999963b1a1f8f",
+    "augmentation.py": "f30476d066f3f652c5fc32071c448908124b43f3a260285a38343aacf8234294",
+    "README.md": "d70a0a08d105b86dd463714a93ae84cabab54bef49d6f54d4fd447e9ebfe62a8",
+    "requirements.txt": "4e0daa4d68320c0d03772af9e28dd2c82f002407a7dcd5823df3b62628e60b6c",
+    "source_manifest.json": "8cfc174c3ad620bd0c9ec875aaacdafb937fab34262e783c59d2951b842afe84",
+    "weights_manifest.json": "315eadb5e1d9af3ab6cfbbcea2afb1d06b18cea01ff4e47e511484cf69a505ce",
+    "thresholds_manifest.json": "ca98650d9c380f407f48a494d9402a7d5d18afeea63e9c8ea6b015fec1911be7",
+    "validation_summary.json": "1ed2bb606640a9c0ffea563c51b978188537b0ce7d52fa216f2d47749f9233c1"
+  },
+  "training_CPU_receipt": "checks/training_cpu_checks.json",
+  "training_CPU_receipt_sha256": "15d9fc6adaf192198004c5f5f6bde540fda29f914b00ce52712ea039f2571988",
+  "no_GPU_or_real_training": true,
+  "all_temporary_files_outside_stage_on_E": true,
+  "no_Git_operation": true,
+  "forbidden_files": [],
+  "inference_and_submissions_not_modified_by_training_finalizer": true
+}

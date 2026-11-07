@@ -1,0 +1,89 @@
+{
+  "BCE-Raw": {
+    "class_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "thresholds": [
+      0.075,
+      0.25,
+      0.125,
+      0.225,
+      0.275,
+      0.25,
+      0.225,
+      0.25,
+      0.3,
+      0.4
+    ],
+    "checkpoint_sha256": "15c2721649f76978a4d063fafa90cc7b27e01338c40470eaa14349f11c169552",
+    "fitted_on": "full official validation; separate from patient OOF scoring",
+    "patient_oof_macro_f1": 0.46658678855684393
+  },
+  "BCE-EMA": {
+    "class_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "thresholds": [
+      0.1,
+      0.275,
+      0.125,
+      0.225,
+      0.25,
+      0.25,
+      0.225,
+      0.25,
+      0.3,
+      0.375
+    ],
+    "checkpoint_sha256": "b79101eabe721b55f19e1865223163c7cf58d63ba538c7f2cc4377329a6650e2",
+    "fitted_on": "full official validation; separate from patient OOF scoring",
+    "patient_oof_macro_f1": 0.4596310206783499
+  },
+  "Photo-Raw": {
+    "class_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "thresholds": [
+      0.05,
+      0.3,
+      0.125,
+      0.2,
+      0.225,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4
+    ],
+    "checkpoint_sha256": "13e0c12f568e852af63685e759801def6958f30571fb923ea72719a6f2f58221",
+    "fitted_on": "full official validation; separate from patient OOF scoring",
+    "patient_oof_macro_f1": 0.46641067328164015
+  }
+}
