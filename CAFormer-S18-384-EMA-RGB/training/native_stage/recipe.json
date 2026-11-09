@@ -1,0 +1,64 @@
+{
+  "EXPECTED": {
+    "train": {
+      "images": 30344,
+      "studies": 18513,
+      "patients": 11055
+    },
+    "val": {
+      "images": 1422,
+      "studies": 859,
+      "patients": 228
+    },
+    "test": {
+      "images": 2218,
+      "studies": 1414,
+      "patients": 136
+    }
+  },
+  "COMMON": {
+    "architecture": "caformer_s18.sail_in1k_384",
+    "epochs": 5,
+    "seed": 42,
+    "image_size": 384,
+    "workers": 2,
+    "prefetch_factor": 1,
+    "persistent_workers": false,
+    "cpu_threads": 4,
+    "candidate_real_batch_size": 32,
+    "gpu_memory_margin_fraction": 0.85,
+    "effective_study_batch_size": 32,
+    "gradient_checkpointing": true,
+    "validation_image_batch_size": 4,
+    "backbone_lr": 5e-05,
+    "classifier_lr": 0.0005,
+    "weight_decay": 0.05,
+    "normalization_and_bias_weight_decay": 0.0,
+    "head_dropout": 0.2,
+    "outer_head_dropout": 0.0,
+    "drop_path_rate": 0.1,
+    "proj_drop_rate": 0.0,
+    "amp_init_scale": 1024,
+    "initialization": "Pinned author ImageNet1K native384 safetensors, never a chest-X-ray trained checkpoint; only final fc2 reset to10 with train-Study prior bias",
+    "full_backbone_training": true,
+    "all_original_hidden_head_layers_trainable": true,
+    "uses_cached_features": false,
+    "uses_old_JPEG_cache": false,
+    "uses_previously_cxr_trained_weights": false,
+    "preprocessing": "Raw official RGB; ImageOps.pad384 BICUBIC, full-field aspect preserved; pinned ImageNet mean/std. No center crop.",
+    "augmentation": "Training only: PIL RandomAffine degrees5 translate.02 scale.95..1.05 BICUBIC; no flip/crop/gamma/noise. Validation deterministic.",
+    "loss": "Equal Study mean10-class BCE on mean per-image sigmoid probabilities, stable FP32 logsigmoid/logsumexp; native complete head per image, never feature mean",
+    "gradient_accumulation": "Sum Study losses divided by actual update-window Study count32, final17; small real batch explicitly distinct from effective batch",
+    "schedule": "Per optimizer update: first epoch579-update warmup.1 to1; remaining4epochs cosine1 to.1, exact successful/attempted count recorded",
+    "selection": "Best of five complete epochs: Study MacroAUC first, F1@.5 tie; initial/smoke not training epochs",
+    "threshold_protocol": "Patient GroupKFold5 shuffleTrue seed42; Gates .025..975 step.025, ties closest.5 then lower; final fullval Gates separate",
+    "train_images": 30344,
+    "train_studies": 18513,
+    "train_patients": 11055,
+    "validation_images": 1422,
+    "validation_studies": 859,
+    "validation_patients": 228,
+    "no_test_inference": true,
+    "github_uploaded": false
+  }
+}

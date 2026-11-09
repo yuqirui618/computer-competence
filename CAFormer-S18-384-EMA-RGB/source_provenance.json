@@ -1,0 +1,33 @@
+{
+  "native_stage_copied_exact": {
+    "train.py": "922ea1a3061a6eea892bed7d2c862bd623eca0e82606b5eb17a50eac2e47657b",
+    "common.py": "76f4e5dc82f70addec6e4a3998f7eec2a050dc69fe24647a4fd4f408543b9d9f",
+    "training_core.py": "435925ec1b3ba3832d630662cb0ebcba70f13f50cdf89df3756f463274a7ab24",
+    "data_pipeline.py": "f4ab6ba46a70aeb083b6fb7e56ba21b2415a01b48d422f49668999963b1a1f8f",
+    "recipe.json": "338164159b75cc0af7fcfa27cfabdee7ed7c54ea31e2367325e3a43c793f3459",
+    "pretrained_config.json": "40b80e3fa85d543c3f924a48e9a5c83607fdbb62962acc749692c8222fca6dca"
+  },
+  "original_continuation_trainer_sha256": "9ddd10e33a1732d84390bc20256451f47b5d21def7ed688fa100ae92da4ba413",
+  "preserved_A_functions": [
+    "note",
+    "setup",
+    "lr_factor",
+    "log_probabilities",
+    "ShadowEMA",
+    "cpu_math",
+    "training_epoch",
+    "key",
+    "cpu_state",
+    "evaluate_checkpoint",
+    "best_evaluations",
+    "verify_variants",
+    "run_arm"
+  ],
+  "modified_function": "verify_variants initial AUC metadata read from explicit reference instead of hardcoded value",
+  "utility_origin_sha256": "a94e2e0221fb89aac18c7b922697f8bcf639db8f2a2a5031f987eed5e972103d",
+  "utility_change": "runtime common import only",
+  "data_pipeline_sha256": "f4ab6ba46a70aeb083b6fb7e56ba21b2415a01b48d422f49668999963b1a1f8f",
+  "scope": "Only BCE+EMA continuation packaged; RLDAM and GLoRI code/dependencies excluded; root report contains compact comparisons only",
+  "fixed_release_infer_sha256": "021dfd4a1e12ef3b7233a734f67a02d7beae319746415992fbb8f1f2d049e397",
+  "fixed_release_infer_source": "EMA official exporter, byte-exact copy; complete selected model, same preprocessing and aggregation"
+}

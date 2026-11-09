@@ -1,0 +1,49 @@
+{
+  "architecture": "caformer_s18.sail_in1k_384",
+  "weights_in_git": false,
+  "lineage": [
+    {
+      "stage": "ImageNet1K native384",
+      "sha256": "629149fd6170274f8f19d1fbbb9b155b13933ff3d2f9e991ac0339d993426806",
+      "source": "https://huggingface.co/timm/caformer_s18.sail_in1k_384",
+      "license": "apache-2.0"
+    },
+    {
+      "stage": "Official CXR native full-backbone 5epochs selected5",
+      "sha256": "e4396db33d9fa25751205fc4d848766ff894ec4d104d884b77847e4afd01b250"
+    },
+    {
+      "stage": "BCE continuation with successful-update EMA, selected local1/global6",
+      "sha256": "f1f862bd6c76235e59e96b17b4bdae92aa497846b4eef42e8fb33b2b34ddee85"
+    }
+  ],
+  "selected_checkpoint_filename": "best_ema.pth",
+  "selected_local_epoch": 1,
+  "source_total_epoch": 6,
+  "validation_prediction_sha256": "84de88e32b80f1240f6f1e476d6eda6d6ca4850fae95ab10f122d855f15f99cc",
+  "gates_sha256": "678fb6ccffcdc1e2d77e48c380debab3a75c0765da1b79e88f2d413f70b474dd",
+  "class_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "gates": [
+    0.1,
+    0.25,
+    0.15,
+    0.175,
+    0.2,
+    0.175,
+    0.225,
+    0.25,
+    0.225,
+    0.3
+  ]
+}

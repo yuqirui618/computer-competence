@@ -1,0 +1,68 @@
+{
+  "epochs_per_arm": 5,
+  "arms": [
+    "A_BCE_EMA",
+    "RGB_EMA"
+  ],
+  "seed": 42,
+  "image_size": 384,
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "initialization": "Continue identical full native384 best epoch5; trained only on official train and permitted ImageNet source; never MambaOut weights or feature cache",
+  "train_images": 30344,
+  "train_studies": 18513,
+  "validation_images": 1422,
+  "validation_studies": 859,
+  "validation_patients": 228,
+  "study_effective_batch": 32,
+  "real_batch_candidates": [
+    16
+  ],
+  "backbone_and_existing_head_lr": 1e-05,
+  "weight_decay": 0.05,
+  "bias_norm_weight_decay": 0.0,
+  "gradient_checkpointing": true,
+  "hidden_head_dropout": 0.2,
+  "drop_path_rate": 0.1,
+  "outer_head_dropout": 0.0,
+  "proj_drop_rate": 0.0,
+  "epochs": 5,
+  "schedule": "Per attempted optimizer window:579-attempt first-epoch linear warmup .1 to1; remaining4epochs cosine1 to.1; skipped AMP attempts still advance schedule, EMA only advances on successful steps",
+  "amp": "FP16 model forward, FP32 stable Study mean-probability loss",
+  "amp_init_scale": 1024,
+  "validation_image_batch_size": 4,
+  "augmentation": "Original native384 raw RGB pad bicubic and PIL affine5deg/translate.02/scale.95..1.05; no old JPEG or feature cache",
+  "aggregation": "Complete classifier per image -> float32 sigmoid -> float32 Study probability mean",
+  "EMA": {
+    "arm": "A_BCE_EMA",
+    "decay": "min(.999,(1+successful_updates)/(10+successful_updates))",
+    "updated_on": "successful optimizer steps only",
+    "final_inference": "one selected EMA checkpoint, no runtime ensemble required"
+  },
+  "best_selection": "Study MacroAUC primary, F1@.5 tie; raw and EMA selected separately within own five epochs",
+  "F1_protocol": "Patient GroupKFold5 shuffleTrue seed42, thresholds.025...975 step.025; final fullval Gates distinct from OOF metric",
+  "no_test_inference": true,
+  "no_GitHub_upload": true,
+  "memory_margin_fraction": 0.85,
+  "loader": {
+    "workers": 2,
+    "prefetch_factor": 1,
+    "persistent_workers": false
+  },
+  "real_study_batch_size": 16,
+  "accumulation_steps": 2,
+  "RGB": {
+    "tn_gamma_neg": 3.0,
+    "fp_gamma_neg": 3.0,
+    "ratio": 1.0,
+    "eps": 0.0001
+  }
+}
