@@ -1,0 +1,17 @@
+# 当前选定模型：CAFormer-S18 + RGB Loss + 320 输入
+data_root: D:/cxr/raw/cxr_first
+manifest: D:/cxr/manifests/manifest.csv
+cache_dir: null
+img_size: 320
+num_classes: 10
+pretrained: true
+batch_size: 6
+num_workers: 0
+pin_memory: true
+epochs: 2
+lr: 1.0e-4
+head_lr: 1.0e-3
+weight_decay: 0.05
+drop_path: 0.1
+amp: true
+seed: 42

@@ -27,3 +27,10 @@
 - 官方实现：https://github.com/xup6YJ/RGB-Loss （GPL-3.0）
 - 仅用于训练，推理不使用；无外部医学数据/医学预训练权重
 - 详见同目录 `RGB_LOSS_NOTICE.md`
+
+## 当前选定输入分辨率
+
+- 选定：**320 × 320**（2000 张 / 2 轮小样本对比：Study Macro-AUC 0.7003，优于 224 的 0.6773，与 384 的 0.6995 基本持平）
+- 配置文件：`configs/caformer_rgb_320.yaml`
+- 本地 checkpoint：`checkpoints/rgb_320.pth`（92.8MB，未提交，`.gitignore` 已忽略）
+- 完整 384 两阶段 EMA 配方仍保留在 `CAFormer-S18-384-EMA-RGB/`，未覆盖
