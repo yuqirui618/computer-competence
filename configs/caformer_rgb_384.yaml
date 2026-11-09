@@ -1,11 +1,12 @@
-# 当前选定模型：CAFormer-S18 + RGB Loss + 320 输入
+# 当前选定模型：CAFormer-S18 + 384 输入（原生）+ RGB/ASL/加权 BCE 损失
 data_root: D:/cxr/raw/cxr_first
 manifest: D:/cxr/manifests/manifest.csv
 cache_dir: null
-img_size: 320
+img_size: 384
+loss: ASL
 num_classes: 10
 pretrained: true
-batch_size: 6
+batch_size: 4
 num_workers: 0
 pin_memory: true
 epochs: 2

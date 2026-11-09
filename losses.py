@@ -116,6 +116,75 @@ class RGBLoss(nn.Module):
         return pos_neg + fp_tn + fp_tp + tn
 
 
+
+OFFICIAL_STUDY_POSITIVES = (622, 900, 942, 1436, 2404, 3885, 3968, 4508, 4654, 6683)
+OFFICIAL_STUDY_TOTAL = 18513
+
+
+def official_pos_weight():
+    """pos_weight = negatives / positives, from official training Study counts."""
+    return torch.tensor(
+        [(OFFICIAL_STUDY_TOTAL - n) / n for n in OFFICIAL_STUDY_POSITIVES],
+        dtype=torch.float32,
+    )
+
+
+class AsymmetricLoss(nn.Module):
+    """ASL for multi-label long-tailed classification (Alibaba-MIIL/ASL, MIT)."""
+
+    def __init__(self, gamma_neg=4.0, gamma_pos=1.0, clip=0.05, eps=1e-8, **kwargs):
+        super().__init__()
+        self.gamma_neg = gamma_neg
+        self.gamma_pos = gamma_pos
+        self.clip = clip
+        self.eps = eps
+
+    def forward(self, logits, targets):
+        logits = logits.float()
+        targets = targets.float()
+        p = torch.sigmoid(logits)
+        p_neg = 1.0 - p
+        if self.clip > 0:
+            p_neg = (p_neg + self.clip).clamp(max=1.0)
+        loss = targets * torch.log(p.clamp(min=self.eps)) + (1.0 - targets) * torch.log(p_neg.clamp(min=self.eps))
+        if self.gamma_pos > 0 or self.gamma_neg > 0:
+            pt = p * targets + p_neg * (1.0 - targets)
+            gamma = self.gamma_pos * targets + self.gamma_neg * (1.0 - targets)
+            loss = loss * torch.pow(1.0 - pt, gamma)
+        return -loss.mean()
+
+
+class WeightedBCEWithLogitsLoss(nn.Module):
+    """BCE with per-class pos_weight from the official training Study counts."""
+
+    def __init__(self, pos_weight=None, **kwargs):
+        super().__init__()
+        if pos_weight is None:
+            pos_weight = official_pos_weight()
+        self.register_buffer("pos_weight", torch.as_tensor(pos_weight, dtype=torch.float32))
+
+    def forward(self, logits, targets):
+        return nn.functional.binary_cross_entropy_with_logits(
+            logits, targets, pos_weight=self.pos_weight.to(logits.device)
+        )
+
+
+class FocalLoss(nn.Module):
+    def __init__(self, gamma=2.0, alpha=0.25, **kwargs):
+        super().__init__()
+        self.gamma = gamma
+        self.alpha = alpha
+
+    def forward(self, logits, targets):
+        logits = logits.float()
+        targets = targets.float()
+        bce = nn.functional.binary_cross_entropy_with_logits(logits, targets, reduction="none")
+        p = torch.sigmoid(logits)
+        pt = p * targets + (1.0 - p) * (1.0 - targets)
+        alpha_t = self.alpha * targets + (1.0 - self.alpha) * (1.0 - targets)
+        return (alpha_t * (1.0 - pt).pow(self.gamma) * bce).mean()
+
+
 def build_loss(name: str = "BCE", num_classes: int = 10, **kwargs):
     """Create a loss by name. Default keeps the verified BCE baseline."""
     key = (name or "BCE").strip().upper()
@@ -123,4 +192,13 @@ def build_loss(name: str = "BCE", num_classes: int = 10, **kwargs):
         return BinaryCrossEntropyWithLogits()
     if key in ("RGB", "RGBLOSS", "CLASSASYDIFF"):
         return RGBLoss(num_classes=num_classes, **kwargs)
+    if key in ("ASL", "ASYMMETRIC"):
+        kwargs.pop("num_classes", None)
+        return AsymmetricLoss(**kwargs)
+    if key in ("WEIGHTED_BCE", "WBCE", "WEIGHTEDBCE"):
+        kwargs.pop("num_classes", None)
+        return WeightedBCEWithLogitsLoss(**kwargs)
+    if key in ("FOCAL", "FOCALLOSS"):
+        kwargs.pop("num_classes", None)
+        return FocalLoss(**kwargs)
     raise ValueError(f"Unsupported loss: {name}")

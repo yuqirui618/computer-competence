@@ -30,7 +30,14 @@
 
 ## 当前选定输入分辨率
 
-- 选定：**320 × 320**（2000 张 / 2 轮小样本对比：Study Macro-AUC 0.7003，优于 224 的 0.6773，与 384 的 0.6995 基本持平）
-- 配置文件：`configs/caformer_rgb_320.yaml`
-- 本地 checkpoint：`checkpoints/rgb_320.pth`（92.8MB，未提交，`.gitignore` 已忽略）
+- 选定：**384 × 384（原生）**（2000 张 / 2 轮小样本对比：384=0.6995，320=0.7003，差异在单种子噪声内；384 与原生预训练一致）
+- 配置文件：`configs/caformer_rgb_384.yaml`
+- 本地 checkpoint：`checkpoints/rgb_384.pth`（92.8MB，未提交，`.gitignore` 已忽略）
 - 完整 384 两阶段 EMA 配方仍保留在 `CAFormer-S18-384-EMA-RGB/`，未覆盖
+
+## 损失函数选择（本地 384 / 2000 张 / 2 轮）
+
+- 默认：**ASL**（Study Macro-AUC 0.7176，优于 BCE 0.7043、RGB 0.6995、加权 BCE 0.7024）
+- ASL 官方实现：Alibaba-MIIL/ASL（MIT）
+- 加权 BCE 的 pos_weight 由官方训练集 Study 计数 [622,900,942,1436,2404,3885,3968,4508,4654,6683] 计算
+- 小样本单种子结果，最终需全量 + 多种子确认

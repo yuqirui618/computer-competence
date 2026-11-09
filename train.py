@@ -56,7 +56,7 @@ def main():
         weight_decay=float(cfg.get("weight_decay", 0.05)),
     )
 
-    loss_name = os.environ.get("LOSS", "RGB").upper()
+    loss_name = os.environ.get("LOSS", cfg.get("loss", "ASL")).upper()
     criterion = build_loss(loss_name, num_classes=int(cfg.get("num_classes", 10)))
     use_amp = bool(cfg.get("amp", True)) and device == "cuda"
     scaler = GradScaler() if use_amp else None

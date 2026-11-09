@@ -7,7 +7,7 @@ CAFormer-S18 多标签分类模型（Echo-12345 / feat/model）。
 
 权重来源：
     timm / caformer_s18.sail_in1k_384（ImageNet-1K 原生 384 预训练 / Apache-2.0 / 非 gated）
-    当前选定训练/推理输入分辨率：320（见 configs/caformer_rgb_320.yaml）
+    当前选定训练/推理输入分辨率：384（原生，见 configs/caformer_rgb_384.yaml）
     预训练权重 SHA-256: 629149fd6170274f8f19d1fbbb9b155b13933ff3d2f9e991ac0339d993426806
     输出为 10 个 logits（不是 Softmax）；训练默认 RGB Loss，推理时 sigmoid。
 """
@@ -22,7 +22,7 @@ def build_model(
     pretrained: bool = True,
     drop_path: float = 0.0,
 ) -> nn.Module:
-    """构建 CAFormer-S18（原生 384 预训练，支持 320 输入）。
+    """构建 CAFormer-S18（原生 384 预训练，默认 384 输入）。
 
     num_classes=10 会把 ImageNet 的 1000 类头替换成 10 类头，骨干权重仍从
     ImageNet-1K 原生 384 预训练权重加载（timm 只跳过头）。
